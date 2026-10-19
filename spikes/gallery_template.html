@@ -1,0 +1,134 @@
+<title>Seen and Heard</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column; a cluster strip you pick from, then the chosen cluster's 10 objects as a card grid with a play control each. */
+:root {
+  --bg: #f6f4ef; --panel: #fdfcfa; --fg: #1d1b17; --fg2: #5c584f; --line: #dcd7cc; --accent: #8a5a1a; --accent-ink: #ffffff; --chip: #ebe6db;
+  --display: "Instrument Serif", Georgia, "Times New Roman", serif; --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #171613; --panel: #1f1d19; --fg: #ebe7df; --fg2: #a39d91; --line: #35322c; --accent: #d9a55a; --accent-ink: #1a1408; --chip: #2a2722; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #171613; --panel: #1f1d19; --fg: #ebe7df; --fg2: #a39d91; --line: #35322c; --accent: #d9a55a; --accent-ink: #1a1408; --chip: #2a2722; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 48px; }
+.wrap { max-width: 1120px; margin: 0 auto; display: grid; gap: 22px; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(34px, 5vw, 52px); line-height: 1.02; margin: 0; text-wrap: balance; }
+h1 em { font-style: italic; color: var(--accent); }
+.lede { max-width: 62ch; color: var(--fg2); margin: 0; font-size: 16px; }
+.stats { display: flex; flex-wrap: wrap; gap: 18px 34px; margin: 0; padding: 0; list-style: none; }
+.stats li { display: grid; gap: 2px; }
+.stats b { font-family: var(--display); font-weight: 400; font-size: 30px; line-height: 1; font-variant-numeric: tabular-nums; }
+.stats span { font-size: 12.5px; color: var(--fg2); letter-spacing: 0.02em; }
+.label { font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.09em; color: var(--fg2); margin: 0 0 8px; }
+.strip { display: flex; flex-wrap: wrap; gap: 8px; }
+.strip button { font: inherit; font-size: 13.5px; background: var(--chip); color: var(--fg); border: 1px solid transparent; border-radius: 999px; padding: 6px 12px; cursor: pointer; display: inline-flex; gap: 8px; align-items: baseline; }
+.strip button small { color: var(--fg2); font-variant-numeric: tabular-nums; }
+.strip button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+.strip button[aria-pressed="true"] small { color: var(--accent-ink); opacity: 0.8; }
+.strip button:focus-visible, .play:focus-visible, .playall:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 16px; }
+.panel-head { display: flex; flex-wrap: wrap; gap: 10px 24px; align-items: baseline; justify-content: space-between; }
+.panel h2 { font-family: var(--display); font-weight: 400; font-size: 28px; margin: 0; line-height: 1.1; }
+.panel h2 small { font-family: var(--body); font-size: 14px; color: var(--fg2); margin-left: 10px; }
+.meta { font-size: 13.5px; color: var(--fg2); display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0; font-variant-numeric: tabular-nums; }
+.playall { font: inherit; font-size: 13.5px; font-weight: 500; border: 1px solid var(--accent); color: var(--accent); background: transparent; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 14px; }
+.card { display: grid; gap: 6px; min-width: 0; }
+.card img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); display: block; }
+.card .name { font-weight: 500; font-size: 14px; line-height: 1.25; overflow-wrap: anywhere; }
+.card .name i { font-style: normal; color: var(--fg2); font-weight: 400; }
+.card .sub { font-size: 12px; color: var(--fg2); line-height: 1.3; overflow-wrap: anywhere; }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.hs { font-size: 11px; padding: 2px 7px; border-radius: 999px; color: #fff; letter-spacing: 0.02em; }
+.snd { font-size: 11px; padding: 2px 7px; border-radius: 4px; background: var(--chip); color: var(--fg2); font-variant-numeric: tabular-nums; }
+.play { font: inherit; font-size: 13px; font-weight: 500; display: inline-flex; align-items: center; gap: 7px; background: var(--chip); color: var(--fg); border: 0; border-radius: 6px; padding: 6px 10px; cursor: pointer; justify-self: start; }
+.play.on { background: var(--accent); color: var(--accent-ink); }
+.play svg { width: 12px; height: 12px; fill: currentColor; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-size: 12.5px; color: var(--fg2); align-items: center; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+.note { font-size: 13px; color: var(--fg2); max-width: 70ch; margin: 0; }
+.note + .note { margin-top: 6px; }
+@media (max-width: 480px) { .grid { grid-template-columns: repeat(2, 1fr); } .panel { padding: 14px; } }
+</style>
+<div class="wrap">
+  <header style="display:grid;gap:14px">
+    <h1>Do instruments that <em>look</em> alike also <em>sound</em> alike?</h1>
+    <p class="lede">868 instruments from 7 museums, each with a photograph and a recording of that same object (recordings shared by several objects are left out). The photos were grouped blind by k-means on DINOv2 features, with no labels. Pick a photo group and listen: the recordings in it should sound like one family.</p>
+    <ul class="stats">
+      <li><b>0.91</b><span>AUC that a shared photo group predicts a high audio similarity (chance 0.50)</span></li>
+      <li><b>0.68</b><span>AMI between blind photo groups and blind sound groups of the same objects</span></li>
+      <li><b>0.91</b><span>the same AUC for a shared Hornbostel-Sachs code, the expert reference</span></li>
+    </ul>
+  </header>
+  <section>
+    <p class="label">Photo groups, largest first (majority instrument name, number of objects)</p>
+    <div class="strip" id="strip" role="tablist"></div>
+  </section>
+  <section class="panel" id="panel" aria-live="polite"></section>
+  <section style="display:grid;gap:10px">
+    <div class="legend" id="legend"></div>
+    <p class="note">Each card shows the object's instrument name from the MIMO vocabulary (or its museum title in grey when no name is recorded), its Hornbostel-Sachs class as a coloured tag, its museum, and the blind sound group the recording fell into (20 sound groups, k-means on CLAP audio features). A photo group whose cards share one sound group is one that sounds alike.</p>
+    <p class="note">Excerpts are the loudest 3 seconds of each museum recording, mono, 16 kHz. Photos and recordings: MIMO member museums through Europeana, under each museum's own licence. Objects shown are the 10 nearest the centre of each photo group.</p>
+  </section>
+</div>
+<audio id="player" preload="none"></audio>
+<script>
+const DATA = /*DATA*/;
+const strip = document.getElementById("strip"), panel = document.getElementById("panel"), player = document.getElementById("player");
+const HSC = DATA.hsc;
+let current = null, playing = null, queue = [];
+const legend = document.getElementById("legend");
+legend.innerHTML = "<span>Hornbostel-Sachs class</span>" + Object.entries(HSC).map(([k, v]) => `<span><i style="background:${v}"></i>${k || "no code"}</span>`).join("");
+const ICON_PLAY = '<svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1.5v9l8-4.5z"/></svg>';
+const ICON_STOP = '<svg viewBox="0 0 12 12" aria-hidden="true"><rect x="2" y="2" width="8" height="8"/></svg>';
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c])); }
+function stop() {
+  player.pause(); queue = [];
+  if (playing) { playing.classList.remove("on"); playing.innerHTML = ICON_PLAY + " Play"; playing.setAttribute("aria-pressed", "false"); playing = null; }
+}
+function play(btn, src) {
+  if (playing === btn) { stop(); return; }
+  stop(); playing = btn; btn.classList.add("on"); btn.innerHTML = ICON_STOP + " Stop"; btn.setAttribute("aria-pressed", "true");
+  player.src = src; player.play().catch(() => stop());
+}
+player.addEventListener("ended", () => { const b = playing; stop(); if (queue.length) { const n = queue.shift(); play(n, n.dataset.src); } else if (b) { b.focus({preventScroll: true}); } });
+function render(c) {
+  current = c; stop();
+  for (const b of strip.children) b.setAttribute("aria-pressed", String(+b.dataset.c === c));
+  const cl = DATA.clusters.find(x => x.cluster === c);
+  const cards = DATA.cards.filter(x => x.c === c);
+  const groups = {}; cards.forEach(x => { groups[x.sound] = (groups[x.sound] || 0) + 1; });
+  const top = Object.entries(groups).sort((a, b) => b[1] - a[1])[0];
+  panel.innerHTML = `
+    <div class="panel-head">
+      <h2>${esc(cl.majority_name)}<small>photo group ${cl.cluster}, ${cl.n} objects, ${Math.round(cl.majority_share * 100)}% share this name</small></h2>
+      <button class="playall" id="playall" type="button">Play all ${cards.length} in a row</button>
+    </div>
+    <p class="meta">
+      <span>mean audio similarity inside the group ${cl.within_sim.toFixed(2)}</span>
+      <span>to objects outside it ${cl.between_sim.toFixed(2)}</span>
+      <span>${cl.audio_clusters} sound group${cl.audio_clusters === 1 ? "" : "s"} across all ${cl.n} objects</span>
+      <span>of the ${cards.length} shown, ${top[1]} fall in sound group ${top[0]}</span>
+    </p>
+    <div class="grid">${cards.map((x, i) => `
+      <article class="card">
+        <img src="${x.img}" alt="${esc(x.name)}" loading="lazy">
+        <div class="name">${x.named ? esc(x.name) : "<i>" + esc(x.name) + "</i>"}</div>
+        <div class="tags"><span class="hs" style="background:${HSC[x.hs1] || HSC[""]}">${esc(x.hs1 || "no code")}${x.hs3 ? " " + esc(x.hs3) : ""}</span><span class="snd">sound ${x.sound}</span></div>
+        <div class="sub">${esc(x.museum.replace("Staatliche Museen zu Berlin", "Berlin"))}</div>
+        <button class="play" type="button" data-src="${x.wav}" aria-pressed="false">${ICON_PLAY} Play</button>
+      </article>`).join("")}</div>`;
+  panel.querySelectorAll(".play").forEach(b => b.addEventListener("click", () => play(b, b.dataset.src)));
+  document.getElementById("playall").addEventListener("click", () => {
+    const bs = [...panel.querySelectorAll(".play")]; stop(); queue = bs.slice(1); play(bs[0], bs[0].dataset.src);
+  });
+}
+DATA.clusters.forEach(cl => {
+  const b = document.createElement("button"); b.type = "button"; b.dataset.c = cl.cluster; b.setAttribute("role", "tab");
+  b.innerHTML = `${esc(cl.majority_name)} <small>${cl.n}</small>`;
+  b.addEventListener("click", () => render(cl.cluster)); strip.appendChild(b);
+});
+render(DATA.clusters[0].cluster);
+</script>

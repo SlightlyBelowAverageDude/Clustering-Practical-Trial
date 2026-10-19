@@ -1,0 +1,170 @@
+<title>Instruments, Sorted Blind</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a single reading column; each step is a heading, 2 or 3 short paragraphs, then a drawing or a figure with a caption. */
+:root {
+  --bg: #f6f4ef; --panel: #fdfcfa; --fg: #1d1b17; --fg2: #5c584f; --line: #dcd7cc; --accent: #8a5a1a; --chip: #ebe6db;
+  --blue: #2a78d6; --orange: #eb6834; --aqua: #1baf7a; --yellow: #eda100; --magenta: #e87ba4;
+  --display: "Instrument Serif", Georgia, "Times New Roman", serif; --body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #171613; --panel: #1f1d19; --fg: #ebe7df; --fg2: #a39d91; --line: #35322c; --accent: #d9a55a; --chip: #2a2722; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #171613; --panel: #1f1d19; --fg: #ebe7df; --fg2: #a39d91; --line: #35322c; --accent: #d9a55a; --chip: #2a2722; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 30px 60px; }
+.wrap { max-width: 860px; margin: 0 auto; display: grid; gap: 40px; }
+h1 { font-family: var(--display); font-weight: 400; font-size: clamp(36px, 5.5vw, 56px); line-height: 1.02; margin: 0; text-wrap: balance; }
+h1 em { font-style: italic; color: var(--accent); }
+h2 { font-family: var(--display); font-weight: 400; font-size: 30px; line-height: 1.1; margin: 0; text-wrap: balance; }
+h2 small { display: block; font-family: var(--body); font-size: 12px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--fg2); margin-bottom: 8px; }
+p { margin: 0; max-width: 64ch; }
+section { display: grid; gap: 14px; }
+.lede { font-size: 18px; color: var(--fg2); }
+figure { margin: 6px 0 0; display: grid; gap: 10px; }
+figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 6px; background: #fcfcfb; display: block; }
+figcaption { font-size: 14px; color: var(--fg2); max-width: 70ch; line-height: 1.5; }
+figcaption b { color: var(--fg); font-weight: 600; }
+.draw { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; overflow-x: auto; }
+.draw svg { width: 100%; max-width: 760px; height: auto; display: block; margin: 0 auto; font-family: var(--body); }
+.draw text { fill: var(--fg); font-size: 13px; }
+.draw text.m { fill: var(--fg2); font-size: 12px; }
+.key { background: var(--chip); border-radius: 8px; padding: 14px 16px; display: grid; gap: 6px; font-size: 15px; }
+.key b { font-weight: 600; }
+.row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+.tile { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; display: grid; gap: 4px; }
+.tile b { font-family: var(--display); font-weight: 400; font-size: 34px; line-height: 1; font-variant-numeric: tabular-nums; }
+.tile span { font-size: 13.5px; color: var(--fg2); }
+.glossary { display: grid; gap: 10px; font-size: 15px; }
+.glossary div { display: grid; grid-template-columns: 150px 1fr; gap: 12px; border-top: 1px solid var(--line); padding-top: 10px; }
+.glossary dt { font-weight: 600; } .glossary dd { margin: 0; color: var(--fg2); }
+@media (max-width: 520px) { .glossary div { grid-template-columns: 1fr; gap: 2px; } }
+a { color: var(--accent); }
+</style>
+<div class="wrap">
+  <header style="display:grid;gap:14px">
+    <h1>60,000 museum instruments, sorted by a computer that has <em>never been told</em> what an instrument is</h1>
+    <p class="lede">What the project does, what came out, and why the numbers mean what they mean. No prior knowledge assumed.</p>
+  </header>
+
+  <section>
+    <h2><small>Step 1</small>The raw material</h2>
+    <p>Museums that belong to MIMO (Musical Instrument Museums Online) have photographed their instruments and put the photos online with a catalogue card. The card says what the object is called (clarinet, oud, slit drum), where it comes from, which museum holds it, and a code from a classification system that organologists have used since 1914, called Hornbostel-Sachs. That code sorts instruments by how the sound is made: a vibrating string, a vibrating skin, air, or the body of the object itself. We harvested all of it, then removed placeholder images, duplicate photos and catalogue records of parts such as bows and mouthpieces.</p>
+    <div class="row">
+      <div class="tile"><b>59,661</b><span>photos from 216 museums, after cleaning</span></div>
+      <div class="tile"><b>40,697</b><span>with a Hornbostel-Sachs code, up to 6 digits deep</span></div>
+      <div class="tile"><b>40,230</b><span>with an instrument name we could link to Wikipedia</span></div>
+      <div class="tile"><b>963</b><span>with a recording of that same object</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2><small>Step 2</small>Turning a photo into a point on a map</h2>
+    <p>A computer cannot compare 2 photos directly. So each photo is first handed to a vision model (we use one called DINOv2) that has looked at hundreds of millions of ordinary pictures and learned, on its own, what shapes, textures and parts look like. For each photo it writes down 768 numbers that describe what it sees. Photos that look alike get similar numbers.</p>
+    <p>You can think of those numbers as coordinates. Every photo becomes a dot on a map, and dots that are close together are photos that look alike. The model was never told what a violin or a drum is. It only knows "these 2 look similar".</p>
+    <div class="draw"><svg viewBox="0 0 760 230" role="img" aria-label="3 photos become 3 dots on a map; the 2 similar ones land close together">
+      <rect x="20" y="40" width="90" height="90" rx="6" fill="var(--chip)" stroke="var(--line)"/><text x="65" y="92" text-anchor="middle">violin</text>
+      <rect x="20" y="140" width="90" height="70" rx="6" fill="var(--chip)" stroke="var(--line)"/><text x="65" y="181" text-anchor="middle">viola</text>
+      <rect x="130" y="40" width="90" height="90" rx="6" fill="var(--chip)" stroke="var(--line)"/><text x="175" y="92" text-anchor="middle">gong</text>
+      <text x="120" y="25" class="m">photos</text>
+      <path d="M235 120 L300 120" stroke="var(--fg2)" stroke-width="1.5" fill="none" marker-end="url(#ar)"/>
+      <text x="268" y="108" text-anchor="middle" class="m">vision model</text>
+      <text x="268" y="140" text-anchor="middle" class="m">768 numbers each</text>
+      <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="var(--fg2)"/></marker></defs>
+      <rect x="320" y="30" width="420" height="185" rx="8" fill="var(--panel)" stroke="var(--line)"/>
+      <text x="330" y="25" class="m">the map (2 of the 768 directions shown)</text>
+      <circle cx="420" cy="90" r="7" fill="var(--orange)"/><text x="432" y="86">violin</text>
+      <circle cx="445" cy="112" r="7" fill="var(--orange)"/><text x="457" y="118">viola</text>
+      <circle cx="660" cy="170" r="7" fill="var(--aqua)"/><text x="672" y="175">gong</text>
+      <path d="M420 90 Q432 101 445 112" stroke="var(--fg2)" stroke-dasharray="3 3" fill="none"/><text x="395" y="140" class="m">close: they look alike</text>
+    </svg></div>
+  </section>
+
+  <section>
+    <h2><small>Step 3</small>Clustering: drawing circles around the crowds</h2>
+    <p>Clustering means asking the computer to find the crowds on that map by itself. We tell it only how many groups to make, say 20. It then moves 20 markers around until every dot is assigned to its nearest marker and the markers sit in the middle of their crowds. That procedure is called k-means, and k is the number of groups. Nobody tells it what the groups should be. It has no labels, no catalogue cards, nothing. It just finds where the dots bunch up.</p>
+    <p>The result is 20 groups of photos. The question of the whole project is: do these blind groups mean anything? Do they line up with how experts sort instruments, with how instruments are named, with where they come from, or with how they sound?</p>
+    <div class="draw"><svg viewBox="0 0 760 240" role="img" aria-label="dots on a map before and after clustering into 3 groups">
+      <text x="10" y="18" class="m">before: just dots</text>
+      <g fill="var(--fg2)">
+        <circle cx="70" cy="70" r="5"/><circle cx="90" cy="60" r="5"/><circle cx="85" cy="90" r="5"/><circle cx="110" cy="80" r="5"/><circle cx="65" cy="105" r="5"/>
+        <circle cx="230" cy="150" r="5"/><circle cx="250" cy="170" r="5"/><circle cx="215" cy="175" r="5"/><circle cx="260" cy="140" r="5"/>
+        <circle cx="170" cy="60" r="5"/><circle cx="300" cy="80" r="5"/><circle cx="290" cy="100" r="5"/><circle cx="315" cy="60" r="5"/><circle cx="270" cy="70" r="5"/>
+      </g>
+      <path d="M375 120 L410 120" stroke="var(--fg2)" stroke-width="1.5" marker-end="url(#ar2)"/><text x="392" y="108" text-anchor="middle" class="m">k = 3</text>
+      <defs><marker id="ar2" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="var(--fg2)"/></marker></defs>
+      <text x="430" y="18" class="m">after: 3 groups, each with its centre</text>
+      <g transform="translate(420 0)">
+        <ellipse cx="86" cy="80" rx="48" ry="40" fill="none" stroke="var(--orange)" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <g fill="var(--orange)"><circle cx="70" cy="70" r="5"/><circle cx="90" cy="60" r="5"/><circle cx="85" cy="90" r="5"/><circle cx="110" cy="80" r="5"/><circle cx="65" cy="105" r="5"/></g>
+        <path d="M80 74 l12 12 M92 74 l-12 12" stroke="var(--fg)" stroke-width="2"/>
+        <ellipse cx="240" cy="158" rx="46" ry="34" fill="none" stroke="var(--aqua)" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <g fill="var(--aqua)"><circle cx="230" cy="150" r="5"/><circle cx="250" cy="170" r="5"/><circle cx="215" cy="175" r="5"/><circle cx="260" cy="140" r="5"/></g>
+        <path d="M233 152 l12 12 M245 152 l-12 12" stroke="var(--fg)" stroke-width="2"/>
+        <ellipse cx="290" cy="76" rx="52" ry="36" fill="none" stroke="var(--blue)" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <g fill="var(--blue)"><circle cx="300" cy="80" r="5"/><circle cx="290" cy="100" r="5"/><circle cx="315" cy="60" r="5"/><circle cx="270" cy="70" r="5"/></g>
+        <path d="M288 70 l12 12 M300 70 l-12 12" stroke="var(--fg)" stroke-width="2"/>
+        <circle cx="170" cy="60" r="5" fill="var(--orange)"/><text x="150" y="44" class="m">this one is far from all</text><text x="150" y="30" class="m">centres; it goes to the nearest</text>
+      </g>
+      <text x="570" y="226" class="m">x marks the centre of each group</text>
+    </svg></div>
+  </section>
+
+  <section>
+    <h2><small>Step 4</small>Scoring the groups against the experts</h2>
+    <p>To check whether the blind groups mean anything, we compare them with a label we hid from the computer, for example the top level of the Hornbostel-Sachs code (string, skin, air, body, electric). The score we use is called AMI, adjusted mutual information. It runs from 0 to 1.</p>
+    <div class="key">
+      <div><b>AMI 1</b> means the groups and the labels are the same sorting: every group holds exactly one label and every label sits in exactly one group.</div>
+      <div><b>AMI 0</b> means the groups tell you nothing about the labels. Sorting the photos at random gives 0, because the score has the luck of random matches taken out ("adjusted").</div>
+      <div><b>In between</b> means partial overlap. Groups that each hold mostly one label, with some spill, land around 0.5.</div>
+    </div>
+    <p>A useful way to picture it: a librarian who cannot read is asked to shelve books by look alone. AMI measures how closely the shelves end up matching the catalogue, after subtracting whatever match pure luck would give.</p>
+    <p>We also run a "cheat test" for comparison. We let a simple model peek at the labels of 80 percent of the photos, learn from them, and then guess the remaining 20 percent. This is called a linear probe. It tells us how much of the label is readable in the 768 numbers at all. Blind clustering can never beat it, so it is the ceiling, and the distance from the blind score to the ceiling is the room for better methods.</p>
+  </section>
+
+  <section>
+    <h2><small>Finding 1</small>The groups are real instrument types</h2>
+    <figure><img src="{{figA}}" alt="Three rows of instrument photos, one row per blind group, each framed in the colour of its expert class"><figcaption><b>Three of the 20 blind groups, 6 photos each.</b> The frame colour is the expert's top-level class. The computer put xylophones with the pan flutes and organs (65 percent of all xylophones land in that group), electric guitars with the lutes and guitars (100 percent), and tube zithers with the flutes and pipes (77 percent). Each row is a sensible "looks like" family, and each row crosses the expert's class boundary, because the expert sorts by how the sound is produced and the camera sorts by shape.</figcaption></figure>
+    <figure><img src="{{figD}}" alt="Two maps of the same 14,000 dots, coloured by expert class and by instrument family"><figcaption><b>The map itself, 14,000 photos squeezed onto a flat sheet.</b> Each dot is a photo. Left, dots are coloured by the expert's top-level class; right, by the everyday family (woodwind, brass, string, percussion, keyboard). The islands match the everyday families better: brass (yellow) is its own island, while the expert class lumps brass and woodwind together as "air".</figcaption></figure>
+  </section>
+
+  <section>
+    <h2><small>Finding 2</small>The finer the label, the better the match</h2>
+    <figure><img src="{{figB}}" alt="Line chart of AMI against number of classes for two taxonomies and the instrument name"><figcaption><b>Blind groups scored against labels of increasing detail.</b> Filled dots are the blind score (AMI), hollow dots the cheat-test ceiling. Against 5 coarse classes the match is 0.35; against 30 finer codes it is 0.57 to 0.59; against 129 instrument names it is 0.59. The computer's groups look like instrument types, and the coarse expert classes are the worst description of them. The gap between filled and hollow dots is what better clustering methods can still win.</figcaption></figure>
+    <figure><img src="{{figC}}" alt="Horizontal bars placing the blind score between chance and a perfect fine labelling"><figcaption><b>Is 0.55 good?</b> Scored against 13 expert codes: random sorting gives 0.00. Blind groups give 0.55. If you sorted perfectly by instrument name, the finest label there is, you would still only score 0.66 against those codes, because names and codes do not agree with each other either. The cheat test that peeks at labels reaches 0.83. So the blind computer gets more than four fifths of the way to what a perfect name-level sorting would get, without ever seeing a label.</figcaption></figure>
+  </section>
+
+  <section>
+    <h2><small>Finding 3</small>It is the object, not the camera</h2>
+    <p>A fair objection: maybe the computer groups by photo style, since each museum uses one photographer and one backdrop. We checked by clustering inside each museum separately, so the photo style is held fixed.</p>
+    <figure><img src="{{figE}}" alt="Dot plot of per-museum scores for expert class and for region of origin"><figcaption><b>Inside one museum at a time.</b> Blue dots: how well blind groups match the expert class, 0.10 to 0.57 across 13 museums and above 0.2 in 12 of them. Orange dots: how well they match where the instrument comes from, close to 0 almost everywhere. The acoustic class is in the object. Geographic origin is barely visible in form, with one exception (Berlin, the only museum with a balanced world collection).</figcaption></figure>
+  </section>
+
+  <section>
+    <h2><small>Finding 4</small>Instruments that look alike sound alike</h2>
+    <p>For 963 objects the museum also recorded the instrument being played. We ran the same trick on the sound: a model that turns audio into numbers (CLAP), then blind grouping. Then we asked: when 2 objects landed in the same photo group, do their recordings sound alike? You can listen for yourself on the <a href="https://claude.ai/artifact/4NCSFwchsHa4BGo1E5NxP7">seen-and-heard page</a>.</p>
+    <figure><img src="{{figF}}" alt="Bars showing how well various groupings predict that two recordings sound alike"><figcaption><b>Reading the bars.</b> Take many pairs of objects. The score (AUC) says how often a pair from the same group sounds more alike than a pair from different groups. 0.50 is a coin flip. Sharing a blind photo group (40 groups) gives 0.90, the same as sharing the expert's code. Sharing only a museum gives 0.62, so the recording room explains little. The computer found, from photos alone, groups that sound alike.</figcaption></figure>
+    <figure><img src="{{figG}}" alt="Grouped bars comparing sound clusters and photo clusters against each label"><figcaption><b>Sound follows the expert's tree more closely than form does.</b> The expert code is about how the sound is made, so sound groups match it better (0.62 vs 0.39 at the top level). Both are blind to region.</figcaption></figure>
+    <figure><img src="{{figH}}" alt="Grid of counts crossing photo groups with sound groups"><figcaption><b>Photo groups against sound groups, same objects, 10 each.</b> A big number on the diagonal means a photo group is also one sound group: ocarinas, natural trumpets, kohorns, guitars, harpsichords, violins and accordions all are. The "bell" row spreads over many sound groups: small percussion looks alike and sounds different.</figcaption></figure>
+  </section>
+
+  <section>
+    <h2><small>So what</small>What the project would be</h2>
+    <p>The blind groups are a typology of instruments made from how they look, with no expert involved. The project builds that typology properly (at several levels of detail, from a few groups to hundreds), lets language name each group (the majority catalogue name, or a model that writes captions), and then compares the result with the expert trees. Where they agree, the expert split is visible in form. Where they disagree, we can say exactly which instruments the camera sees differently from the organologist, and whether the ear sides with the camera or the expert.</p>
+    <p>Two things make it publishable rather than a class exercise. Nobody has scored image groups of instruments against the Hornbostel-Sachs tree before, and the data are usable under a non-commercial licence (60,000 photos, 1,000 recordings, 2 expert taxonomies, 129 names), so anyone can check the claim.</p>
+  </section>
+
+  <section>
+    <h2><small>Glossary</small>The words, in one line each</h2>
+    <dl class="glossary">
+      <div><dt>embedding</dt><dd>the 768 numbers a vision model writes down for a photo; the photo's coordinates on the map</dd></div>
+      <div><dt>DINOv2, CLAP</dt><dd>the models that turn photos (DINOv2) and audio (CLAP) into numbers; both were trained without any instrument labels</dd></div>
+      <div><dt>clustering, k-means</dt><dd>finding the crowds on the map with no labels; k is how many groups you ask for</dd></div>
+      <div><dt>AMI</dt><dd>0 to 1 score of how well blind groups match a hidden label, with luck removed</dd></div>
+      <div><dt>linear probe</dt><dd>the cheat test that peeks at labels; the ceiling blind clustering cannot pass</dd></div>
+      <div><dt>AUC</dt><dd>0.5 to 1 score of how often same-group pairs beat different-group pairs; 0.5 is a coin flip</dd></div>
+      <div><dt>Hornbostel-Sachs</dt><dd>the 1914 expert classification of instruments by how the sound is made, written as a code like 321.322</dd></div>
+      <div><dt>MIMO</dt><dd>Musical Instrument Museums Online, the network whose photos, cards and recordings we use</dd></div>
+    </dl>
+  </section>
+</div>
