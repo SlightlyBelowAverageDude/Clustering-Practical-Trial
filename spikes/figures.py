@@ -1,4 +1,4 @@
-"""Figures for the instrument findings (and the 3-idea overview). Static PNGs via matplotlib.
+"""Figures for the instrument findings. Static PNGs via matplotlib.
 
 Palette: fixed categorical order blue, orange, aqua, yellow, magenta (validated with the dataviz skill's
 script). Thin marks, light grid, direct labels where they help, text in ink colours, never series colours.
@@ -149,25 +149,8 @@ def fig6_umap():
     fig.tight_layout(); fig.savefig(OUT / "fig6_umap.png", dpi=170); plt.close(fig)
 
 
-def fig7_ghost_borders():
-    o = pd.read_csv(ROOT / "runs/ghost_age_curve.csv")
-    names = {"cz_at": "Czech-Austrian\nexisting", "inner_de": "inner German\nended 1990", "de_nds_1946": "Niedersachsen 1946\nno regime contrast",
-             "pl_partition": "Prussian-Russian\nended 1918", "pl_austrian": "Austrian-Russian\nended 1918, no contrast"}
-    fig, ax = plt.subplots(figsize=(8.5, 4))
-    x = np.arange(len(o))
-    ax.bar(x - 0.2, o["AUC real"], width=0.38, color=C["blue"], label="real border")
-    ax.bar(x + 0.2, o["AUC placebo"], width=0.38, color="#9ec5f4", label="placebo lines (same line shifted 35 km)")
-    ax.axhline(0.5, color=INK2, linewidth=0.8, linestyle="--"); ax.text(len(o) - 0.5, 0.505, "chance", fontsize=8, color=INK2, ha="right")
-    for xi, (r, p) in enumerate(zip(o["AUC real"], o["AUC placebo"])):
-        ax.text(xi - 0.2, r + 0.01, f"{r:.2f}", ha="center", fontsize=8.5, color=INK2); ax.text(xi + 0.2, p + 0.01, f"{p:.2f}", ha="center", fontsize=8.5, color=INK2)
-    ax.set_xticks(x); ax.set_xticklabels([names[b] for b in o.border], fontsize=8.5); ax.set_ylim(0.4, 1.02)
-    ax.set_ylabel("AUC: mean field-segment area, side A vs side B"); ax.legend(frameon=False, fontsize=8.5, loc="upper right")
-    ax.set_title("Ghost Borders: borders with an agrarian-regime contrast stay visible, borders without one do not", loc="left", fontsize=11)
-    fig.tight_layout(); fig.savefig(OUT / "fig7_ghost_borders.png", dpi=170); plt.close(fig)
-
-
 if __name__ == "__main__":
-    which = sys.argv[1:] or ["1", "2", "3", "4", "5", "6", "7"]
+    which = sys.argv[1:] or ["1", "2", "3", "4", "5", "6"]
     for w in which:
         globals()[[n for n in globals() if n.startswith(f"fig{w}_")][0]]()
         print("fig", w, "done", flush=True)
