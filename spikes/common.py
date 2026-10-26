@@ -35,7 +35,8 @@ class Encoder:
         """pad_square: pad each image to a white square before the model's own transform, so the resize keeps the
         whole object. Without it the default transforms resize the short side and centre-crop, which cuts the ends
         off elongated objects (MIMO thumbnails have a median aspect ratio of 1.5)."""
-        lib, model_id, tag = ENCODERS[name]
+        lib, model_id, tag = ENCODERS[name][:3]
+        kw = ENCODERS[name][3] if len(ENCODERS[name]) > 3 else {}  # timm create_model keyword arguments, e.g. img_size
         self.name, self.lib, self.pad_square = name, lib, pad_square
         if lib == "open_clip":
             import open_clip
@@ -43,8 +44,10 @@ class Encoder:
             self.tokenizer = open_clip.get_tokenizer(model_id)
         elif lib == "timm":
             import timm
-            self.model = timm.create_model(model_id, pretrained=True, num_classes=0)
+            self.model = timm.create_model(model_id, pretrained=True, num_classes=0, **kw)
             cfg = timm.data.resolve_data_config({}, model=self.model)
+            if "img_size" in kw:
+                cfg["input_size"] = (3, kw["img_size"], kw["img_size"])
             self.preprocess = timm.data.create_transform(**cfg)
         self.model = self.model.to(DEVICE).eval()
 
