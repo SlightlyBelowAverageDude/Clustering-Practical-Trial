@@ -31,8 +31,16 @@ def fig_f():
             ("same image cluster, 10 clusters", "image cluster k=10", C["blue"]), ("same image cluster, 20 clusters", "image cluster k=20", C["blue"]),
             ("same image cluster, 40 clusters", "image cluster k=40", C["blue"]), ("same H-S class (level 1)", "hs1", C["orange"]),
             ("same H-S code (level 3)", "hs3", C["orange"]), ("same instrument name", "name", C["aqua"])]
-    v = t.set_index("grouping").AUC
-    fig, ax = plt.subplots(figsize=(8.4, 4.2))
+    v = t.set_index("grouping").AUC.copy()
+    g = ROOT / "runs/tests/audio/pair_auc_granularity.csv"  # photo groups with as many groups as the label has classes
+    if g.exists():
+        gr = pd.read_csv(g)
+        gr = gr[gr.space == "clap"].set_index("label")
+        v["image cluster k=17"] = gr.loc["hs3", "AUC_photo_groups_same_k_same_objects"]
+        rows.insert(3, ("same image cluster, 17 clusters (as many as level-3 codes)", "image cluster k=17", C["blue"]))
+        rows = [(lab.replace("same H-S code (level 3)", "same H-S code (level 3, 17 codes)").replace("same instrument name", "same instrument name (140 names)"), key, col)
+                for lab, key, col in rows]
+    fig, ax = plt.subplots(figsize=(8.4 + 2.2 * (len(rows) > 8), 4.2 + 0.4 * (len(rows) - 8)))
     y = np.arange(len(rows))[::-1]
     for yi, (lab, key, col) in zip(y, rows):
         ax.barh(yi, v[key], color=col, height=0.6)

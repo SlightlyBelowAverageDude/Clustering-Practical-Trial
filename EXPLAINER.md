@@ -98,9 +98,9 @@ Inside one museum the photographer and the backdrop are the same for every objec
 
 868 objects come with a museum recording of that same instrument. (95 more were excluded because their file is shared with other objects: ensemble recordings in Paris, one sample for many accordions in Soinuenea.) The recordings are turned into numbers by CLAP, an audio model trained on audio paired with text descriptions, which do name instruments, so the sound side is not label-free in training. The grouping itself is blind.
 
-![pair test](runs/figures_clean_v3/figF_pair_auc.png)
+![pair test](runs/figures_clean_v4/figF_pair_auc.png)
 
-Take pairs of objects. AUC says how often a pair from the same group sounds more alike than a pair from different groups; 0.5 is a coin flip. Sharing a blind photo group (40 groups) gives 0.91 (0.90 to 0.92 over 5 seeds), sharing the expert code 0.91, sharing a museum 0.63, permuted codes 0.49. Restricted to objects with a code, the photo groups give 0.92 against 0.91 for the code.
+Take pairs of objects. AUC says how often a pair from the same group sounds more alike than a pair from different groups; 0.5 is a coin flip. Sharing a blind photo group gives 0.80 with 17 groups and 0.91 with 40 groups (0.90 to 0.92 over 5 seeds). Sharing the expert level-3 code, 17 classes on these objects, gives 0.91, sharing a museum 0.63, permuted codes 0.49. With sound features that never saw a label (timbre statistics from the spectrum, HuBERT) photo groups and code score within 0.05 of each other at equal group counts, between 0.70 and 0.84.
 
 ![sound vs photo](runs/figures_clean_v3/figG_audio_vs_image.png)
 
