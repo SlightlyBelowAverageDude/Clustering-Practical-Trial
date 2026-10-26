@@ -57,9 +57,9 @@ h1 em { font-style: italic; color: var(--accent); }
     <h1>Do instruments that <em>look</em> alike also <em>sound</em> alike?</h1>
     <p class="lede">868 instruments from 7 museums, each with a photograph and a recording of that same object (recordings shared by several objects are left out). The photos were grouped blind by k-means on DINOv2 features, with no labels. Pick a photo group and listen: the recordings in it should sound like one family.</p>
     <ul class="stats">
-      <li><b>0.91</b><span>AUC that a shared photo group predicts a high audio similarity (chance 0.50)</span></li>
+      <li><b>0.80</b><span>AUC that a shared photo group predicts a high audio similarity, with as many groups as the expert code has classes (17); 0.91 with 40 groups; chance 0.50</span></li>
       <li><b>0.68</b><span>AMI between blind photo groups and blind sound groups of the same objects</span></li>
-      <li><b>0.91</b><span>the same AUC for a shared Hornbostel-Sachs code, the expert reference</span></li>
+      <li><b>0.91</b><span>the same AUC for a shared Hornbostel-Sachs code (17 classes), the expert reference</span></li>
     </ul>
   </header>
   <section>
