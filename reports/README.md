@@ -4,6 +4,7 @@ Everything here was produced by the scripts in each folder's `source/`, run from
 
 | Folder | What | Start with |
 |---|---|---|
+| `week6/presentation/final/` | **Final Week 6 deck** (full MIMO collection + 12,000-object development benchmark), EN/DE speaker notes, slide sources, validation (224/224) | `week6/presentation/final/Week6_Final_FullMIMO_StatusUpdate.pdf` |
 | `week6/` | P1 foundation audit, P2 RQ1 benchmark (5 clustering families × CLIP/SigLIP, blind k), P3 robustness, AMI-vs-ARI, RQ2 preprocessing, P4 validation (299/299) and the 16 Nov slides | `week6/P4_WEEK6_FINAL_REPORT.md`, `week6/presentation/` |
 | `full_dataset/` | Reconstructed full MIMO dataset: 63,473 images, 59,658 cleaned photographs, 27,347-object benchmark (13 HS3 classes), object-level dev/held-out split | `full_dataset/FULL_DATASET_REPORT.md` |
 | `dinov2/` | DINOv2 S/B/L (official weights), three-backbone comparison, RQ3 size/layer/resolution, linear-probe gap, development-partition benchmark, P5 validation | `dinov2/DINOV2_BENCHMARK.md` |
