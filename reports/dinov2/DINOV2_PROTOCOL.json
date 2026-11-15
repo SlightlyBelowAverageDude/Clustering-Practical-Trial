@@ -1,0 +1,41 @@
+{
+  "declared_utc": "2026-11-15T13:03:00Z",
+  "status": "declared before DINOv2 clustering; pilot = explored development set; dev partition = development only; held-out never touched",
+  "pilot": {
+    "rows": 2000,
+    "order": "results/phase2/inputs/image_order.csv",
+    "masks": "results/phase2/inputs/evaluation_masks.csv (HS1/2/3 = 1565/1563/1549)"
+  },
+  "backbones": {
+    "clip": "existing pilot cache (512-d)",
+    "siglip": "existing phase-2 cache (768-d)",
+    "dinov2_{s,b,l}": "official LVD-142M checkpoints via timm, pinned revisions in reports/dinov2/models.json; CLS token, final LayerNorm; layers -1,-2,-4; 224 px for S/B/L, 518 px (timm default) for S/B"
+  },
+  "representations": [
+    "l2",
+    "centered_l2",
+    "pca50_l2",
+    "pca100_l2"
+  ],
+  "representation_rule": "identical to results/phase2/source/benchmark.py transform(): L2 / global mean-centering then L2 / full-SVD non-whitened PCA then L2; fitted on the clustered rows only, no labels",
+  "methods": {
+    "kmeans": "n_init 10, seeds 0-4",
+    "agglomerative_average_cosine": "deterministic",
+    "spectral_knn": "15-NN, seeds 0-4",
+    "gmm_diag": "n_init 3, seeds 0-4, float64",
+    "hdbscan": "min_cluster_size 20, noise scored as its own cluster (primary) and assigned-only"
+  },
+  "k": 10,
+  "k_note": "fixed predeclared anchor; no k selection by labels",
+  "primary_comparison": "centered_l2, k=10, HS3 AMI and ARI, mean over seeds; three backbones at their default configs: CLIP, SigLIP, DINOv2-B 518 px layer -1",
+  "rq3": "model size S/B/L and layer -1/-2/-4 at 224 px; resolution 224 vs 518 for S/B; k-means/agglomerative/spectral, centered_l2, k=10",
+  "linear_probe": {
+    "labels": "HS3 classes with >= 10 labelled pilot images (13 classes)",
+    "model": "LogisticRegression(C=0.5, max_iter=2000) on centered_l2 features",
+    "protocol": "StratifiedKFold(5, shuffle, seed 0): train on 4 folds, predict the held-out fold; out-of-fold accuracy, balanced accuracy, AMI",
+    "separation": "supervised reference only, reported in a separate table; never used to build or select clusters"
+  },
+  "dev_partition": "reports/full_dataset/benchmark/dev_ids.csv (12,000 rows); CLIP, SigLIP and DINOv2-B (224 px) embedded with the same adaptation; same methods at k=10 and at k=13 (benchmark HS3 class count, label-informed reference only, flagged)",
+  "heldout": "reports/full_dataset/benchmark/heldout_ids_DO_NOT_USE_FOR_SELECTION.csv is not embedded, clustered or scored",
+  "source_sha256": "e4faf956b8d493dad4855d1afd509be976b2bece8286f06a6463a6322f2b37bf"
+}

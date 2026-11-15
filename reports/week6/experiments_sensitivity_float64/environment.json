@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-14T22:53:38.867659+00:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "threads": 4,
+  "cpu_count": 12,
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "matplotlib": "3.11.2",
+    "threadpoolctl": "3.7.0"
+  },
+  "source_sha256": {
+    "p2_protocol.py": "d3fe36d91b9e45f9226f044ba846fafc5f2aa5208b316c39e5953612210e1e02",
+    "p1_audit.py": "967d4bbabd590f39fd360f9c5b99c07d73ccd4e1b2bd276d41698018c5483113",
+    "p2_benchmark.py": "02de1fca4640aa47a6a052f710f6d232ae90bcbd0a7e487cb361a19e178da9a0"
+  },
+  "protocol_sha256": "4fd741599e2cae46bf608aea086b7b3761de9d3df2bad6648da6b1bb48ba2d26"
+}

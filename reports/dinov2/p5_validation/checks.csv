@@ -1,0 +1,813 @@
+check,recomputed,reported,pass
+pilot clip centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.45912678091993486,0.45912678091993486,True
+pilot clip centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.36618319644004693,0.36618319644004693,True
+pilot clip centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.33158331721022005,0.33158331721022005,True
+pilot clip centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.22832726961079522,0.22832726961079522,True
+pilot clip centered_l2 gmm_diag k10.0 hs3 AMI,0.4519828425797249,0.4519828425797249,True
+pilot clip centered_l2 gmm_diag k10.0 hs3 ARI,0.26229562076648416,0.2622956207664841,True
+pilot clip centered_l2 gmm_diag k10.0 hs1 AMI,0.3213488667857701,0.3213488667857701,True
+pilot clip centered_l2 gmm_diag k10.0 hs1 ARI,0.12065739354675302,0.12065739354675302,True
+pilot clip centered_l2 hdbscan knan hs3 AMI,0.2689086340775006,0.2689086340775006,True
+pilot clip centered_l2 hdbscan knan hs3 ARI,0.042469136989447626,0.042469136989447626,True
+pilot clip centered_l2 hdbscan knan hs1 AMI,0.2837368121254465,0.2837368121254465,True
+pilot clip centered_l2 hdbscan knan hs1 ARI,0.0699105000061516,0.0699105000061516,True
+pilot clip centered_l2 kmeans k10.0 hs3 AMI,0.44000060115390155,0.44000060115390155,True
+pilot clip centered_l2 kmeans k10.0 hs3 ARI,0.3062879732703156,0.3062879732703156,True
+pilot clip centered_l2 kmeans k10.0 hs1 AMI,0.317056969452352,0.317056969452352,True
+pilot clip centered_l2 kmeans k10.0 hs1 ARI,0.15148392761759175,0.15148392761759172,True
+pilot clip centered_l2 spectral_knn k10.0 hs3 AMI,0.4703514073408767,0.4703514073408768,True
+pilot clip centered_l2 spectral_knn k10.0 hs3 ARI,0.2850556370447365,0.2850556370447365,True
+pilot clip centered_l2 spectral_knn k10.0 hs1 AMI,0.3230889523967413,0.3230889523967413,True
+pilot clip centered_l2 spectral_knn k10.0 hs1 ARI,0.20375872821412827,0.20375872821412827,True
+pilot clip l2 agglomerative_average_cosine k10.0 hs3 AMI,0.032247457842395806,0.032247457842395806,True
+pilot clip l2 agglomerative_average_cosine k10.0 hs3 ARI,0.005555221631399054,0.005555221631399054,True
+pilot clip l2 agglomerative_average_cosine k10.0 hs1 AMI,0.045181369321474735,0.045181369321474735,True
+pilot clip l2 agglomerative_average_cosine k10.0 hs1 ARI,0.017133200936684863,0.017133200936684863,True
+pilot clip l2 gmm_diag k10.0 hs3 AMI,0.4444640867916207,0.4444640867916207,True
+pilot clip l2 gmm_diag k10.0 hs3 ARI,0.27581334019322445,0.2758133401932245,True
+pilot clip l2 gmm_diag k10.0 hs1 AMI,0.32104410988658927,0.32104410988658927,True
+pilot clip l2 gmm_diag k10.0 hs1 ARI,0.13222929885080076,0.13222929885080073,True
+pilot clip l2 hdbscan knan hs3 AMI,0.197302996872181,0.197302996872181,True
+pilot clip l2 hdbscan knan hs3 ARI,0.005990182080863874,0.005990182080863874,True
+pilot clip l2 hdbscan knan hs1 AMI,0.21927587432613516,0.21927587432613516,True
+pilot clip l2 hdbscan knan hs1 ARI,-0.0038516796079573054,-0.0038516796079573054,True
+pilot clip l2 kmeans k10.0 hs3 AMI,0.44915006565242954,0.44915006565242954,True
+pilot clip l2 kmeans k10.0 hs3 ARI,0.3102938880888847,0.3102938880888847,True
+pilot clip l2 kmeans k10.0 hs1 AMI,0.3236643936982027,0.3236643936982027,True
+pilot clip l2 kmeans k10.0 hs1 ARI,0.15974131974819777,0.15974131974819777,True
+pilot clip l2 spectral_knn k10.0 hs3 AMI,0.4435690821965488,0.4435690821965488,True
+pilot clip l2 spectral_knn k10.0 hs3 ARI,0.1767524014267312,0.17675240142673124,True
+pilot clip l2 spectral_knn k10.0 hs1 AMI,0.29628291955844155,0.29628291955844155,True
+pilot clip l2 spectral_knn k10.0 hs1 ARI,0.1406448571431608,0.1406448571431608,True
+pilot clip pca100_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.4621250849380264,0.4621250849380264,True
+pilot clip pca100_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3648123332002105,0.3648123332002105,True
+pilot clip pca100_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.33198853070319884,0.33198853070319884,True
+pilot clip pca100_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.22790085766193804,0.22790085766193804,True
+pilot clip pca100_l2 gmm_diag k10.0 hs3 AMI,0.38164169673555376,0.3816416967355537,True
+pilot clip pca100_l2 gmm_diag k10.0 hs3 ARI,0.12851939739572527,0.12851939739572527,True
+pilot clip pca100_l2 gmm_diag k10.0 hs1 AMI,0.27725465290877943,0.27725465290877943,True
+pilot clip pca100_l2 gmm_diag k10.0 hs1 ARI,0.04785056283108398,0.04785056283108398,True
+pilot clip pca100_l2 hdbscan knan hs3 AMI,0.27482950395285677,0.27482950395285677,True
+pilot clip pca100_l2 hdbscan knan hs3 ARI,0.0437690723896088,0.0437690723896088,True
+pilot clip pca100_l2 hdbscan knan hs1 AMI,0.29326209154185456,0.29326209154185456,True
+pilot clip pca100_l2 hdbscan knan hs1 ARI,0.07844499585836494,0.07844499585836494,True
+pilot clip pca100_l2 kmeans k10.0 hs3 AMI,0.43909227819187785,0.43909227819187785,True
+pilot clip pca100_l2 kmeans k10.0 hs3 ARI,0.31386359040010403,0.31386359040010403,True
+pilot clip pca100_l2 kmeans k10.0 hs1 AMI,0.31820271277615886,0.31820271277615886,True
+pilot clip pca100_l2 kmeans k10.0 hs1 ARI,0.1551661971571767,0.1551661971571767,True
+pilot clip pca100_l2 spectral_knn k10.0 hs3 AMI,0.4616397699631281,0.46163976996312817,True
+pilot clip pca100_l2 spectral_knn k10.0 hs3 ARI,0.2793543247157454,0.2793543247157454,True
+pilot clip pca100_l2 spectral_knn k10.0 hs1 AMI,0.3168835693656403,0.3168835693656403,True
+pilot clip pca100_l2 spectral_knn k10.0 hs1 ARI,0.1943624515971751,0.19436245159717508,True
+pilot clip pca50_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.4610146972471683,0.4610146972471683,True
+pilot clip pca50_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.36627750411657783,0.36627750411657783,True
+pilot clip pca50_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.323342531295177,0.323342531295177,True
+pilot clip pca50_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.221606282063131,0.221606282063131,True
+pilot clip pca50_l2 gmm_diag k10.0 hs3 AMI,0.40114118780413943,0.40114118780413943,True
+pilot clip pca50_l2 gmm_diag k10.0 hs3 ARI,0.12263240494359229,0.12263240494359229,True
+pilot clip pca50_l2 gmm_diag k10.0 hs1 AMI,0.29733399945986666,0.29733399945986666,True
+pilot clip pca50_l2 gmm_diag k10.0 hs1 ARI,0.051170456522349285,0.051170456522349285,True
+pilot clip pca50_l2 hdbscan knan hs3 AMI,0.28928584957833536,0.28928584957833536,True
+pilot clip pca50_l2 hdbscan knan hs3 ARI,0.05160525514283983,0.05160525514283983,True
+pilot clip pca50_l2 hdbscan knan hs1 AMI,0.29711231286224693,0.29711231286224693,True
+pilot clip pca50_l2 hdbscan knan hs1 ARI,0.08114031554157065,0.08114031554157065,True
+pilot clip pca50_l2 kmeans k10.0 hs3 AMI,0.4408686421289622,0.4408686421289622,True
+pilot clip pca50_l2 kmeans k10.0 hs3 ARI,0.3217170231746272,0.3217170231746272,True
+pilot clip pca50_l2 kmeans k10.0 hs1 AMI,0.3139227158179396,0.3139227158179397,True
+pilot clip pca50_l2 kmeans k10.0 hs1 ARI,0.15556058617083035,0.15556058617083032,True
+pilot clip pca50_l2 spectral_knn k10.0 hs3 AMI,0.46426682232139027,0.46426682232139027,True
+pilot clip pca50_l2 spectral_knn k10.0 hs3 ARI,0.28133720835829534,0.2813372083582954,True
+pilot clip pca50_l2 spectral_knn k10.0 hs1 AMI,0.32380073662976094,0.32380073662976094,True
+pilot clip pca50_l2 spectral_knn k10.0 hs1 ARI,0.21093439736541683,0.21093439736541683,True
+pilot dinov2_b_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5116719320467666,0.5116719320467666,True
+pilot dinov2_b_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.39436159810229027,0.39436159810229027,True
+pilot dinov2_b_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.39880901901027027,0.39880901901027027,True
+pilot dinov2_b_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.24859873950327477,0.24859873950327477,True
+pilot dinov2_b_224_L1 centered_l2 kmeans k10.0 hs3 AMI,0.48814912120962123,0.48814912120962123,True
+pilot dinov2_b_224_L1 centered_l2 kmeans k10.0 hs3 ARI,0.30308770266929463,0.3030877026692947,True
+pilot dinov2_b_224_L1 centered_l2 kmeans k10.0 hs1 AMI,0.3805984717333594,0.3805984717333595,True
+pilot dinov2_b_224_L1 centered_l2 kmeans k10.0 hs1 ARI,0.15742475590375035,0.15742475590375035,True
+pilot dinov2_b_224_L1 centered_l2 spectral_knn k10.0 hs3 AMI,0.4885968224948976,0.4885968224948976,True
+pilot dinov2_b_224_L1 centered_l2 spectral_knn k10.0 hs3 ARI,0.20008438134045514,0.2000843813404551,True
+pilot dinov2_b_224_L1 centered_l2 spectral_knn k10.0 hs1 AMI,0.4029753508775823,0.4029753508775823,True
+pilot dinov2_b_224_L1 centered_l2 spectral_knn k10.0 hs1 ARI,0.1682050699970235,0.1682050699970235,True
+pilot dinov2_b_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.46507144269471684,0.46507144269471684,True
+pilot dinov2_b_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3702965279968986,0.3702965279968986,True
+pilot dinov2_b_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.33248204930538605,0.33248204930538605,True
+pilot dinov2_b_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.236403878177383,0.236403878177383,True
+pilot dinov2_b_224_L2 centered_l2 kmeans k10.0 hs3 AMI,0.4060491044520975,0.4060491044520974,True
+pilot dinov2_b_224_L2 centered_l2 kmeans k10.0 hs3 ARI,0.26537077048804314,0.26537077048804314,True
+pilot dinov2_b_224_L2 centered_l2 kmeans k10.0 hs1 AMI,0.2939201699653102,0.2939201699653102,True
+pilot dinov2_b_224_L2 centered_l2 kmeans k10.0 hs1 ARI,0.12770641483799042,0.12770641483799042,True
+pilot dinov2_b_224_L2 centered_l2 spectral_knn k10.0 hs3 AMI,0.4341593689347377,0.4341593689347377,True
+pilot dinov2_b_224_L2 centered_l2 spectral_knn k10.0 hs3 ARI,0.2117752853431238,0.2117752853431238,True
+pilot dinov2_b_224_L2 centered_l2 spectral_knn k10.0 hs1 AMI,0.3041418001959778,0.3041418001959778,True
+pilot dinov2_b_224_L2 centered_l2 spectral_knn k10.0 hs1 ARI,0.13964007793616925,0.13964007793616925,True
+pilot dinov2_b_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.13957129686665476,0.13957129686665476,True
+pilot dinov2_b_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.07804156930876874,0.07804156930876874,True
+pilot dinov2_b_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.07159431320024646,0.07159431320024646,True
+pilot dinov2_b_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.05460557058127462,0.05460557058127462,True
+pilot dinov2_b_224_L4 centered_l2 kmeans k10.0 hs3 AMI,0.15534241882163308,0.15534241882163308,True
+pilot dinov2_b_224_L4 centered_l2 kmeans k10.0 hs3 ARI,0.09229344665576544,0.09229344665576544,True
+pilot dinov2_b_224_L4 centered_l2 kmeans k10.0 hs1 AMI,0.08909032715579437,0.08909032715579437,True
+pilot dinov2_b_224_L4 centered_l2 kmeans k10.0 hs1 ARI,0.04396035706960854,0.04396035706960854,True
+pilot dinov2_b_224_L4 centered_l2 spectral_knn k10.0 hs3 AMI,0.17843177805275354,0.1784317780527535,True
+pilot dinov2_b_224_L4 centered_l2 spectral_knn k10.0 hs3 ARI,0.09850787139349577,0.09850787139349577,True
+pilot dinov2_b_224_L4 centered_l2 spectral_knn k10.0 hs1 AMI,0.11121554076642806,0.11121554076642806,True
+pilot dinov2_b_224_L4 centered_l2 spectral_knn k10.0 hs1 ARI,0.05869325412824875,0.05869325412824875,True
+pilot dinov2_b_518_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5435920762701567,0.5435920762701567,True
+pilot dinov2_b_518_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.43708941314224226,0.43708941314224226,True
+pilot dinov2_b_518_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.40583745823768846,0.40583745823768846,True
+pilot dinov2_b_518_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.2842496700532613,0.2842496700532613,True
+pilot dinov2_b_518_L1 centered_l2 gmm_diag k10.0 hs3 AMI,0.4940476076720464,0.4940476076720464,True
+pilot dinov2_b_518_L1 centered_l2 gmm_diag k10.0 hs3 ARI,0.2900139944975333,0.29001399449753335,True
+pilot dinov2_b_518_L1 centered_l2 gmm_diag k10.0 hs1 AMI,0.39720756949512415,0.39720756949512415,True
+pilot dinov2_b_518_L1 centered_l2 gmm_diag k10.0 hs1 ARI,0.1729612271157792,0.17296122711577921,True
+pilot dinov2_b_518_L1 centered_l2 hdbscan knan hs3 AMI,0.42978870366042987,0.42978870366042987,True
+pilot dinov2_b_518_L1 centered_l2 hdbscan knan hs3 ARI,0.11569267817017727,0.11569267817017727,True
+pilot dinov2_b_518_L1 centered_l2 hdbscan knan hs1 AMI,0.36485023922535714,0.36485023922535714,True
+pilot dinov2_b_518_L1 centered_l2 hdbscan knan hs1 ARI,0.08229023608261585,0.08229023608261585,True
+pilot dinov2_b_518_L1 centered_l2 kmeans k10.0 hs3 AMI,0.4948671760389637,0.49486717603896374,True
+pilot dinov2_b_518_L1 centered_l2 kmeans k10.0 hs3 ARI,0.30982021906625723,0.30982021906625723,True
+pilot dinov2_b_518_L1 centered_l2 kmeans k10.0 hs1 AMI,0.39458688969448164,0.39458688969448164,True
+pilot dinov2_b_518_L1 centered_l2 kmeans k10.0 hs1 ARI,0.16413847476658225,0.16413847476658225,True
+pilot dinov2_b_518_L1 centered_l2 spectral_knn k10.0 hs3 AMI,0.4973656921032624,0.4973656921032624,True
+pilot dinov2_b_518_L1 centered_l2 spectral_knn k10.0 hs3 ARI,0.21379778890931495,0.21379778890931495,True
+pilot dinov2_b_518_L1 centered_l2 spectral_knn k10.0 hs1 AMI,0.420878528184401,0.420878528184401,True
+pilot dinov2_b_518_L1 centered_l2 spectral_knn k10.0 hs1 ARI,0.18239632971725717,0.18239632971725717,True
+pilot dinov2_b_518_L1 l2 agglomerative_average_cosine k10.0 hs3 AMI,0.40325877966866686,0.40325877966866686,True
+pilot dinov2_b_518_L1 l2 agglomerative_average_cosine k10.0 hs3 ARI,0.1862439057938956,0.1862439057938956,True
+pilot dinov2_b_518_L1 l2 agglomerative_average_cosine k10.0 hs1 AMI,0.255128930721588,0.255128930721588,True
+pilot dinov2_b_518_L1 l2 agglomerative_average_cosine k10.0 hs1 ARI,0.09798804657744346,0.09798804657744346,True
+pilot dinov2_b_518_L1 l2 gmm_diag k10.0 hs3 AMI,0.4836747489548416,0.4836747489548416,True
+pilot dinov2_b_518_L1 l2 gmm_diag k10.0 hs3 ARI,0.27340785375707416,0.27340785375707416,True
+pilot dinov2_b_518_L1 l2 gmm_diag k10.0 hs1 AMI,0.38833573730609494,0.38833573730609494,True
+pilot dinov2_b_518_L1 l2 gmm_diag k10.0 hs1 ARI,0.15931778984821668,0.15931778984821668,True
+pilot dinov2_b_518_L1 l2 hdbscan knan hs3 AMI,0.4351055804023959,0.4351055804023959,True
+pilot dinov2_b_518_L1 l2 hdbscan knan hs3 ARI,0.1236888026066481,0.1236888026066481,True
+pilot dinov2_b_518_L1 l2 hdbscan knan hs1 AMI,0.36876171423795245,0.36876171423795245,True
+pilot dinov2_b_518_L1 l2 hdbscan knan hs1 ARI,0.08871280238584668,0.08871280238584668,True
+pilot dinov2_b_518_L1 l2 kmeans k10.0 hs3 AMI,0.5026572599361834,0.5026572599361835,True
+pilot dinov2_b_518_L1 l2 kmeans k10.0 hs3 ARI,0.31305605400896014,0.31305605400896014,True
+pilot dinov2_b_518_L1 l2 kmeans k10.0 hs1 AMI,0.40125430095047954,0.40125430095047954,True
+pilot dinov2_b_518_L1 l2 kmeans k10.0 hs1 ARI,0.1707173300032484,0.17071733000324837,True
+pilot dinov2_b_518_L1 l2 spectral_knn k10.0 hs3 AMI,0.4898480362000327,0.4898480362000327,True
+pilot dinov2_b_518_L1 l2 spectral_knn k10.0 hs3 ARI,0.20299171344232522,0.20299171344232522,True
+pilot dinov2_b_518_L1 l2 spectral_knn k10.0 hs1 AMI,0.4128092179664227,0.4128092179664227,True
+pilot dinov2_b_518_L1 l2 spectral_knn k10.0 hs1 ARI,0.17490879097226011,0.17490879097226011,True
+pilot dinov2_b_518_L1 pca100_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5273986477494245,0.5273986477494245,True
+pilot dinov2_b_518_L1 pca100_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.38872808066676595,0.38872808066676595,True
+pilot dinov2_b_518_L1 pca100_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.39707424219602394,0.39707424219602394,True
+pilot dinov2_b_518_L1 pca100_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.24965472413069728,0.24965472413069728,True
+pilot dinov2_b_518_L1 pca100_l2 gmm_diag k10.0 hs3 AMI,0.46145529558591497,0.46145529558591497,True
+pilot dinov2_b_518_L1 pca100_l2 gmm_diag k10.0 hs3 ARI,0.22707724887833103,0.22707724887833103,True
+pilot dinov2_b_518_L1 pca100_l2 gmm_diag k10.0 hs1 AMI,0.36384367784814164,0.36384367784814164,True
+pilot dinov2_b_518_L1 pca100_l2 gmm_diag k10.0 hs1 ARI,0.14557041517536953,0.14557041517536953,True
+pilot dinov2_b_518_L1 pca100_l2 hdbscan knan hs3 AMI,0.45217234137208184,0.45217234137208184,True
+pilot dinov2_b_518_L1 pca100_l2 hdbscan knan hs3 ARI,0.14381363006147846,0.14381363006147846,True
+pilot dinov2_b_518_L1 pca100_l2 hdbscan knan hs1 AMI,0.35653078438536634,0.35653078438536634,True
+pilot dinov2_b_518_L1 pca100_l2 hdbscan knan hs1 ARI,0.08686748217768041,0.08686748217768041,True
+pilot dinov2_b_518_L1 pca100_l2 kmeans k10.0 hs3 AMI,0.49876995331496765,0.49876995331496765,True
+pilot dinov2_b_518_L1 pca100_l2 kmeans k10.0 hs3 ARI,0.31345493671696417,0.3134549367169642,True
+pilot dinov2_b_518_L1 pca100_l2 kmeans k10.0 hs1 AMI,0.3990752556339464,0.3990752556339464,True
+pilot dinov2_b_518_L1 pca100_l2 kmeans k10.0 hs1 ARI,0.16900171333189903,0.169001713331899,True
+pilot dinov2_b_518_L1 pca100_l2 spectral_knn k10.0 hs3 AMI,0.5409144470944078,0.5409144470944078,True
+pilot dinov2_b_518_L1 pca100_l2 spectral_knn k10.0 hs3 ARI,0.27427883189152197,0.27427883189152197,True
+pilot dinov2_b_518_L1 pca100_l2 spectral_knn k10.0 hs1 AMI,0.4481289986629669,0.4481289986629668,True
+pilot dinov2_b_518_L1 pca100_l2 spectral_knn k10.0 hs1 ARI,0.21535808138365709,0.21535808138365709,True
+pilot dinov2_b_518_L1 pca50_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5318650778951277,0.5318650778951277,True
+pilot dinov2_b_518_L1 pca50_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3928990091133921,0.3928990091133921,True
+pilot dinov2_b_518_L1 pca50_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.4120306334392447,0.4120306334392447,True
+pilot dinov2_b_518_L1 pca50_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.25862779907844347,0.25862779907844347,True
+pilot dinov2_b_518_L1 pca50_l2 gmm_diag k10.0 hs3 AMI,0.46996943938432506,0.46996943938432506,True
+pilot dinov2_b_518_L1 pca50_l2 gmm_diag k10.0 hs3 ARI,0.24766893211340807,0.24766893211340807,True
+pilot dinov2_b_518_L1 pca50_l2 gmm_diag k10.0 hs1 AMI,0.37679810919414947,0.37679810919414947,True
+pilot dinov2_b_518_L1 pca50_l2 gmm_diag k10.0 hs1 ARI,0.15919264039895217,0.15919264039895217,True
+pilot dinov2_b_518_L1 pca50_l2 hdbscan knan hs3 AMI,0.4743286297807209,0.4743286297807209,True
+pilot dinov2_b_518_L1 pca50_l2 hdbscan knan hs3 ARI,0.1647232033938297,0.1647232033938297,True
+pilot dinov2_b_518_L1 pca50_l2 hdbscan knan hs1 AMI,0.37994930570831115,0.37994930570831115,True
+pilot dinov2_b_518_L1 pca50_l2 hdbscan knan hs1 ARI,0.10033746995789422,0.10033746995789422,True
+pilot dinov2_b_518_L1 pca50_l2 kmeans k10.0 hs3 AMI,0.5133004026290198,0.5133004026290198,True
+pilot dinov2_b_518_L1 pca50_l2 kmeans k10.0 hs3 ARI,0.33547299757951554,0.33547299757951554,True
+pilot dinov2_b_518_L1 pca50_l2 kmeans k10.0 hs1 AMI,0.4120096012616603,0.4120096012616603,True
+pilot dinov2_b_518_L1 pca50_l2 kmeans k10.0 hs1 ARI,0.18545637412480764,0.1854563741248076,True
+pilot dinov2_b_518_L1 pca50_l2 spectral_knn k10.0 hs3 AMI,0.5373975464638739,0.5373975464638739,True
+pilot dinov2_b_518_L1 pca50_l2 spectral_knn k10.0 hs3 ARI,0.27042389769031183,0.27042389769031183,True
+pilot dinov2_b_518_L1 pca50_l2 spectral_knn k10.0 hs1 AMI,0.4426200636222413,0.4426200636222413,True
+pilot dinov2_b_518_L1 pca50_l2 spectral_knn k10.0 hs1 ARI,0.21188271762674118,0.21188271762674118,True
+pilot dinov2_b_518_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.4461049952606574,0.4461049952606574,True
+pilot dinov2_b_518_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3513349301649313,0.3513349301649313,True
+pilot dinov2_b_518_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.33547829841686205,0.33547829841686205,True
+pilot dinov2_b_518_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.23486396832087697,0.23486396832087697,True
+pilot dinov2_b_518_L2 centered_l2 kmeans k10.0 hs3 AMI,0.414445587596805,0.414445587596805,True
+pilot dinov2_b_518_L2 centered_l2 kmeans k10.0 hs3 ARI,0.28362333156042974,0.28362333156042974,True
+pilot dinov2_b_518_L2 centered_l2 kmeans k10.0 hs1 AMI,0.3150413891238898,0.31504138912388974,True
+pilot dinov2_b_518_L2 centered_l2 kmeans k10.0 hs1 ARI,0.14938288938724956,0.14938288938724958,True
+pilot dinov2_b_518_L2 centered_l2 spectral_knn k10.0 hs3 AMI,0.453358630544786,0.45335863054478603,True
+pilot dinov2_b_518_L2 centered_l2 spectral_knn k10.0 hs3 ARI,0.22544535415766367,0.22544535415766367,True
+pilot dinov2_b_518_L2 centered_l2 spectral_knn k10.0 hs1 AMI,0.3244069443225657,0.3244069443225657,True
+pilot dinov2_b_518_L2 centered_l2 spectral_knn k10.0 hs1 ARI,0.13429579744988573,0.13429579744988573,True
+pilot dinov2_b_518_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.152724036188703,0.152724036188703,True
+pilot dinov2_b_518_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.07120456213617041,0.07120456213617041,True
+pilot dinov2_b_518_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.09348845656760281,0.09348845656760281,True
+pilot dinov2_b_518_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.07232740339554726,0.07232740339554726,True
+pilot dinov2_b_518_L4 centered_l2 kmeans k10.0 hs3 AMI,0.16367232111342916,0.16367232111342916,True
+pilot dinov2_b_518_L4 centered_l2 kmeans k10.0 hs3 ARI,0.0956014571469197,0.09560145714691969,True
+pilot dinov2_b_518_L4 centered_l2 kmeans k10.0 hs1 AMI,0.10398374069087273,0.10398374069087273,True
+pilot dinov2_b_518_L4 centered_l2 kmeans k10.0 hs1 ARI,0.051054494832138184,0.05105449483213818,True
+pilot dinov2_b_518_L4 centered_l2 spectral_knn k10.0 hs3 AMI,0.18598404213038006,0.18598404213038006,True
+pilot dinov2_b_518_L4 centered_l2 spectral_knn k10.0 hs3 ARI,0.10223672391434765,0.10223672391434765,True
+pilot dinov2_b_518_L4 centered_l2 spectral_knn k10.0 hs1 AMI,0.13471264277449949,0.13471264277449946,True
+pilot dinov2_b_518_L4 centered_l2 spectral_knn k10.0 hs1 ARI,0.07633570220222215,0.07633570220222216,True
+pilot dinov2_l_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5509848311432379,0.5509848311432379,True
+pilot dinov2_l_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.4123827114059368,0.4123827114059368,True
+pilot dinov2_l_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.4425627088152572,0.4425627088152572,True
+pilot dinov2_l_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.2875466972496446,0.2875466972496446,True
+pilot dinov2_l_224_L1 centered_l2 gmm_diag k10.0 hs3 AMI,0.46719275882372263,0.46719275882372263,True
+pilot dinov2_l_224_L1 centered_l2 gmm_diag k10.0 hs3 ARI,0.24560431889465745,0.24560431889465745,True
+pilot dinov2_l_224_L1 centered_l2 gmm_diag k10.0 hs1 AMI,0.3577114979013018,0.35771149790130174,True
+pilot dinov2_l_224_L1 centered_l2 gmm_diag k10.0 hs1 ARI,0.1269716545129259,0.1269716545129259,True
+pilot dinov2_l_224_L1 centered_l2 hdbscan knan hs3 AMI,0.47317638394336664,0.47317638394336664,True
+pilot dinov2_l_224_L1 centered_l2 hdbscan knan hs3 ARI,0.17507115063059953,0.17507115063059953,True
+pilot dinov2_l_224_L1 centered_l2 hdbscan knan hs1 AMI,0.3690008092947537,0.3690008092947537,True
+pilot dinov2_l_224_L1 centered_l2 hdbscan knan hs1 ARI,0.105801768745605,0.105801768745605,True
+pilot dinov2_l_224_L1 centered_l2 kmeans k10.0 hs3 AMI,0.5078104919110306,0.5078104919110304,True
+pilot dinov2_l_224_L1 centered_l2 kmeans k10.0 hs3 ARI,0.3274300747760598,0.3274300747760598,True
+pilot dinov2_l_224_L1 centered_l2 kmeans k10.0 hs1 AMI,0.4081051344513781,0.4081051344513781,True
+pilot dinov2_l_224_L1 centered_l2 kmeans k10.0 hs1 ARI,0.17881209875709547,0.1788120987570955,True
+pilot dinov2_l_224_L1 centered_l2 spectral_knn k10.0 hs3 AMI,0.5287965166319317,0.5287965166319318,True
+pilot dinov2_l_224_L1 centered_l2 spectral_knn k10.0 hs3 ARI,0.2607730140911821,0.26077301409118203,True
+pilot dinov2_l_224_L1 centered_l2 spectral_knn k10.0 hs1 AMI,0.40930639353633635,0.40930639353633635,True
+pilot dinov2_l_224_L1 centered_l2 spectral_knn k10.0 hs1 ARI,0.16934149144960914,0.16934149144960914,True
+pilot dinov2_l_224_L1 l2 agglomerative_average_cosine k10.0 hs3 AMI,0.25794249125413843,0.25794249125413843,True
+pilot dinov2_l_224_L1 l2 agglomerative_average_cosine k10.0 hs3 ARI,0.07547640563213406,0.07547640563213406,True
+pilot dinov2_l_224_L1 l2 agglomerative_average_cosine k10.0 hs1 AMI,0.15044191314294383,0.15044191314294383,True
+pilot dinov2_l_224_L1 l2 agglomerative_average_cosine k10.0 hs1 ARI,0.07669853719729067,0.07669853719729067,True
+pilot dinov2_l_224_L1 l2 gmm_diag k10.0 hs3 AMI,0.4720442407892252,0.4720442407892252,True
+pilot dinov2_l_224_L1 l2 gmm_diag k10.0 hs3 ARI,0.2509565234117095,0.2509565234117095,True
+pilot dinov2_l_224_L1 l2 gmm_diag k10.0 hs1 AMI,0.37114071932153675,0.3711407193215367,True
+pilot dinov2_l_224_L1 l2 gmm_diag k10.0 hs1 ARI,0.1350671955603076,0.1350671955603076,True
+pilot dinov2_l_224_L1 l2 hdbscan knan hs3 AMI,0.4639133417964874,0.4639133417964874,True
+pilot dinov2_l_224_L1 l2 hdbscan knan hs3 ARI,0.16027850485007933,0.16027850485007933,True
+pilot dinov2_l_224_L1 l2 hdbscan knan hs1 AMI,0.3609957570261774,0.3609957570261774,True
+pilot dinov2_l_224_L1 l2 hdbscan knan hs1 ARI,0.09215854438200514,0.09215854438200514,True
+pilot dinov2_l_224_L1 l2 kmeans k10.0 hs3 AMI,0.5152394732156813,0.5152394732156813,True
+pilot dinov2_l_224_L1 l2 kmeans k10.0 hs3 ARI,0.3271069518902648,0.3271069518902648,True
+pilot dinov2_l_224_L1 l2 kmeans k10.0 hs1 AMI,0.41761859798959555,0.41761859798959555,True
+pilot dinov2_l_224_L1 l2 kmeans k10.0 hs1 ARI,0.18245514581678782,0.18245514581678782,True
+pilot dinov2_l_224_L1 l2 spectral_knn k10.0 hs3 AMI,0.5214111865883234,0.5214111865883234,True
+pilot dinov2_l_224_L1 l2 spectral_knn k10.0 hs3 ARI,0.2494274145921443,0.2494274145921443,True
+pilot dinov2_l_224_L1 l2 spectral_knn k10.0 hs1 AMI,0.3992811482022133,0.3992811482022133,True
+pilot dinov2_l_224_L1 l2 spectral_knn k10.0 hs1 ARI,0.15793709223603444,0.15793709223603444,True
+pilot dinov2_l_224_L1 pca100_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5573723692643072,0.5573723692643072,True
+pilot dinov2_l_224_L1 pca100_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.41639994512168504,0.41639994512168504,True
+pilot dinov2_l_224_L1 pca100_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.4267696959650308,0.4267696959650308,True
+pilot dinov2_l_224_L1 pca100_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.25404304163815833,0.25404304163815833,True
+pilot dinov2_l_224_L1 pca100_l2 gmm_diag k10.0 hs3 AMI,0.42516195588816474,0.42516195588816474,True
+pilot dinov2_l_224_L1 pca100_l2 gmm_diag k10.0 hs3 ARI,0.19341059021588344,0.19341059021588342,True
+pilot dinov2_l_224_L1 pca100_l2 gmm_diag k10.0 hs1 AMI,0.3163305940591467,0.3163305940591467,True
+pilot dinov2_l_224_L1 pca100_l2 gmm_diag k10.0 hs1 ARI,0.1022453373036624,0.10224533730366243,True
+pilot dinov2_l_224_L1 pca100_l2 hdbscan knan hs3 AMI,0.48874562669446886,0.48874562669446886,True
+pilot dinov2_l_224_L1 pca100_l2 hdbscan knan hs3 ARI,0.197937549363977,0.197937549363977,True
+pilot dinov2_l_224_L1 pca100_l2 hdbscan knan hs1 AMI,0.377296203525939,0.377296203525939,True
+pilot dinov2_l_224_L1 pca100_l2 hdbscan knan hs1 ARI,0.12167363065931165,0.12167363065931165,True
+pilot dinov2_l_224_L1 pca100_l2 kmeans k10.0 hs3 AMI,0.5096061193111547,0.5096061193111547,True
+pilot dinov2_l_224_L1 pca100_l2 kmeans k10.0 hs3 ARI,0.33806955345856754,0.33806955345856754,True
+pilot dinov2_l_224_L1 pca100_l2 kmeans k10.0 hs1 AMI,0.40908918322761084,0.40908918322761084,True
+pilot dinov2_l_224_L1 pca100_l2 kmeans k10.0 hs1 ARI,0.18278445726529713,0.18278445726529716,True
+pilot dinov2_l_224_L1 pca100_l2 spectral_knn k10.0 hs3 AMI,0.5276487541184478,0.5276487541184479,True
+pilot dinov2_l_224_L1 pca100_l2 spectral_knn k10.0 hs3 ARI,0.2545807633299925,0.2545807633299925,True
+pilot dinov2_l_224_L1 pca100_l2 spectral_knn k10.0 hs1 AMI,0.4076112899092938,0.4076112899092938,True
+pilot dinov2_l_224_L1 pca100_l2 spectral_knn k10.0 hs1 ARI,0.16391128936341395,0.16391128936341395,True
+pilot dinov2_l_224_L1 pca50_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5779326649468222,0.5779326649468222,True
+pilot dinov2_l_224_L1 pca50_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.40226300621388883,0.40226300621388883,True
+pilot dinov2_l_224_L1 pca50_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.4480474681175375,0.4480474681175375,True
+pilot dinov2_l_224_L1 pca50_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.2659202366972928,0.2659202366972928,True
+pilot dinov2_l_224_L1 pca50_l2 gmm_diag k10.0 hs3 AMI,0.4545026303163646,0.4545026303163646,True
+pilot dinov2_l_224_L1 pca50_l2 gmm_diag k10.0 hs3 ARI,0.21607081341657525,0.21607081341657525,True
+pilot dinov2_l_224_L1 pca50_l2 gmm_diag k10.0 hs1 AMI,0.34667073741820603,0.34667073741820603,True
+pilot dinov2_l_224_L1 pca50_l2 gmm_diag k10.0 hs1 ARI,0.11920442827357643,0.11920442827357643,True
+pilot dinov2_l_224_L1 pca50_l2 hdbscan knan hs3 AMI,0.46428505957937904,0.46428505957937904,True
+pilot dinov2_l_224_L1 pca50_l2 hdbscan knan hs3 ARI,0.14231730861017822,0.14231730861017822,True
+pilot dinov2_l_224_L1 pca50_l2 hdbscan knan hs1 AMI,0.3487838213238721,0.3487838213238721,True
+pilot dinov2_l_224_L1 pca50_l2 hdbscan knan hs1 ARI,0.06568989289575185,0.06568989289575185,True
+pilot dinov2_l_224_L1 pca50_l2 kmeans k10.0 hs3 AMI,0.5114470800320225,0.5114470800320225,True
+pilot dinov2_l_224_L1 pca50_l2 kmeans k10.0 hs3 ARI,0.33877329305714204,0.33877329305714204,True
+pilot dinov2_l_224_L1 pca50_l2 kmeans k10.0 hs1 AMI,0.41287738675308516,0.41287738675308516,True
+pilot dinov2_l_224_L1 pca50_l2 kmeans k10.0 hs1 ARI,0.18681491414074808,0.18681491414074808,True
+pilot dinov2_l_224_L1 pca50_l2 spectral_knn k10.0 hs3 AMI,0.4719290984596932,0.4719290984596933,True
+pilot dinov2_l_224_L1 pca50_l2 spectral_knn k10.0 hs3 ARI,0.16200896578363508,0.16200896578363508,True
+pilot dinov2_l_224_L1 pca50_l2 spectral_knn k10.0 hs1 AMI,0.34743958289521515,0.34743958289521515,True
+pilot dinov2_l_224_L1 pca50_l2 spectral_knn k10.0 hs1 ARI,0.06614572520068465,0.06614572520068465,True
+pilot dinov2_l_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.4995676026747866,0.4995676026747866,True
+pilot dinov2_l_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3397891192818236,0.3397891192818236,True
+pilot dinov2_l_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.3889501077169068,0.3889501077169068,True
+pilot dinov2_l_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.2036279842358626,0.2036279842358626,True
+pilot dinov2_l_224_L2 centered_l2 kmeans k10.0 hs3 AMI,0.4932440891761119,0.49324408917611196,True
+pilot dinov2_l_224_L2 centered_l2 kmeans k10.0 hs3 ARI,0.31012394913182517,0.31012394913182517,True
+pilot dinov2_l_224_L2 centered_l2 kmeans k10.0 hs1 AMI,0.3921411333599289,0.3921411333599289,True
+pilot dinov2_l_224_L2 centered_l2 kmeans k10.0 hs1 ARI,0.16421655785124917,0.16421655785124917,True
+pilot dinov2_l_224_L2 centered_l2 spectral_knn k10.0 hs3 AMI,0.5346543689954033,0.5346543689954033,True
+pilot dinov2_l_224_L2 centered_l2 spectral_knn k10.0 hs3 ARI,0.24767610118665956,0.24767610118665956,True
+pilot dinov2_l_224_L2 centered_l2 spectral_knn k10.0 hs1 AMI,0.40886072380976524,0.40886072380976524,True
+pilot dinov2_l_224_L2 centered_l2 spectral_knn k10.0 hs1 ARI,0.14757817038489685,0.14757817038489685,True
+pilot dinov2_l_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.3516210537642459,0.3516210537642459,True
+pilot dinov2_l_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.2589810197037024,0.2589810197037024,True
+pilot dinov2_l_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.22984410928747437,0.22984410928747437,True
+pilot dinov2_l_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.14321082067007604,0.14321082067007604,True
+pilot dinov2_l_224_L4 centered_l2 kmeans k10.0 hs3 AMI,0.3975149941101971,0.3975149941101971,True
+pilot dinov2_l_224_L4 centered_l2 kmeans k10.0 hs3 ARI,0.2703902160475856,0.2703902160475856,True
+pilot dinov2_l_224_L4 centered_l2 kmeans k10.0 hs1 AMI,0.2654674595530033,0.2654674595530033,True
+pilot dinov2_l_224_L4 centered_l2 kmeans k10.0 hs1 ARI,0.11918458450276741,0.11918458450276741,True
+pilot dinov2_l_224_L4 centered_l2 spectral_knn k10.0 hs3 AMI,0.4408953691702009,0.4408953691702009,True
+pilot dinov2_l_224_L4 centered_l2 spectral_knn k10.0 hs3 ARI,0.2780779235705856,0.2780779235705856,True
+pilot dinov2_l_224_L4 centered_l2 spectral_knn k10.0 hs1 AMI,0.2918077364649125,0.2918077364649125,True
+pilot dinov2_l_224_L4 centered_l2 spectral_knn k10.0 hs1 ARI,0.12662484599040935,0.12662484599040938,True
+pilot dinov2_s_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.4670339227070137,0.4670339227070137,True
+pilot dinov2_s_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3748887569215631,0.3748887569215631,True
+pilot dinov2_s_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.3303633938101727,0.3303633938101727,True
+pilot dinov2_s_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.22508342183721863,0.22508342183721863,True
+pilot dinov2_s_224_L1 centered_l2 kmeans k10.0 hs3 AMI,0.45854050967992316,0.45854050967992316,True
+pilot dinov2_s_224_L1 centered_l2 kmeans k10.0 hs3 ARI,0.3032378762082185,0.3032378762082185,True
+pilot dinov2_s_224_L1 centered_l2 kmeans k10.0 hs1 AMI,0.34239633016425375,0.34239633016425375,True
+pilot dinov2_s_224_L1 centered_l2 kmeans k10.0 hs1 ARI,0.1511470501786494,0.1511470501786494,True
+pilot dinov2_s_224_L1 centered_l2 spectral_knn k10.0 hs3 AMI,0.4754590671127139,0.4754590671127139,True
+pilot dinov2_s_224_L1 centered_l2 spectral_knn k10.0 hs3 ARI,0.26235576599001875,0.26235576599001875,True
+pilot dinov2_s_224_L1 centered_l2 spectral_knn k10.0 hs1 AMI,0.3341547213540519,0.3341547213540519,True
+pilot dinov2_s_224_L1 centered_l2 spectral_knn k10.0 hs1 ARI,0.21885132292620746,0.21885132292620746,True
+pilot dinov2_s_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.3864982229999449,0.3864982229999449,True
+pilot dinov2_s_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.2386895107516634,0.2386895107516634,True
+pilot dinov2_s_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.23969226209388847,0.23969226209388847,True
+pilot dinov2_s_224_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.12168443103973076,0.12168443103973076,True
+pilot dinov2_s_224_L2 centered_l2 kmeans k10.0 hs3 AMI,0.37424546303255857,0.37424546303255857,True
+pilot dinov2_s_224_L2 centered_l2 kmeans k10.0 hs3 ARI,0.2451220631455661,0.2451220631455661,True
+pilot dinov2_s_224_L2 centered_l2 kmeans k10.0 hs1 AMI,0.2404846660856183,0.2404846660856183,True
+pilot dinov2_s_224_L2 centered_l2 kmeans k10.0 hs1 ARI,0.11262444611046056,0.11262444611046056,True
+pilot dinov2_s_224_L2 centered_l2 spectral_knn k10.0 hs3 AMI,0.41437503997654146,0.41437503997654146,True
+pilot dinov2_s_224_L2 centered_l2 spectral_knn k10.0 hs3 ARI,0.24087782814631561,0.24087782814631561,True
+pilot dinov2_s_224_L2 centered_l2 spectral_knn k10.0 hs1 AMI,0.2723175266523087,0.2723175266523087,True
+pilot dinov2_s_224_L2 centered_l2 spectral_knn k10.0 hs1 ARI,0.1322121829333891,0.1322121829333891,True
+pilot dinov2_s_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.14329981153340998,0.14329981153340998,True
+pilot dinov2_s_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.090248744702239,0.090248744702239,True
+pilot dinov2_s_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.08750773770694217,0.08750773770694217,True
+pilot dinov2_s_224_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.06092076622907257,0.06092076622907257,True
+pilot dinov2_s_224_L4 centered_l2 kmeans k10.0 hs3 AMI,0.14318137833519984,0.1431813783351998,True
+pilot dinov2_s_224_L4 centered_l2 kmeans k10.0 hs3 ARI,0.0861606330939049,0.0861606330939049,True
+pilot dinov2_s_224_L4 centered_l2 kmeans k10.0 hs1 AMI,0.07401410345596549,0.07401410345596549,True
+pilot dinov2_s_224_L4 centered_l2 kmeans k10.0 hs1 ARI,0.034748017305239055,0.034748017305239055,True
+pilot dinov2_s_224_L4 centered_l2 spectral_knn k10.0 hs3 AMI,0.15332225566808783,0.15332225566808783,True
+pilot dinov2_s_224_L4 centered_l2 spectral_knn k10.0 hs3 ARI,0.08050693200757424,0.08050693200757424,True
+pilot dinov2_s_224_L4 centered_l2 spectral_knn k10.0 hs1 AMI,0.0819997199286403,0.0819997199286403,True
+pilot dinov2_s_224_L4 centered_l2 spectral_knn k10.0 hs1 ARI,0.034170374676960144,0.034170374676960144,True
+pilot dinov2_s_518_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.4991072746075829,0.4991072746075829,True
+pilot dinov2_s_518_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.44213684430406136,0.44213684430406136,True
+pilot dinov2_s_518_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.33397788021593827,0.33397788021593827,True
+pilot dinov2_s_518_L1 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.25367097334163574,0.25367097334163574,True
+pilot dinov2_s_518_L1 centered_l2 gmm_diag k10.0 hs3 AMI,0.43926003755808746,0.43926003755808746,True
+pilot dinov2_s_518_L1 centered_l2 gmm_diag k10.0 hs3 ARI,0.23691324910662023,0.23691324910662023,True
+pilot dinov2_s_518_L1 centered_l2 gmm_diag k10.0 hs1 AMI,0.33599511286137085,0.33599511286137085,True
+pilot dinov2_s_518_L1 centered_l2 gmm_diag k10.0 hs1 ARI,0.11866507187990379,0.11866507187990379,True
+pilot dinov2_s_518_L1 centered_l2 hdbscan knan hs3 AMI,0.36044875620845335,0.36044875620845335,True
+pilot dinov2_s_518_L1 centered_l2 hdbscan knan hs3 ARI,0.12180809297724937,0.12180809297724937,True
+pilot dinov2_s_518_L1 centered_l2 hdbscan knan hs1 AMI,0.38432109321283076,0.38432109321283076,True
+pilot dinov2_s_518_L1 centered_l2 hdbscan knan hs1 ARI,0.2084187208104841,0.2084187208104841,True
+pilot dinov2_s_518_L1 centered_l2 kmeans k10.0 hs3 AMI,0.46561710183784244,0.46561710183784244,True
+pilot dinov2_s_518_L1 centered_l2 kmeans k10.0 hs3 ARI,0.2885291526231312,0.2885291526231312,True
+pilot dinov2_s_518_L1 centered_l2 kmeans k10.0 hs1 AMI,0.3581014472146957,0.3581014472146958,True
+pilot dinov2_s_518_L1 centered_l2 kmeans k10.0 hs1 ARI,0.14391796182515987,0.14391796182515987,True
+pilot dinov2_s_518_L1 centered_l2 spectral_knn k10.0 hs3 AMI,0.47274513415360814,0.4727451341536081,True
+pilot dinov2_s_518_L1 centered_l2 spectral_knn k10.0 hs3 ARI,0.2946134680730691,0.2946134680730691,True
+pilot dinov2_s_518_L1 centered_l2 spectral_knn k10.0 hs1 AMI,0.3501797227689622,0.3501797227689622,True
+pilot dinov2_s_518_L1 centered_l2 spectral_knn k10.0 hs1 ARI,0.18132107863863972,0.18132107863863972,True
+pilot dinov2_s_518_L1 l2 agglomerative_average_cosine k10.0 hs3 AMI,0.30537230870089244,0.30537230870089244,True
+pilot dinov2_s_518_L1 l2 agglomerative_average_cosine k10.0 hs3 ARI,0.11618795947667224,0.11618795947667224,True
+pilot dinov2_s_518_L1 l2 agglomerative_average_cosine k10.0 hs1 AMI,0.24552874268016012,0.24552874268016012,True
+pilot dinov2_s_518_L1 l2 agglomerative_average_cosine k10.0 hs1 ARI,0.18417597681704298,0.18417597681704298,True
+pilot dinov2_s_518_L1 l2 gmm_diag k10.0 hs3 AMI,0.4466309872095563,0.4466309872095562,True
+pilot dinov2_s_518_L1 l2 gmm_diag k10.0 hs3 ARI,0.24562825386310663,0.24562825386310663,True
+pilot dinov2_s_518_L1 l2 gmm_diag k10.0 hs1 AMI,0.3418921777010453,0.34189217770104524,True
+pilot dinov2_s_518_L1 l2 gmm_diag k10.0 hs1 ARI,0.12467516425316912,0.12467516425316912,True
+pilot dinov2_s_518_L1 l2 hdbscan knan hs3 AMI,0.3606867398117933,0.3606867398117933,True
+pilot dinov2_s_518_L1 l2 hdbscan knan hs3 ARI,0.14816359483998306,0.14816359483998306,True
+pilot dinov2_s_518_L1 l2 hdbscan knan hs1 AMI,0.3812902305124699,0.3812902305124699,True
+pilot dinov2_s_518_L1 l2 hdbscan knan hs1 ARI,0.2618922992230962,0.2618922992230962,True
+pilot dinov2_s_518_L1 l2 kmeans k10.0 hs3 AMI,0.46725724122676704,0.46725724122676693,True
+pilot dinov2_s_518_L1 l2 kmeans k10.0 hs3 ARI,0.2909898253275191,0.2909898253275191,True
+pilot dinov2_s_518_L1 l2 kmeans k10.0 hs1 AMI,0.3521510191682299,0.3521510191682299,True
+pilot dinov2_s_518_L1 l2 kmeans k10.0 hs1 ARI,0.14175138373928248,0.14175138373928248,True
+pilot dinov2_s_518_L1 l2 spectral_knn k10.0 hs3 AMI,0.47367185310418025,0.47367185310418025,True
+pilot dinov2_s_518_L1 l2 spectral_knn k10.0 hs3 ARI,0.26045403373478676,0.2604540337347868,True
+pilot dinov2_s_518_L1 l2 spectral_knn k10.0 hs1 AMI,0.3425081691481513,0.34250816914815135,True
+pilot dinov2_s_518_L1 l2 spectral_knn k10.0 hs1 ARI,0.2283023260667516,0.22830232606675166,True
+pilot dinov2_s_518_L1 pca100_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.508552052999315,0.508552052999315,True
+pilot dinov2_s_518_L1 pca100_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.4334319455655279,0.4334319455655279,True
+pilot dinov2_s_518_L1 pca100_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.35219187102218763,0.35219187102218763,True
+pilot dinov2_s_518_L1 pca100_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.24804964714524144,0.24804964714524144,True
+pilot dinov2_s_518_L1 pca100_l2 gmm_diag k10.0 hs3 AMI,0.4223191293679013,0.4223191293679013,True
+pilot dinov2_s_518_L1 pca100_l2 gmm_diag k10.0 hs3 ARI,0.19530966134577926,0.19530966134577926,True
+pilot dinov2_s_518_L1 pca100_l2 gmm_diag k10.0 hs1 AMI,0.3274767999695115,0.3274767999695115,True
+pilot dinov2_s_518_L1 pca100_l2 gmm_diag k10.0 hs1 ARI,0.1261580361513192,0.1261580361513192,True
+pilot dinov2_s_518_L1 pca100_l2 hdbscan knan hs3 AMI,0.36614212376967464,0.36614212376967464,True
+pilot dinov2_s_518_L1 pca100_l2 hdbscan knan hs3 ARI,0.13049645473468863,0.13049645473468863,True
+pilot dinov2_s_518_L1 pca100_l2 hdbscan knan hs1 AMI,0.3807267498735963,0.3807267498735963,True
+pilot dinov2_s_518_L1 pca100_l2 hdbscan knan hs1 ARI,0.21708656257112074,0.21708656257112074,True
+pilot dinov2_s_518_L1 pca100_l2 kmeans k10.0 hs3 AMI,0.4674579620046776,0.4674579620046776,True
+pilot dinov2_s_518_L1 pca100_l2 kmeans k10.0 hs3 ARI,0.2959357975541341,0.2959357975541341,True
+pilot dinov2_s_518_L1 pca100_l2 kmeans k10.0 hs1 AMI,0.3540062316663186,0.35400623166631856,True
+pilot dinov2_s_518_L1 pca100_l2 kmeans k10.0 hs1 ARI,0.14671070188815155,0.14671070188815155,True
+pilot dinov2_s_518_L1 pca100_l2 spectral_knn k10.0 hs3 AMI,0.47927981155562815,0.47927981155562815,True
+pilot dinov2_s_518_L1 pca100_l2 spectral_knn k10.0 hs3 ARI,0.285889824781642,0.285889824781642,True
+pilot dinov2_s_518_L1 pca100_l2 spectral_knn k10.0 hs1 AMI,0.3550367311883144,0.3550367311883144,True
+pilot dinov2_s_518_L1 pca100_l2 spectral_knn k10.0 hs1 ARI,0.1678100911813457,0.16781009118134568,True
+pilot dinov2_s_518_L1 pca50_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5114220638784474,0.5114220638784474,True
+pilot dinov2_s_518_L1 pca50_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.4263234040857153,0.4263234040857153,True
+pilot dinov2_s_518_L1 pca50_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.3490568928065519,0.3490568928065519,True
+pilot dinov2_s_518_L1 pca50_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.24437705240819046,0.24437705240819046,True
+pilot dinov2_s_518_L1 pca50_l2 gmm_diag k10.0 hs3 AMI,0.4352563745871655,0.4352563745871655,True
+pilot dinov2_s_518_L1 pca50_l2 gmm_diag k10.0 hs3 ARI,0.2146662860477,0.2146662860477,True
+pilot dinov2_s_518_L1 pca50_l2 gmm_diag k10.0 hs1 AMI,0.3301590266589858,0.3301590266589858,True
+pilot dinov2_s_518_L1 pca50_l2 gmm_diag k10.0 hs1 ARI,0.13152378484054808,0.13152378484054808,True
+pilot dinov2_s_518_L1 pca50_l2 hdbscan knan hs3 AMI,0.39095658066324307,0.39095658066324307,True
+pilot dinov2_s_518_L1 pca50_l2 hdbscan knan hs3 ARI,0.1323906495789845,0.1323906495789845,True
+pilot dinov2_s_518_L1 pca50_l2 hdbscan knan hs1 AMI,0.40413797316876643,0.40413797316876643,True
+pilot dinov2_s_518_L1 pca50_l2 hdbscan knan hs1 ARI,0.23393561328229032,0.23393561328229032,True
+pilot dinov2_s_518_L1 pca50_l2 kmeans k10.0 hs3 AMI,0.4624665278547265,0.4624665278547265,True
+pilot dinov2_s_518_L1 pca50_l2 kmeans k10.0 hs3 ARI,0.29912203555286243,0.29912203555286243,True
+pilot dinov2_s_518_L1 pca50_l2 kmeans k10.0 hs1 AMI,0.3462894158491906,0.3462894158491906,True
+pilot dinov2_s_518_L1 pca50_l2 kmeans k10.0 hs1 ARI,0.14496364383289162,0.14496364383289162,True
+pilot dinov2_s_518_L1 pca50_l2 spectral_knn k10.0 hs3 AMI,0.4918773196824744,0.4918773196824744,True
+pilot dinov2_s_518_L1 pca50_l2 spectral_knn k10.0 hs3 ARI,0.28311798810486616,0.28311798810486616,True
+pilot dinov2_s_518_L1 pca50_l2 spectral_knn k10.0 hs1 AMI,0.3752200370142767,0.37522003701427664,True
+pilot dinov2_s_518_L1 pca50_l2 spectral_knn k10.0 hs1 ARI,0.2026921476830922,0.2026921476830922,True
+pilot dinov2_s_518_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.3776242961512267,0.3776242961512267,True
+pilot dinov2_s_518_L2 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.22698561457571095,0.22698561457571095,True
+pilot dinov2_s_518_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.28356333156965796,0.28356333156965796,True
+pilot dinov2_s_518_L2 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.1627729855128955,0.1627729855128955,True
+pilot dinov2_s_518_L2 centered_l2 kmeans k10.0 hs3 AMI,0.39420730182489055,0.3942073018248905,True
+pilot dinov2_s_518_L2 centered_l2 kmeans k10.0 hs3 ARI,0.2560722777768399,0.2560722777768399,True
+pilot dinov2_s_518_L2 centered_l2 kmeans k10.0 hs1 AMI,0.2642259463663942,0.2642259463663941,True
+pilot dinov2_s_518_L2 centered_l2 kmeans k10.0 hs1 ARI,0.12833534167367905,0.12833534167367905,True
+pilot dinov2_s_518_L2 centered_l2 spectral_knn k10.0 hs3 AMI,0.4428931158881815,0.4428931158881815,True
+pilot dinov2_s_518_L2 centered_l2 spectral_knn k10.0 hs3 ARI,0.28371095229353854,0.28371095229353854,True
+pilot dinov2_s_518_L2 centered_l2 spectral_knn k10.0 hs1 AMI,0.30634689560632744,0.30634689560632744,True
+pilot dinov2_s_518_L2 centered_l2 spectral_knn k10.0 hs1 ARI,0.14586168376573738,0.14586168376573738,True
+pilot dinov2_s_518_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.12903919629224062,0.12903919629224062,True
+pilot dinov2_s_518_L4 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.07843773992429531,0.07843773992429531,True
+pilot dinov2_s_518_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.06633874116075926,0.06633874116075926,True
+pilot dinov2_s_518_L4 centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.04211982756307136,0.04211982756307136,True
+pilot dinov2_s_518_L4 centered_l2 kmeans k10.0 hs3 AMI,0.13439457079854997,0.13439457079854997,True
+pilot dinov2_s_518_L4 centered_l2 kmeans k10.0 hs3 ARI,0.07888755807018052,0.07888755807018054,True
+pilot dinov2_s_518_L4 centered_l2 kmeans k10.0 hs1 AMI,0.078521854266176,0.078521854266176,True
+pilot dinov2_s_518_L4 centered_l2 kmeans k10.0 hs1 ARI,0.043650291287671554,0.04365029128767155,True
+pilot dinov2_s_518_L4 centered_l2 spectral_knn k10.0 hs3 AMI,0.13031570094359635,0.13031570094359635,True
+pilot dinov2_s_518_L4 centered_l2 spectral_knn k10.0 hs3 ARI,0.06495248008404764,0.06495248008404765,True
+pilot dinov2_s_518_L4 centered_l2 spectral_knn k10.0 hs1 AMI,0.08377933327276899,0.08377933327276899,True
+pilot dinov2_s_518_L4 centered_l2 spectral_knn k10.0 hs1 ARI,0.05309292717170063,0.05309292717170063,True
+pilot siglip centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.49889763148329963,0.49889763148329963,True
+pilot siglip centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3598268218347661,0.3598268218347661,True
+pilot siglip centered_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.3443715916962761,0.3443715916962761,True
+pilot siglip centered_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.20431832098547198,0.20431832098547198,True
+pilot siglip centered_l2 gmm_diag k10.0 hs3 AMI,0.4633550969975607,0.4633550969975607,True
+pilot siglip centered_l2 gmm_diag k10.0 hs3 ARI,0.2973203811156962,0.2973203811156962,True
+pilot siglip centered_l2 gmm_diag k10.0 hs1 AMI,0.34365678152424917,0.34365678152424917,True
+pilot siglip centered_l2 gmm_diag k10.0 hs1 ARI,0.15775488188377979,0.15775488188377979,True
+pilot siglip centered_l2 hdbscan knan hs3 AMI,0.34182313754736615,0.34182313754736615,True
+pilot siglip centered_l2 hdbscan knan hs3 ARI,0.05668025244057956,0.05668025244057956,True
+pilot siglip centered_l2 hdbscan knan hs1 AMI,0.2762303182334076,0.2762303182334076,True
+pilot siglip centered_l2 hdbscan knan hs1 ARI,0.030626856349178683,0.030626856349178683,True
+pilot siglip centered_l2 kmeans k10.0 hs3 AMI,0.47615785203344235,0.47615785203344246,True
+pilot siglip centered_l2 kmeans k10.0 hs3 ARI,0.34433238318144793,0.34433238318144793,True
+pilot siglip centered_l2 kmeans k10.0 hs1 AMI,0.34796837176097084,0.34796837176097084,True
+pilot siglip centered_l2 kmeans k10.0 hs1 ARI,0.17680594259033472,0.1768059425903347,True
+pilot siglip centered_l2 spectral_knn k10.0 hs3 AMI,0.5439752408935208,0.5439752408935208,True
+pilot siglip centered_l2 spectral_knn k10.0 hs3 ARI,0.3086231008719118,0.3086231008719118,True
+pilot siglip centered_l2 spectral_knn k10.0 hs1 AMI,0.39466625465246524,0.3946662546524652,True
+pilot siglip centered_l2 spectral_knn k10.0 hs1 ARI,0.18378792349905376,0.18378792349905376,True
+pilot siglip l2 agglomerative_average_cosine k10.0 hs3 AMI,0.024599250012871356,0.024599250012871356,True
+pilot siglip l2 agglomerative_average_cosine k10.0 hs3 ARI,0.003203210028484759,0.003203210028484759,True
+pilot siglip l2 agglomerative_average_cosine k10.0 hs1 AMI,0.043664908468640136,0.043664908468640136,True
+pilot siglip l2 agglomerative_average_cosine k10.0 hs1 ARI,0.012756108573341526,0.012756108573341526,True
+pilot siglip l2 gmm_diag k10.0 hs3 AMI,0.4584442768417446,0.4584442768417446,True
+pilot siglip l2 gmm_diag k10.0 hs3 ARI,0.30758246210733314,0.30758246210733314,True
+pilot siglip l2 gmm_diag k10.0 hs1 AMI,0.33805355882638627,0.33805355882638627,True
+pilot siglip l2 gmm_diag k10.0 hs1 ARI,0.14984764459408062,0.14984764459408065,True
+pilot siglip l2 hdbscan knan hs3 AMI,0.268684790799806,0.268684790799806,True
+pilot siglip l2 hdbscan knan hs3 ARI,0.03366182993593652,0.03366182993593652,True
+pilot siglip l2 hdbscan knan hs1 AMI,0.2900320180238741,0.2900320180238741,True
+pilot siglip l2 hdbscan knan hs1 ARI,0.06092675637628478,0.06092675637628478,True
+pilot siglip l2 kmeans k10.0 hs3 AMI,0.49784815698185864,0.49784815698185864,True
+pilot siglip l2 kmeans k10.0 hs3 ARI,0.3694796019071739,0.3694796019071739,True
+pilot siglip l2 kmeans k10.0 hs1 AMI,0.36961835567344453,0.3696183556734446,True
+pilot siglip l2 kmeans k10.0 hs1 ARI,0.1941323791635733,0.1941323791635733,True
+pilot siglip l2 spectral_knn k10.0 hs3 AMI,0.5170404685784407,0.5170404685784407,True
+pilot siglip l2 spectral_knn k10.0 hs3 ARI,0.26994663783443223,0.26994663783443223,True
+pilot siglip l2 spectral_knn k10.0 hs1 AMI,0.3994792562238314,0.3994792562238314,True
+pilot siglip l2 spectral_knn k10.0 hs1 ARI,0.17576459485133897,0.175764594851339,True
+pilot siglip pca100_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.48327440846155073,0.48327440846155073,True
+pilot siglip pca100_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.36904098617344044,0.36904098617344044,True
+pilot siglip pca100_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.3229199240900673,0.3229199240900673,True
+pilot siglip pca100_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.2058638387136554,0.2058638387136554,True
+pilot siglip pca100_l2 gmm_diag k10.0 hs3 AMI,0.4370100602595029,0.4370100602595029,True
+pilot siglip pca100_l2 gmm_diag k10.0 hs3 ARI,0.2283937477124054,0.2283937477124054,True
+pilot siglip pca100_l2 gmm_diag k10.0 hs1 AMI,0.3188753323898438,0.3188753323898438,True
+pilot siglip pca100_l2 gmm_diag k10.0 hs1 ARI,0.11321349876275896,0.11321349876275896,True
+pilot siglip pca100_l2 hdbscan knan hs3 AMI,0.36258611575779554,0.36258611575779554,True
+pilot siglip pca100_l2 hdbscan knan hs3 ARI,0.07648826446953484,0.07648826446953484,True
+pilot siglip pca100_l2 hdbscan knan hs1 AMI,0.2853097255474589,0.2853097255474589,True
+pilot siglip pca100_l2 hdbscan knan hs1 ARI,0.0340296723800688,0.0340296723800688,True
+pilot siglip pca100_l2 kmeans k10.0 hs3 AMI,0.4814716387732211,0.4814716387732211,True
+pilot siglip pca100_l2 kmeans k10.0 hs3 ARI,0.34698640422967786,0.34698640422967786,True
+pilot siglip pca100_l2 kmeans k10.0 hs1 AMI,0.35372145292126933,0.3537214529212694,True
+pilot siglip pca100_l2 kmeans k10.0 hs1 ARI,0.1761392879844402,0.17613928798444017,True
+pilot siglip pca100_l2 spectral_knn k10.0 hs3 AMI,0.5468534051090849,0.5468534051090849,True
+pilot siglip pca100_l2 spectral_knn k10.0 hs3 ARI,0.3038650902454786,0.3038650902454786,True
+pilot siglip pca100_l2 spectral_knn k10.0 hs1 AMI,0.3996845774278808,0.3996845774278809,True
+pilot siglip pca100_l2 spectral_knn k10.0 hs1 ARI,0.18202915101356165,0.18202915101356168,True
+pilot siglip pca50_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.49828105144834955,0.49828105144834955,True
+pilot siglip pca50_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3648858679052515,0.3648858679052515,True
+pilot siglip pca50_l2 agglomerative_average_cosine k10.0 hs1 AMI,0.3578128996551082,0.3578128996551082,True
+pilot siglip pca50_l2 agglomerative_average_cosine k10.0 hs1 ARI,0.204615019907894,0.204615019907894,True
+pilot siglip pca50_l2 gmm_diag k10.0 hs3 AMI,0.46412260026376806,0.46412260026376806,True
+pilot siglip pca50_l2 gmm_diag k10.0 hs3 ARI,0.21792296207327158,0.21792296207327158,True
+pilot siglip pca50_l2 gmm_diag k10.0 hs1 AMI,0.3435882784523499,0.3435882784523499,True
+pilot siglip pca50_l2 gmm_diag k10.0 hs1 ARI,0.11203481220079721,0.11203481220079721,True
+pilot siglip pca50_l2 hdbscan knan hs3 AMI,0.3733349377108252,0.3733349377108252,True
+pilot siglip pca50_l2 hdbscan knan hs3 ARI,0.08582397265781018,0.08582397265781018,True
+pilot siglip pca50_l2 hdbscan knan hs1 AMI,0.2863789606021083,0.2863789606021083,True
+pilot siglip pca50_l2 hdbscan knan hs1 ARI,0.034400061303240935,0.034400061303240935,True
+pilot siglip pca50_l2 kmeans k10.0 hs3 AMI,0.49310137703516227,0.49310137703516216,True
+pilot siglip pca50_l2 kmeans k10.0 hs3 ARI,0.36688241472677785,0.36688241472677785,True
+pilot siglip pca50_l2 kmeans k10.0 hs1 AMI,0.3653568191142385,0.36535681911423845,True
+pilot siglip pca50_l2 kmeans k10.0 hs1 ARI,0.19114390094815423,0.19114390094815423,True
+pilot siglip pca50_l2 spectral_knn k10.0 hs3 AMI,0.5397413797645279,0.5397413797645279,True
+pilot siglip pca50_l2 spectral_knn k10.0 hs3 ARI,0.29772682505818615,0.29772682505818615,True
+pilot siglip pca50_l2 spectral_knn k10.0 hs1 AMI,0.3990922565342744,0.3990922565342744,True
+pilot siglip pca50_l2 spectral_knn k10.0 hs1 ARI,0.182438843401495,0.182438843401495,True
+embedding hash data/dinov2/emb/dev/clip.npy,57a84d1a7af7330e02fdd3cf20f513cf083967ef9a1c5746117b41d6c1a687d7,57a84d1a7af7330e02fdd3cf20f513cf083967ef9a1c5746117b41d6c1a687d7,True
+embedding finite data/dinov2/emb/dev/clip.npy,True,True,True
+embedding rows data/dinov2/emb/dev/clip.npy,12000,12000,True
+embedding hash data/dinov2/emb/dev/dinov2_b_224_L1.npy,3eccdd92dd91eb71645f855a5a993803f523b3928633e392377d5108660e396c,3eccdd92dd91eb71645f855a5a993803f523b3928633e392377d5108660e396c,True
+embedding finite data/dinov2/emb/dev/dinov2_b_224_L1.npy,True,True,True
+embedding rows data/dinov2/emb/dev/dinov2_b_224_L1.npy,12000,12000,True
+embedding hash data/dinov2/emb/dev/dinov2_b_224_L2.npy,4b6852cf3bfcd48252f1ac2e5158dba615e3e664dd09dc0d966933665b9431f8,4b6852cf3bfcd48252f1ac2e5158dba615e3e664dd09dc0d966933665b9431f8,True
+embedding finite data/dinov2/emb/dev/dinov2_b_224_L2.npy,True,True,True
+embedding rows data/dinov2/emb/dev/dinov2_b_224_L2.npy,12000,12000,True
+embedding hash data/dinov2/emb/dev/dinov2_b_224_L4.npy,5225b5221fc2c9305c852846ee56b92fa27b61d3cc3f695ed37278bcd1a4a9fb,5225b5221fc2c9305c852846ee56b92fa27b61d3cc3f695ed37278bcd1a4a9fb,True
+embedding finite data/dinov2/emb/dev/dinov2_b_224_L4.npy,True,True,True
+embedding rows data/dinov2/emb/dev/dinov2_b_224_L4.npy,12000,12000,True
+embedding hash data/dinov2/emb/dev/siglip.npy,13dec27f0a9bc15709ea11c49f95b4b8fcaf2fb912d9d20d87fac860de5856a3,13dec27f0a9bc15709ea11c49f95b4b8fcaf2fb912d9d20d87fac860de5856a3,True
+embedding finite data/dinov2/emb/dev/siglip.npy,True,True,True
+embedding rows data/dinov2/emb/dev/siglip.npy,12000,12000,True
+embedding hash data/dinov2/emb/pilot/dinov2_b_224_L1.npy,1dc7c77a55488f6de0443a041aa318af047e8050b76860f7c47f694612abf170,1dc7c77a55488f6de0443a041aa318af047e8050b76860f7c47f694612abf170,True
+embedding finite data/dinov2/emb/pilot/dinov2_b_224_L1.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_b_224_L1.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_b_224_L2.npy,a00669ed3852840593ee19f4183d0d465ed518f4cf2398a4ecc11c143ab608b4,a00669ed3852840593ee19f4183d0d465ed518f4cf2398a4ecc11c143ab608b4,True
+embedding finite data/dinov2/emb/pilot/dinov2_b_224_L2.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_b_224_L2.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_b_224_L4.npy,aa00d6ab58d179a28f27c27fb8b18248ecbe417a1c370aaefa5decccd88d9ccd,aa00d6ab58d179a28f27c27fb8b18248ecbe417a1c370aaefa5decccd88d9ccd,True
+embedding finite data/dinov2/emb/pilot/dinov2_b_224_L4.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_b_224_L4.npy,2000,2000,True
+pilot row order pilot_dinov2_b_224.json,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,True
+embedding hash data/dinov2/emb/pilot/dinov2_b_518_L1.npy,0a676660c572fa94c5c78e9c10570944af54d36be3fe619dafc3d1e8eb3819b0,0a676660c572fa94c5c78e9c10570944af54d36be3fe619dafc3d1e8eb3819b0,True
+embedding finite data/dinov2/emb/pilot/dinov2_b_518_L1.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_b_518_L1.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_b_518_L2.npy,bec0943b7e4bb87f5e8fd24c42c9c24c83aea65430b89d81b4cb31a943b55981,bec0943b7e4bb87f5e8fd24c42c9c24c83aea65430b89d81b4cb31a943b55981,True
+embedding finite data/dinov2/emb/pilot/dinov2_b_518_L2.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_b_518_L2.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_b_518_L4.npy,ca6880b640a927b991c1674da3bf6cb81ad1ec0f55c1f1d4ff99140fc53d3179,ca6880b640a927b991c1674da3bf6cb81ad1ec0f55c1f1d4ff99140fc53d3179,True
+embedding finite data/dinov2/emb/pilot/dinov2_b_518_L4.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_b_518_L4.npy,2000,2000,True
+pilot row order pilot_dinov2_b_518.json,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,True
+embedding hash data/dinov2/emb/pilot/dinov2_l_224_L1.npy,11742423591d915835fb861afdb9bd6d7634fda24300331e084881ca931ca515,11742423591d915835fb861afdb9bd6d7634fda24300331e084881ca931ca515,True
+embedding finite data/dinov2/emb/pilot/dinov2_l_224_L1.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_l_224_L1.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_l_224_L2.npy,a2e4393cdf97321a0719c54528e97cf55ce3287993825758a7cd54b630b1460c,a2e4393cdf97321a0719c54528e97cf55ce3287993825758a7cd54b630b1460c,True
+embedding finite data/dinov2/emb/pilot/dinov2_l_224_L2.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_l_224_L2.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_l_224_L4.npy,0eaa2c48651b7dc1c18d3d36bcf87438b05a07f178e4a572ab5649d7a7bb3ad7,0eaa2c48651b7dc1c18d3d36bcf87438b05a07f178e4a572ab5649d7a7bb3ad7,True
+embedding finite data/dinov2/emb/pilot/dinov2_l_224_L4.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_l_224_L4.npy,2000,2000,True
+pilot row order pilot_dinov2_l_224.json,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,True
+embedding hash data/dinov2/emb/pilot/dinov2_s_224_L1.npy,61736543b572769aed0fbe9585abed0d2b56551894aa88316fb21c2ac1cceb40,61736543b572769aed0fbe9585abed0d2b56551894aa88316fb21c2ac1cceb40,True
+embedding finite data/dinov2/emb/pilot/dinov2_s_224_L1.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_s_224_L1.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_s_224_L2.npy,99dddb2dee1beaee0bd2c6feb4078ad1bf55b84b2e55a9b2e478fb5f72739a2d,99dddb2dee1beaee0bd2c6feb4078ad1bf55b84b2e55a9b2e478fb5f72739a2d,True
+embedding finite data/dinov2/emb/pilot/dinov2_s_224_L2.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_s_224_L2.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_s_224_L4.npy,f534638d698c6674dea60210d6d79f4cf6275294f557647a853fb39574a753c3,f534638d698c6674dea60210d6d79f4cf6275294f557647a853fb39574a753c3,True
+embedding finite data/dinov2/emb/pilot/dinov2_s_224_L4.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_s_224_L4.npy,2000,2000,True
+pilot row order pilot_dinov2_s_224.json,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,True
+embedding hash data/dinov2/emb/pilot/dinov2_s_518_L1.npy,0fcc2ccb4333982eb6eb1cc5bd43d2ad1a22a9056d1a782b09aae82311f2d2ff,0fcc2ccb4333982eb6eb1cc5bd43d2ad1a22a9056d1a782b09aae82311f2d2ff,True
+embedding finite data/dinov2/emb/pilot/dinov2_s_518_L1.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_s_518_L1.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_s_518_L2.npy,690789677437b74134dd6f20c5e5078f88f23b634a495604d5ed94ad8dce9507,690789677437b74134dd6f20c5e5078f88f23b634a495604d5ed94ad8dce9507,True
+embedding finite data/dinov2/emb/pilot/dinov2_s_518_L2.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_s_518_L2.npy,2000,2000,True
+embedding hash data/dinov2/emb/pilot/dinov2_s_518_L4.npy,737a814855bb94cc9412dafc14f1cbfa658cde778683b5bdefe66b96b4a2ca50,737a814855bb94cc9412dafc14f1cbfa658cde778683b5bdefe66b96b4a2ca50,True
+embedding finite data/dinov2/emb/pilot/dinov2_s_518_L4.npy,True,True,True
+embedding rows data/dinov2/emb/pilot/dinov2_s_518_L4.npy,2000,2000,True
+pilot row order pilot_dinov2_s_518.json,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,cd650a2a427f0689f2fb8097a30d9407d52b61b3a35b58b9ef3714b922722135,True
+weight sha256 dinov2_s,04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081,04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081,True
+weight sha256 dinov2_b,55cbb5d887b336d430e649c277b85a1429e724871f9d02ac16203235886d8c7b,55cbb5d887b336d430e649c277b85a1429e724871f9d02ac16203235886d8c7b,True
+weight sha256 dinov2_l,0424a5d1b515278cba3c6640ccbeaacc41de59d3a93df0dd5e494285eea2b355,0424a5d1b515278cba3c6640ccbeaacc41de59d3a93df0dd5e494285eea2b355,True
+probe AMI clip,0.5678659561363647,0.5678659561363647,True
+probe accuracy clip,0.7460526315789474,0.7460526315789474,True
+probe AMI dinov2_l_224_L1,0.7189561781131709,0.7189561781131709,True
+probe accuracy dinov2_l_224_L1,0.8368421052631579,0.8368421052631579,True
+dev clip centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5117104415388256,0.5117104415388256,True
+dev clip centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.39123255541569657,0.39123255541569657,True
+dev clip centered_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5182308776660371,0.5182308776660371,True
+dev clip centered_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.3942085407352078,0.3942085407352078,True
+dev clip centered_l2 gmm_diag k10.0 hs3 AMI,0.46604640446017187,0.46604640446017187,True
+dev clip centered_l2 gmm_diag k10.0 hs3 ARI,0.233850249037136,0.233850249037136,True
+dev clip centered_l2 gmm_diag k13.0 hs3 AMI,0.48243691303805847,0.48243691303805847,True
+dev clip centered_l2 gmm_diag k13.0 hs3 ARI,0.22984463224717175,0.22984463224717175,True
+dev clip centered_l2 hdbscan knan hs3 AMI,0.40141594920364876,0.40141594920364876,True
+dev clip centered_l2 hdbscan knan hs3 ARI,0.157403841438273,0.157403841438273,True
+dev clip centered_l2 kmeans k10.0 hs3 AMI,0.4507934354797709,0.4507934354797709,True
+dev clip centered_l2 kmeans k10.0 hs3 ARI,0.2591485623403163,0.2591485623403163,True
+dev clip centered_l2 kmeans k13.0 hs3 AMI,0.4685102706915781,0.4685102706915781,True
+dev clip centered_l2 kmeans k13.0 hs3 ARI,0.2776492468822723,0.27764924688227227,True
+dev clip centered_l2 spectral_knn k10.0 hs3 AMI,0.49294319240709517,0.49294319240709517,True
+dev clip centered_l2 spectral_knn k10.0 hs3 ARI,0.2726329568992833,0.27263295689928335,True
+dev clip centered_l2 spectral_knn k13.0 hs3 AMI,0.507694070113234,0.507694070113234,True
+dev clip centered_l2 spectral_knn k13.0 hs3 ARI,0.251380780721599,0.251380780721599,True
+dev clip l2 agglomerative_average_cosine k10.0 hs3 AMI,0.002153930494063263,0.002153930494063263,True
+dev clip l2 agglomerative_average_cosine k10.0 hs3 ARI,0.0003645879330789058,0.0003645879330789058,True
+dev clip l2 agglomerative_average_cosine k13.0 hs3 AMI,0.0120358138432173,0.0120358138432173,True
+dev clip l2 agglomerative_average_cosine k13.0 hs3 ARI,0.0016321246866791432,0.0016321246866791432,True
+dev clip l2 kmeans k10.0 hs3 AMI,0.47198633923250766,0.47198633923250766,True
+dev clip l2 kmeans k10.0 hs3 ARI,0.30338109222166026,0.30338109222166026,True
+dev clip l2 kmeans k13.0 hs3 AMI,0.47224971539750776,0.4722497153975079,True
+dev clip l2 kmeans k13.0 hs3 ARI,0.2868065281876033,0.2868065281876033,True
+dev clip l2 spectral_knn k10.0 hs3 AMI,0.4348182653102475,0.4348182653102475,True
+dev clip l2 spectral_knn k10.0 hs3 ARI,0.15324487875223264,0.15324487875223264,True
+dev clip l2 spectral_knn k13.0 hs3 AMI,0.49576136322759307,0.49576136322759307,True
+dev clip l2 spectral_knn k13.0 hs3 ARI,0.2722234314311883,0.2722234314311883,True
+dev clip pca100_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5089367267308279,0.5089367267308279,True
+dev clip pca100_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3825912387341449,0.3825912387341449,True
+dev clip pca100_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5158659900255799,0.5158659900255799,True
+dev clip pca100_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.4109001570065433,0.4109001570065433,True
+dev clip pca100_l2 kmeans k10.0 hs3 AMI,0.4551485448905875,0.45514854489058754,True
+dev clip pca100_l2 kmeans k10.0 hs3 ARI,0.2792687578668967,0.2792687578668967,True
+dev clip pca100_l2 kmeans k13.0 hs3 AMI,0.4719996171273581,0.4719996171273581,True
+dev clip pca100_l2 kmeans k13.0 hs3 ARI,0.2821856101104737,0.2821856101104737,True
+dev clip pca100_l2 spectral_knn k10.0 hs3 AMI,0.49249324324039145,0.49249324324039145,True
+dev clip pca100_l2 spectral_knn k10.0 hs3 ARI,0.27130955432752335,0.27130955432752335,True
+dev clip pca100_l2 spectral_knn k13.0 hs3 AMI,0.5099518878033551,0.5099518878033552,True
+dev clip pca100_l2 spectral_knn k13.0 hs3 ARI,0.2554871583271397,0.2554871583271397,True
+dev clip pca50_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5010228200881934,0.5010228200881934,True
+dev clip pca50_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.38648693502005343,0.38648693502005343,True
+dev clip pca50_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5011650857698273,0.5011650857698273,True
+dev clip pca50_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.3917512253744331,0.3917512253744331,True
+dev clip pca50_l2 gmm_diag k10.0 hs3 AMI,0.4360714061600438,0.4360714061600438,True
+dev clip pca50_l2 gmm_diag k10.0 hs3 ARI,0.16848410898670743,0.16848410898670746,True
+dev clip pca50_l2 gmm_diag k13.0 hs3 AMI,0.4417852465739969,0.4417852465739969,True
+dev clip pca50_l2 gmm_diag k13.0 hs3 ARI,0.15606220727667194,0.15606220727667194,True
+dev clip pca50_l2 hdbscan knan hs3 AMI,0.41422911140964813,0.41422911140964813,True
+dev clip pca50_l2 hdbscan knan hs3 ARI,0.12301744550514637,0.12301744550514637,True
+dev clip pca50_l2 kmeans k10.0 hs3 AMI,0.4750870321507322,0.4750870321507323,True
+dev clip pca50_l2 kmeans k10.0 hs3 ARI,0.3054719139821107,0.3054719139821107,True
+dev clip pca50_l2 kmeans k13.0 hs3 AMI,0.46881763776188057,0.46881763776188057,True
+dev clip pca50_l2 kmeans k13.0 hs3 ARI,0.2853249765636733,0.28532497656367334,True
+dev clip pca50_l2 spectral_knn k10.0 hs3 AMI,0.4813503251697651,0.4813503251697651,True
+dev clip pca50_l2 spectral_knn k10.0 hs3 ARI,0.24810394621960077,0.2481039462196008,True
+dev clip pca50_l2 spectral_knn k13.0 hs3 AMI,0.5101465360907534,0.5101465360907534,True
+dev clip pca50_l2 spectral_knn k13.0 hs3 ARI,0.2524001282428762,0.2524001282428762,True
+dev dinov2_b_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5605764413515799,0.5605764413515799,True
+dev dinov2_b_224_L1 centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.41730922170313645,0.41730922170313645,True
+dev dinov2_b_224_L1 centered_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5837146593573553,0.5837146593573553,True
+dev dinov2_b_224_L1 centered_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.4365083581466961,0.4365083581466961,True
+dev dinov2_b_224_L1 centered_l2 gmm_diag k10.0 hs3 AMI,0.4994208147806208,0.4994208147806208,True
+dev dinov2_b_224_L1 centered_l2 gmm_diag k10.0 hs3 ARI,0.23073795733124808,0.23073795733124808,True
+dev dinov2_b_224_L1 centered_l2 gmm_diag k13.0 hs3 AMI,0.5143284014780856,0.5143284014780856,True
+dev dinov2_b_224_L1 centered_l2 gmm_diag k13.0 hs3 ARI,0.23886714719580712,0.23886714719580718,True
+dev dinov2_b_224_L1 centered_l2 hdbscan knan hs3 AMI,0.44760076903615137,0.44760076903615137,True
+dev dinov2_b_224_L1 centered_l2 hdbscan knan hs3 ARI,0.17811519457041866,0.17811519457041866,True
+dev dinov2_b_224_L1 centered_l2 kmeans k10.0 hs3 AMI,0.5377048437822586,0.5377048437822586,True
+dev dinov2_b_224_L1 centered_l2 kmeans k10.0 hs3 ARI,0.31365288898531773,0.31365288898531773,True
+dev dinov2_b_224_L1 centered_l2 kmeans k13.0 hs3 AMI,0.5568952624015727,0.5568952624015727,True
+dev dinov2_b_224_L1 centered_l2 kmeans k13.0 hs3 ARI,0.3315894570075447,0.3315894570075447,True
+dev dinov2_b_224_L1 centered_l2 spectral_knn k10.0 hs3 AMI,0.47556107198464603,0.47556107198464603,True
+dev dinov2_b_224_L1 centered_l2 spectral_knn k10.0 hs3 ARI,0.16451914637808446,0.16451914637808446,True
+dev dinov2_b_224_L1 centered_l2 spectral_knn k13.0 hs3 AMI,0.5210927715151248,0.5210927715151248,True
+dev dinov2_b_224_L1 centered_l2 spectral_knn k13.0 hs3 ARI,0.2364895623099458,0.23648956230994575,True
+dev dinov2_b_224_L1 l2 agglomerative_average_cosine k10.0 hs3 AMI,0.36054173396136807,0.36054173396136807,True
+dev dinov2_b_224_L1 l2 agglomerative_average_cosine k10.0 hs3 ARI,0.14903515270391884,0.14903515270391884,True
+dev dinov2_b_224_L1 l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5457788515900617,0.5457788515900617,True
+dev dinov2_b_224_L1 l2 agglomerative_average_cosine k13.0 hs3 ARI,0.34024425743451303,0.34024425743451303,True
+dev dinov2_b_224_L1 l2 kmeans k10.0 hs3 AMI,0.5368700123656438,0.5368700123656438,True
+dev dinov2_b_224_L1 l2 kmeans k10.0 hs3 ARI,0.31537697588620495,0.31537697588620495,True
+dev dinov2_b_224_L1 l2 kmeans k13.0 hs3 AMI,0.5525591067252186,0.5525591067252186,True
+dev dinov2_b_224_L1 l2 kmeans k13.0 hs3 ARI,0.34234437222717606,0.34234437222717606,True
+dev dinov2_b_224_L1 l2 spectral_knn k10.0 hs3 AMI,0.4739273909345642,0.4739273909345642,True
+dev dinov2_b_224_L1 l2 spectral_knn k10.0 hs3 ARI,0.1949038103720643,0.19490381037206425,True
+dev dinov2_b_224_L1 l2 spectral_knn k13.0 hs3 AMI,0.47610726649718876,0.47610726649718876,True
+dev dinov2_b_224_L1 l2 spectral_knn k13.0 hs3 ARI,0.16602368706849208,0.1660236870684921,True
+dev dinov2_b_224_L1 pca100_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5680458626331787,0.5680458626331787,True
+dev dinov2_b_224_L1 pca100_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.4213522326667315,0.4213522326667315,True
+dev dinov2_b_224_L1 pca100_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5523975600833131,0.5523975600833131,True
+dev dinov2_b_224_L1 pca100_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.36616633734059845,0.36616633734059845,True
+dev dinov2_b_224_L1 pca100_l2 kmeans k10.0 hs3 AMI,0.5452665040937165,0.5452665040937165,True
+dev dinov2_b_224_L1 pca100_l2 kmeans k10.0 hs3 ARI,0.3316009809123755,0.33160098091237555,True
+dev dinov2_b_224_L1 pca100_l2 kmeans k13.0 hs3 AMI,0.5572059561821474,0.5572059561821473,True
+dev dinov2_b_224_L1 pca100_l2 kmeans k13.0 hs3 ARI,0.3420653699133445,0.3420653699133445,True
+dev dinov2_b_224_L1 pca100_l2 spectral_knn k10.0 hs3 AMI,0.4757717597120427,0.4757717597120427,True
+dev dinov2_b_224_L1 pca100_l2 spectral_knn k10.0 hs3 ARI,0.16289169618941252,0.16289169618941252,True
+dev dinov2_b_224_L1 pca100_l2 spectral_knn k13.0 hs3 AMI,0.5369310186243469,0.5369310186243468,True
+dev dinov2_b_224_L1 pca100_l2 spectral_knn k13.0 hs3 ARI,0.24705695089910576,0.2470569508991057,True
+dev dinov2_b_224_L1 pca50_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5512311601283543,0.5512311601283543,True
+dev dinov2_b_224_L1 pca50_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3545848570394641,0.3545848570394641,True
+dev dinov2_b_224_L1 pca50_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5693531459387066,0.5693531459387066,True
+dev dinov2_b_224_L1 pca50_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.37332619656413624,0.37332619656413624,True
+dev dinov2_b_224_L1 pca50_l2 gmm_diag k10.0 hs3 AMI,0.4823727174006064,0.4823727174006064,True
+dev dinov2_b_224_L1 pca50_l2 gmm_diag k10.0 hs3 ARI,0.2167011427299636,0.2167011427299636,True
+dev dinov2_b_224_L1 pca50_l2 gmm_diag k13.0 hs3 AMI,0.5097585553961895,0.5097585553961895,True
+dev dinov2_b_224_L1 pca50_l2 gmm_diag k13.0 hs3 ARI,0.23586190963075135,0.23586190963075135,True
+dev dinov2_b_224_L1 pca50_l2 hdbscan knan hs3 AMI,0.45895256731027617,0.45895256731027617,True
+dev dinov2_b_224_L1 pca50_l2 hdbscan knan hs3 ARI,0.19028863987380076,0.19028863987380076,True
+dev dinov2_b_224_L1 pca50_l2 kmeans k10.0 hs3 AMI,0.5496875692514327,0.5496875692514327,True
+dev dinov2_b_224_L1 pca50_l2 kmeans k10.0 hs3 ARI,0.3500361748052421,0.35003617480524213,True
+dev dinov2_b_224_L1 pca50_l2 kmeans k13.0 hs3 AMI,0.5745549302053848,0.5745549302053848,True
+dev dinov2_b_224_L1 pca50_l2 kmeans k13.0 hs3 ARI,0.37184679616959065,0.3718467961695906,True
+dev dinov2_b_224_L1 pca50_l2 spectral_knn k10.0 hs3 AMI,0.4763673950413219,0.4763673950413219,True
+dev dinov2_b_224_L1 pca50_l2 spectral_knn k10.0 hs3 ARI,0.16439504732519272,0.16439504732519272,True
+dev dinov2_b_224_L1 pca50_l2 spectral_knn k13.0 hs3 AMI,0.5506672599696336,0.5506672599696336,True
+dev dinov2_b_224_L1 pca50_l2 spectral_knn k13.0 hs3 ARI,0.2701382204342497,0.2701382204342497,True
+dev siglip centered_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5419947495198675,0.5419947495198675,True
+dev siglip centered_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.399265335217446,0.399265335217446,True
+dev siglip centered_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5525611109793748,0.5525611109793748,True
+dev siglip centered_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.408228926101679,0.408228926101679,True
+dev siglip centered_l2 gmm_diag k10.0 hs3 AMI,0.5116119845110003,0.5116119845110003,True
+dev siglip centered_l2 gmm_diag k10.0 hs3 ARI,0.2905690652094681,0.2905690652094682,True
+dev siglip centered_l2 gmm_diag k13.0 hs3 AMI,0.5164490233089841,0.5164490233089841,True
+dev siglip centered_l2 gmm_diag k13.0 hs3 ARI,0.28567223268279285,0.28567223268279285,True
+dev siglip centered_l2 hdbscan knan hs3 AMI,0.39360503239872957,0.39360503239872957,True
+dev siglip centered_l2 hdbscan knan hs3 ARI,0.08906077200855976,0.08906077200855976,True
+dev siglip centered_l2 kmeans k10.0 hs3 AMI,0.5234911684666228,0.5234911684666229,True
+dev siglip centered_l2 kmeans k10.0 hs3 ARI,0.3345651467949979,0.33456514679499794,True
+dev siglip centered_l2 kmeans k13.0 hs3 AMI,0.5248118247799336,0.5248118247799336,True
+dev siglip centered_l2 kmeans k13.0 hs3 ARI,0.33020953790207647,0.33020953790207647,True
+dev siglip centered_l2 spectral_knn k10.0 hs3 AMI,0.5590711000489725,0.5590711000489724,True
+dev siglip centered_l2 spectral_knn k10.0 hs3 ARI,0.3106943370360226,0.3106943370360226,True
+dev siglip centered_l2 spectral_knn k13.0 hs3 AMI,0.5414798153420467,0.5414798153420467,True
+dev siglip centered_l2 spectral_knn k13.0 hs3 ARI,0.2871931706140869,0.2871931706140869,True
+dev siglip l2 agglomerative_average_cosine k10.0 hs3 AMI,0.0011579182454344327,0.0011579182454344327,True
+dev siglip l2 agglomerative_average_cosine k10.0 hs3 ARI,0.0003418962881919111,0.0003418962881919111,True
+dev siglip l2 agglomerative_average_cosine k13.0 hs3 AMI,0.009946028948444938,0.009946028948444938,True
+dev siglip l2 agglomerative_average_cosine k13.0 hs3 ARI,0.0009160667777945873,0.0009160667777945873,True
+dev siglip l2 kmeans k10.0 hs3 AMI,0.5243950592644893,0.5243950592644893,True
+dev siglip l2 kmeans k10.0 hs3 ARI,0.366767437755558,0.366767437755558,True
+dev siglip l2 kmeans k13.0 hs3 AMI,0.5408085513941812,0.5408085513941812,True
+dev siglip l2 kmeans k13.0 hs3 ARI,0.3561458433516065,0.35614584335160643,True
+dev siglip l2 spectral_knn k10.0 hs3 AMI,0.5518840687331721,0.5518840687331721,True
+dev siglip l2 spectral_knn k10.0 hs3 ARI,0.327897328136686,0.327897328136686,True
+dev siglip l2 spectral_knn k13.0 hs3 AMI,0.5472365951558934,0.5472365951558935,True
+dev siglip l2 spectral_knn k13.0 hs3 ARI,0.31000924694193205,0.31000924694193205,True
+dev siglip pca100_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5154727308504133,0.5154727308504133,True
+dev siglip pca100_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.3384489821352541,0.3384489821352541,True
+dev siglip pca100_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.513353879557254,0.513353879557254,True
+dev siglip pca100_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.34798948995153633,0.34798948995153633,True
+dev siglip pca100_l2 kmeans k10.0 hs3 AMI,0.5236682390408467,0.5236682390408467,True
+dev siglip pca100_l2 kmeans k10.0 hs3 ARI,0.35692471957110117,0.35692471957110117,True
+dev siglip pca100_l2 kmeans k13.0 hs3 AMI,0.5294013891096376,0.5294013891096376,True
+dev siglip pca100_l2 kmeans k13.0 hs3 ARI,0.3392119791426341,0.3392119791426341,True
+dev siglip pca100_l2 spectral_knn k10.0 hs3 AMI,0.5615056412591575,0.5615056412591575,True
+dev siglip pca100_l2 spectral_knn k10.0 hs3 ARI,0.30871467490390686,0.30871467490390686,True
+dev siglip pca100_l2 spectral_knn k13.0 hs3 AMI,0.561303749162461,0.5613037491624608,True
+dev siglip pca100_l2 spectral_knn k13.0 hs3 ARI,0.29352354538471664,0.29352354538471664,True
+dev siglip pca50_l2 agglomerative_average_cosine k10.0 hs3 AMI,0.5580249019495758,0.5580249019495758,True
+dev siglip pca50_l2 agglomerative_average_cosine k10.0 hs3 ARI,0.37896066435157816,0.37896066435157816,True
+dev siglip pca50_l2 agglomerative_average_cosine k13.0 hs3 AMI,0.5385936580850517,0.5385936580850517,True
+dev siglip pca50_l2 agglomerative_average_cosine k13.0 hs3 ARI,0.38313760372496747,0.38313760372496747,True
+dev siglip pca50_l2 gmm_diag k10.0 hs3 AMI,0.5233895276802552,0.5233895276802552,True
+dev siglip pca50_l2 gmm_diag k10.0 hs3 ARI,0.28825058724425556,0.28825058724425556,True
+dev siglip pca50_l2 gmm_diag k13.0 hs3 AMI,0.5287454548374353,0.5287454548374353,True
+dev siglip pca50_l2 gmm_diag k13.0 hs3 ARI,0.2816834626002234,0.2816834626002234,True
+dev siglip pca50_l2 hdbscan knan hs3 AMI,0.41000955753453716,0.41000955753453716,True
+dev siglip pca50_l2 hdbscan knan hs3 ARI,0.09576460981181682,0.09576460981181682,True
+dev siglip pca50_l2 kmeans k10.0 hs3 AMI,0.5192768777316414,0.5192768777316414,True
+dev siglip pca50_l2 kmeans k10.0 hs3 ARI,0.3488314803973645,0.3488314803973645,True
+dev siglip pca50_l2 kmeans k13.0 hs3 AMI,0.5268797328291664,0.5268797328291663,True
+dev siglip pca50_l2 kmeans k13.0 hs3 ARI,0.3378516854152823,0.3378516854152823,True
+dev siglip pca50_l2 spectral_knn k10.0 hs3 AMI,0.5578848743541374,0.5578848743541374,True
+dev siglip pca50_l2 spectral_knn k10.0 hs3 ARI,0.3007393412146436,0.3007393412146436,True
+dev siglip pca50_l2 spectral_knn k13.0 hs3 AMI,0.551238284411251,0.551238284411251,True
+dev siglip pca50_l2 spectral_knn k13.0 hs3 ARI,0.2988817253315098,0.2988817253315098,True
+dev ∩ held-out ids,0,0,True
+dev rows,12000,12000,True
+dev_dinov2_b_224.json embeds exactly the dev rows,12000,12000,True
+dev_clip.json embeds exactly the dev rows,12000,12000,True
+dev_siglip.json embeds exactly the dev rows,12000,12000,True
+held-out never embedded (no held-out manifest),0,0,True
+benchmark rows,27347,27347,True
+benchmark HS3 classes,13,13,True
+clean rows,59658,59658,True
+benchmark rule: every class >= 30,1,1,True
+benchmark ids unique,True,True,True
+API key absent from all committable files,0,0,True
+.env not committable,False,False,True
+no committable file > 50 MB,0,0,True
+no raw image files committable,0,0,True
+no model weights committable,0,0,True

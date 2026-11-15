@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-10-29T00:50:07.233758+00:00",
+  "target": 32,
+  "selected": 32,
+  "seed": 42,
+  "sampling": "museum round-robin, SHA256(seed:record_id) within museum; missing HS labels retained",
+  "candidate_records": 500,
+  "attempted_records": 32,
+  "statuses": {
+    "ok": 32
+  },
+  "unique_pixel_hashes": 32,
+  "manifest_sha256": "bf9387cf5d1a83dfa85bf512ad2ec795e13757100ece78c26a968c7b38bfbbde",
+  "missing_selected": {
+    "hs1": 6,
+    "hs2": 6,
+    "hs3": 6,
+    "origin": 4,
+    "rights": 0,
+    "instrument_names": 0
+  },
+  "missing_metadata": {
+    "hs1": 109,
+    "hs2": 109,
+    "hs3": 112,
+    "origin": 24,
+    "rights": 0,
+    "instrument_names": 0
+  }
+}

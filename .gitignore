@@ -6,3 +6,22 @@ runs/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# secrets: the Europeana key lives only in a local .env
+.env
+.env.*
+!.env.example
+
+# model weights and caches (never commit checkpoints)
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+.cache/
+.pytest_cache/
+.matplotlib/
+
+# research evidence logs are tracked (they hold no secrets; checked before commit)
+!results/**/*.log
+!reports/**/*.log

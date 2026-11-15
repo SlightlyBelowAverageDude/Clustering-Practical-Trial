@@ -1,0 +1,37 @@
+{
+  "files": {
+    "reports/full_dataset/benchmark/benchmark_objects.csv": {
+      "sha256": "043f7c2095662517b1999e98d7db99b28c863162b94169bb49e40e1f3775ad8b",
+      "bytes": 13280446
+    },
+    "reports/full_dataset/benchmark/dev_ids.csv": {
+      "sha256": "9a8d6139bc3ed075aba25b7305b3909e46fa8c7f8dcf930487e508726b4a1439",
+      "bytes": 5797257
+    },
+    "reports/full_dataset/benchmark/heldout_ids_DO_NOT_USE_FOR_SELECTION.csv": {
+      "sha256": "8fdb2bfd7c19bf06212f90b831f3f6dfd97303d0378041daa8dea7851f2079e8",
+      "bytes": 2461856
+    },
+    "reports/full_dataset/clean_records.csv": {
+      "sha256": "64d276dcab29f85574104f2399489cbe00a8bace7f354d0613770a21671087e7",
+      "bytes": 25088205
+    },
+    "reports/full_dataset/exclusions.csv": {
+      "sha256": "c6c04be3ccdb80892f8ec71142f081887596ccb3dc032ed4c3122c2fe270fc81",
+      "bytes": 363965
+    }
+  },
+  "inputs": {
+    "data/mimo/records.csv": "f1c03d2166e0e6919a47e813e8185383284d26b05145f5c8a4ab9c1aee198e44",
+    "data/mimo/hs_vocab.csv": "0969568b92a1a4f3de934dfaef8a86613ab4e6328f1ecf8e281e888f86c58d25",
+    "data/mimo_full/download_ledger.csv": "15ae6e0ea659638f7a8e1f86d27441944b6f9eb8378cb4218fb2dd2275d7f779",
+    "dl/wd_mimo_instruments.csv": "204c43e879f617b24a38a31e4dff01c2ed557d3efa7036af6225f09e1a65aef8",
+    "dl/wd_mimo_ancestors.csv": "38e5fd6665efa7be2da896bbc78dbb2f927295582451f41e7ee2f785ea76fc50"
+  },
+  "image_store": {
+    "location": "data/mimo_pilot/images/<image_id>.img (local only, git-ignored)",
+    "valid_images": 63473,
+    "total_bytes": 2395294691,
+    "per_image_sha256": "data/mimo_full/download_ledger.csv (sha256 column); benchmark rows also in benchmark_objects.csv"
+  }
+}

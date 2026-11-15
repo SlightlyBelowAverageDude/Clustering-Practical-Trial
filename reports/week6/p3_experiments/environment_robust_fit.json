@@ -1,0 +1,23 @@
+{
+  "utc": "2026-11-14T23:32:26.712666+00:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "threads": 4,
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "source_sha256": {
+    "p2_protocol.py": "d3fe36d91b9e45f9226f044ba846fafc5f2aa5208b316c39e5953612210e1e02",
+    "p3_protocol.py": "5638fa49cfcc100f1121dd0facf288ff46cc99ec546771ca97b2013978b7cd0a",
+    "p3_experiments.py": "e920afb551f100192bc7900fa055e41c365be9e0e58fe89f2048f4b5c08254fb",
+    "p2_figures.py": "af5c0f36195ff2a6bbc8d629a9f911ca13b119393e27a36a8bda8f310f597662",
+    "p2_summarize.py": "5abaa61c3f19dd1a6228a71752f9a3ff961c20ae9d8401e2a8046b5bae141dae",
+    "p1_audit.py": "967d4bbabd590f39fd360f9c5b99c07d73ccd4e1b2bd276d41698018c5483113",
+    "p2_benchmark.py": "967b4f62c45cefe1b43954745e072711dad5d08bd0b0b0ec029db8504a10600a"
+  },
+  "p3_protocol_sha256": "0ecbd62174b58a2ff88399142bff8fefb9cbfeafc1a0e1596110d0c56022c67a"
+}

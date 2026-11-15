@@ -1,0 +1,5 @@
+method,remove_cosine_scale_duplicate,cells,CLIP_mean_AMI,SigLIP_mean_AMI,mean_paired_AMI_delta,positive_cells,interpretation
+average_cosine,False,20,0.369810036475997,0.4021307720097146,0.03232073553371763,18,Equal-weight descriptive grid average; cells share images and are not independent replicates.
+average_cosine,True,16,0.34992720119247656,0.38002851253514136,0.03010131134266484,14,Equal-weight descriptive grid average; cells share images and are not independent replicates.
+kmeans,False,20,0.43172132138396435,0.47536390213581525,0.04364258075185086,20,Equal-weight descriptive grid average; cells share images and are not independent replicates.
+kmeans,True,20,0.43172132138396435,0.47536390213581525,0.04364258075185086,20,Equal-weight descriptive grid average; cells share images and are not independent replicates.

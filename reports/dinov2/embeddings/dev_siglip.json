@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-15T14:21:12Z",
+  "set": "dev",
+  "n": 12000,
+  "model": {
+    "repo": "timm/ViT-B-16-SigLIP",
+    "revision": "41f575766f40e752fdd1383e9565b7f02388c1c4",
+    "weight_sha256": "81942ea8c09b9e41963357cca5d2682118bf7eb7491c2ae51a28bc4f4f95b194"
+  },
+  "pilot_parity_max_abs_diff": 0.0,
+  "array": {
+    "path": "data/dinov2/emb/dev/siglip.npy",
+    "sha256": "13dec27f0a9bc15709ea11c49f95b4b8fcaf2fb912d9d20d87fac860de5856a3",
+    "shape": [
+      12000,
+      768
+    ]
+  },
+  "ordered_inputs_sha256": "112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37",
+  "seconds": 2303.4
+}

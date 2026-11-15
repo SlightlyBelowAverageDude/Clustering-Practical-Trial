@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-29T02:01:23.598130+00:00",
+  "hs1_labelled": 1565,
+  "hs3_labelled": 1549,
+  "hs1_majority_fraction_among_labeled": 0.5207667731629393,
+  "hs3_majority_fraction_among_labeled": 0.18463524854744998,
+  "museums_with_zero_hs3": 7,
+  "museums_with_all_hs3": 71,
+  "parts_title_flagged": 65,
+  "hs3_missing_fraction_parts_flagged": 0.6153846153846154,
+  "hs3_missing_fraction_not_flagged": 0.2124031007751938,
+  "conflicting_prefix_hs1": 6,
+  "conflicting_prefix_hs2": 8,
+  "conflicting_prefix_hs3": 21,
+  "visual_observations": 3,
+  "review_annotations_filled": 0,
+  "no_label_corrections": true
+}

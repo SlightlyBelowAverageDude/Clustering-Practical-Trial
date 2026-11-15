@@ -1,0 +1,13 @@
+{
+  "validated_utc": "2026-10-29T00:55:54.624676+00:00",
+  "success": true,
+  "images_redecoded_and_hashed": 32,
+  "unique_records": 32,
+  "identical_order_verified_runs": 16,
+  "metric_rows_independently_recomputed": 48,
+  "source_and_model_hashes_verified": true,
+  "credential_scan_text_files": 395,
+  "credential_found": false,
+  "gallery_images_inside_ignored_data": true,
+  "input_key": "b5de2071b48f2056985b8a30fb7a5cd3f49c3360a7e9d13db79f675f9786ebb0"
+}

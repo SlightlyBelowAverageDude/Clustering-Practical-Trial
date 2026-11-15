@@ -1,0 +1,21 @@
+{
+  "utc": "2026-11-15T13:42:30Z",
+  "set": "dev",
+  "n": 12000,
+  "model": {
+    "repo": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K",
+    "revision": "1a25a446712ba5ee05982a381eed697ef9b435cf",
+    "weight_sha256": "ac4f8c4b88af6d963118cbf40ad93176d092abbedfcb752601ae1866352656e6"
+  },
+  "pilot_parity_max_abs_diff": 0.0,
+  "array": {
+    "path": "data/dinov2/emb/dev/clip.npy",
+    "sha256": "57a84d1a7af7330e02fdd3cf20f513cf083967ef9a1c5746117b41d6c1a687d7",
+    "shape": [
+      12000,
+      512
+    ]
+  },
+  "ordered_inputs_sha256": "112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37",
+  "seconds": 657.6
+}

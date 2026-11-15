@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-29T01:51:51.568141+00:00",
+  "review_seed": 20261102,
+  "review_images": 180,
+  "review_museums": 106,
+  "strata": {
+    "possible duplicate/view pair": 30,
+    "random across museums": 30,
+    "random across HS1 classes (review only)": 30,
+    "large and small failure-case clusters": 14,
+    "large and small failure-case clusters (random backfill)": 16,
+    "potential parts / representations / placeholder screen": 30,
+    "missing / multiple or conflicting HS": 30
+  },
+  "candidate_pair_count": 191,
+  "selected_pair_images": 30,
+  "title_parts_candidates": 65,
+  "title_representation_candidates": 2,
+  "explicit_placeholder_title_candidates": 0,
+  "multiple_hs_records": 73,
+  "human_annotations_completed": 0,
+  "labels_or_exclusions_changed": false
+}

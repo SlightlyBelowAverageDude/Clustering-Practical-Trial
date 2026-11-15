@@ -1,0 +1,93 @@
+{
+  "utc": "2026-10-29T02:05:05.478764+00:00",
+  "success": true,
+  "original_pilot_unchanged": true,
+  "no_new_dataset_downloaded": true,
+  "commit_or_push_performed": false,
+  "images": 2000,
+  "encoders": 2,
+  "full_grid_fits": 240,
+  "subset_fits": 60,
+  "random_partitions": 1600,
+  "independently_recomputed_metric_rows": 5700,
+  "independently_recomputed_silhouettes": 480,
+  "seed_partition_comparisons": 400,
+  "subset_partition_comparisons": 40,
+  "human_review_images": 180,
+  "human_annotations_completed": 0,
+  "source_labels_changed": false,
+  "input_order_and_masks_verified": true,
+  "model_weight_hashes_verified": true,
+  "artifact_links_valid": true,
+  "gallery_photo_bytes_inside_ignored_data": true,
+  "credential_scan_files": 120,
+  "credential_found": false,
+  "targeted_tests_passed": 3,
+  "source_sha256": {
+    "benchmark.py": "a8c07e4c655e4d8576074177ce40d8da570aeb521a643f954f13cd74a0ef8b01",
+    "report.py": "1e5ede2587b2d58443046ca803c1b2fbfc9d1ef1d53a56dbe2fe9d36371a471e",
+    "charts.py": "b5efa3179116ec0a4d2d821f339d778aabfe9145a9212831a1c23c435cf8db6a",
+    "evaluation.py": "e95570e1fe2ef28a94a2a681eb582812e92a324123a87628106cab795853c9cb",
+    "siglip_embed.py": "e9e4e24203e680cd962026ebab78edaee7978fe8aaf75f02a44163141c43bd23",
+    "verify_evaluation.py": "e73bc55486a2d8da5cbbefa337190004ef65ceb24b9c63dbd3b414a2c35f5c95",
+    "quality_diagnostics.py": "e0c4be19c8d76211a3a7197eb8e4984a38e5ff703f89f3b6da9a938ddb11c6ed",
+    "final_audit.py": "16a13a1cddcdc78d49e938f20c1c3af76fb7287071ddf55fc04c44d7e892614c",
+    "verify.py": "e39b9ca748ffe1eeb437ce6d1e4e9241f6bc6b1e2dc4fc1fb3416b57b4338f05",
+    "test_phase2.py": "0a14841580e91ef0beb70ab2879322cffad0c5f0bab42ec6a2718cc722e7c17a",
+    "review.py": "ab680b1f4682b54120c884a19c81df99de82a22de59e5957518b5d095830c96c"
+  },
+  "report_sha256": {
+    "PROTOCOL.md": "f56bf07e0d8c96f76bc4d3b2a799bd6aa0483289fc709f71bca9865dd0ca6758",
+    "SLIDES_NOV2.md": "2b0ae5d672fac488de26bfbee6c13f9f836a75721b6342f36bb4a3b0aaae461c",
+    "NEXT_UPDATE.md": "94f182cbbfc1ab430dc6d0ad480fdc2f7b3506b6a998cfe34243f71b16095a6d",
+    "TASK1_RESULTS.md": "3f4f6b47a3b1bb55aceb44500152ee1c500e4d01f34161633994c241be4166f2"
+  },
+  "figure_sha256": {
+    "cluster_size_imbalance.svg": "d1eef2ce205552d6f0d572504cc7297b98c994c7b8dcae0e0fd310eade30713c",
+    "chance_baseline.png": "6546c2d1b2a9f029e3939f28f55b27911c8ae7b29eabb5032843c84da4f79065",
+    "chance_baseline.svg": "992db804b48acfd980ca864a92601d5cd7c4d2ccefd5b6b9b6afb205dac2bcf9",
+    "cluster_size_imbalance.png": "900da58408f0f92f1bd967d1d9586e49abd9d0c459d8040f815bbb90830268c4",
+    "preprocessing_ablation.png": "10f3060a02044d21e0e70c7cb97e919596b221748c5b4158ceac74e3db19036b",
+    "preprocessing_ablation.svg": "53ac0619bc8a7aacc106d6e048e082534418826724ed75eea492a59b7052b835",
+    "clip_siglip_comparison.png": "9b53d8610d68c74f966319dbf3b4a4f9858b068f81e953b963241fc13005352a",
+    "clip_siglip_comparison.svg": "545f2ae3d44cae37bb7566507ef9e2bf989e3122c7671a2aa4360f8f710da78f"
+  },
+  "audits": [
+    {
+      "utc": "2026-10-29T01:43:17.718446+00:00",
+      "success": true,
+      "images_rehashed": 2000,
+      "runs": 120,
+      "metric_rows_recomputed": 360,
+      "silhouettes_recomputed": 240,
+      "original_pilot_unchanged": true,
+      "original_parity_rows": 96
+    },
+    {
+      "utc": "2026-10-29T01:51:00.004982+00:00",
+      "success": true,
+      "chance_and_subset_metric_rows_recomputed": 2490,
+      "seed_pair_rows_recomputed": 200,
+      "subset_pair_rows_recomputed": 20,
+      "subsets_refit_centering_verified": true
+    },
+    {
+      "utc": "2026-10-29T01:52:34.292783+00:00",
+      "success": true,
+      "images_rehashed": 2000,
+      "runs": 120,
+      "metric_rows_recomputed": 360,
+      "silhouettes_recomputed": 240,
+      "original_pilot_unchanged": true,
+      "original_parity_rows": 0
+    },
+    {
+      "utc": "2026-10-29T01:53:52.112738+00:00",
+      "success": true,
+      "chance_and_subset_metric_rows_recomputed": 2490,
+      "seed_pair_rows_recomputed": 200,
+      "subset_pair_rows_recomputed": 20,
+      "subsets_refit_centering_verified": true
+    }
+  ]
+}

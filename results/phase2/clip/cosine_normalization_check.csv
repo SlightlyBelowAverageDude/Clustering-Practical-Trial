@@ -1,0 +1,5 @@
+k,partition_ARI,exact_array_equal
+5,1.0,True
+10,1.0,True
+20,1.0,True
+40,1.0,True

@@ -1,0 +1,131 @@
+scope,level,class,n
+clean,hs1,4,20515
+clean,hs1,(missing),18964
+clean,hs1,3,10790
+clean,hs1,1,6850
+clean,hs1,2,2307
+clean,hs1,5,232
+clean,hs2,42,19204
+clean,hs2,(missing),18964
+clean,hs2,32,7628
+clean,hs2,11,5190
+clean,hs2,31,3153
+clean,hs2,21,2193
+clean,hs2,12,1572
+clean,hs2,41,1311
+clean,hs2,53,126
+clean,hs2,51,102
+clean,hs2,24,88
+clean,hs2,13,85
+clean,hs2,23,26
+clean,hs2,33,9
+clean,hs2,52,4
+clean,hs2,15,3
+clean,hs3,(missing),19035
+clean,hs3,421,8277
+clean,hs3,321,6889
+clean,hs3,422,5591
+clean,hs3,423,5334
+clean,hs3,111,3466
+clean,hs3,314,2558
+clean,hs3,211,2140
+clean,hs3,112,1710
+clean,hs3,122,1284
+clean,hs3,412,1273
+clean,hs3,322,696
+clean,hs3,121,282
+clean,hs3,312,269
+clean,hs3,311,180
+clean,hs3,531,117
+clean,hs3,315,105
+clean,hs3,513,101
+clean,hs3,242,88
+clean,hs3,212,53
+clean,hs3,323,43
+clean,hs3,313,39
+clean,hs3,131,33
+clean,hs3,133,27
+clean,hs3,231,18
+clean,hs3,413,11
+clean,hs3,533,9
+clean,hs3,232,8
+clean,hs3,332,6
+clean,hs3,154,3
+clean,hs3,331,3
+clean,hs3,524,2
+clean,hs3,420,2
+clean,hs3,316,2
+clean,hs3,521,2
+clean,hs3,132,1
+clean,hs3,511,1
+clean,family,(missing),25390
+clean,family,woodwind instrument,13424
+clean,family,percussion instrument,7803
+clean,family,string instrument,7065
+clean,family,brass instrument,3974
+clean,family,keyboard instrument,1896
+clean,family,electronic musical instrument,106
+benchmark,hs1,4,16450
+benchmark,hs1,3,5926
+benchmark,hs1,1,3687
+benchmark,hs1,2,1109
+benchmark,hs1,5,175
+benchmark,hs2,42,15584
+benchmark,hs2,32,5214
+benchmark,hs2,11,3687
+benchmark,hs2,21,1109
+benchmark,hs2,41,866
+benchmark,hs2,31,712
+benchmark,hs2,53,89
+benchmark,hs2,51,86
+benchmark,hs3,421,7039
+benchmark,hs3,422,4943
+benchmark,hs3,321,4623
+benchmark,hs3,423,3602
+benchmark,hs3,111,2171
+benchmark,hs3,112,1516
+benchmark,hs3,211,1069
+benchmark,hs3,412,866
+benchmark,hs3,314,712
+benchmark,hs3,322,591
+benchmark,hs3,531,89
+benchmark,hs3,513,86
+benchmark,hs3,212,40
+benchmark,family,woodwind instrument,12179
+benchmark,family,string instrument,5348
+benchmark,family,percussion instrument,4793
+benchmark,family,brass instrument,3610
+benchmark,family,keyboard instrument,1329
+benchmark,family,electronic musical instrument,88
+dev,hs1,4,7214
+dev,hs1,3,2609
+dev,hs1,1,1635
+dev,hs1,2,476
+dev,hs1,5,66
+dev,hs2,42,6846
+dev,hs2,32,2315
+dev,hs2,11,1635
+dev,hs2,21,476
+dev,hs2,41,368
+dev,hs2,31,294
+dev,hs2,51,33
+dev,hs2,53,33
+dev,hs3,421,3103
+dev,hs3,422,2196
+dev,hs3,321,2054
+dev,hs3,423,1547
+dev,hs3,111,953
+dev,hs3,112,682
+dev,hs3,211,453
+dev,hs3,412,368
+dev,hs3,314,294
+dev,hs3,322,261
+dev,hs3,513,33
+dev,hs3,531,33
+dev,hs3,212,23
+dev,family,woodwind instrument,5390
+dev,family,string instrument,2368
+dev,family,percussion instrument,2108
+dev,family,brass instrument,1553
+dev,family,keyboard instrument,548
+dev,family,electronic musical instrument,33

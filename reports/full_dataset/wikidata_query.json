@@ -1,0 +1,9 @@
+{
+  "queried_utc": "2026-11-15T12:59:55Z",
+  "endpoint": "https://query.wikidata.org/sparql",
+  "items_rows": 1022,
+  "distinct_mimo_ids": 1012,
+  "ancestor_rows": 80793,
+  "query_items": "SELECT ?item ?itemLabel ?mimo ?en WHERE {\n  ?item wdt:P3763 ?mimo .\n  OPTIONAL { ?en schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . }\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}",
+  "query_ancestors": "SELECT ?item ?anc ?ancLabel WHERE {\n  ?i wdt:P3763 ?m .\n  ?i wdt:P279* ?anc .\n  BIND(STRAFTER(STR(?i), \"entity/\") AS ?item)\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}"
+}

@@ -1,0 +1,5 @@
+exclusions: {'instrument part': 3012, 'copy of a shared photo': 556, 'placeholder image': 247}
+   parts by name: {'bow': 1513, 'mouthpiece': 1434, '': 39, 'plectrum': 12, 'band reeds': 10, 'beater': 4}
+   parts by title only: {'drumstick': 20, 'beater': 9, 'schlägel': 8, 'baguette': 2}
+kept 59658 of 63473 records | coded 40694 | named 40229 | with family 34268 | with region 35417 | Oceania 144
+

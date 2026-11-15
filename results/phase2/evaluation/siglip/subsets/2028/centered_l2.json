@@ -1,0 +1,14 @@
+{
+  "representation": "centered_l2",
+  "fit_rows": 1600,
+  "input_shape": [
+    1600,
+    768
+  ],
+  "seconds": 0.005218512000283226,
+  "array_sha256": "43cd228afbd2b5e5e89b1feece3c432b4e9b7386832f0a09e05203fe241d9126",
+  "shape": [
+    1600,
+    768
+  ]
+}

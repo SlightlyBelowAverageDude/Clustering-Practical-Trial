@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-10-29T01:02:48.027421+00:00",
+  "record_id": "/09102/_NYC_IUE076",
+  "museum": "The Nydahl Collection",
+  "preview_decodes": true,
+  "width": 400,
+  "height": 23,
+  "validation_failure": "too_small: shortest side below 32 pixels",
+  "source_fallback_error": "SSLError",
+  "note": "This is a decodable thumbnail rejected by the declared size rule, not a corrupt file. The deterministic next valid candidate replaced it."
+}

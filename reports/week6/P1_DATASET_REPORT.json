@@ -1,0 +1,413 @@
+{
+  "dataset": "MIMO/Europeana museum-balanced pilot (tag \"pilot\")",
+  "source_file": "data/mimo_pilot/sample_pilot.csv",
+  "source_sha256": "77ca3b43dec6b0daf4a68faf89102aabd3cf6866a17dddec83cbf147042ea6ba",
+  "n_rows": 2000,
+  "unique_record_ids": 2000,
+  "unique_image_ids": 2000,
+  "unique_byte_sha256": 2000,
+  "unique_pixel_sha256": 2000,
+  "duplicate_record_rows": 0,
+  "duplicate_byte_rows": 0,
+  "duplicate_pixel_rows": 0,
+  "image_files_present_and_hash_verified": 2000,
+  "labels": {
+    "hs1": {
+      "valid": 1565,
+      "missing": 435,
+      "missing_pct": 21.75,
+      "classes": 5,
+      "largest_class": "4",
+      "largest_class_n": 815,
+      "largest_class_pct_of_valid": 52.08,
+      "singleton_classes": 0,
+      "classes_with_ge_10": 5,
+      "distribution": {
+        "4": 815,
+        "3": 405,
+        "1": 254,
+        "2": 76,
+        "5": 15
+      }
+    },
+    "hs2": {
+      "valid": 1563,
+      "missing": 437,
+      "missing_pct": 21.85,
+      "classes": 11,
+      "largest_class": "42",
+      "largest_class_n": 750,
+      "largest_class_pct_of_valid": 47.98,
+      "singleton_classes": 1,
+      "classes_with_ge_10": 8,
+      "distribution": {
+        "42": 750,
+        "32": 249,
+        "11": 211,
+        "31": 154,
+        "21": 72,
+        "41": 65,
+        "12": 42,
+        "53": 10,
+        "51": 5,
+        "24": 4,
+        "13": 1
+      }
+    },
+    "hs3": {
+      "valid": 1549,
+      "missing": 451,
+      "missing_pct": 22.55,
+      "classes": 22,
+      "largest_class": "423",
+      "largest_class_n": 286,
+      "largest_class_pct_of_valid": 18.46,
+      "singleton_classes": 3,
+      "classes_with_ge_10": 13,
+      "distribution": {
+        "423": 286,
+        "421": 279,
+        "321": 211,
+        "422": 184,
+        "111": 132,
+        "314": 130,
+        "211": 72,
+        "112": 69,
+        "412": 65,
+        "322": 35,
+        "122": 28,
+        "312": 15,
+        "121": 14,
+        "531": 7,
+        "513": 5,
+        "242": 4,
+        "311": 4,
+        "313": 3,
+        "533": 3,
+        "133": 1,
+        "315": 1,
+        "323": 1
+      }
+    }
+  },
+  "hs_multiple_true": 73,
+  "museums": {
+    "distinct": 216,
+    "min_images": 1,
+    "median_images": 13.0,
+    "max_images": 14,
+    "museums_without_any_hs3": 7,
+    "top10": {
+      "Accademia Gallery in Florence - Department of Musical Instruments": 14,
+      "American Museum & Gardens": 14,
+      "Angoulême Museum": 14,
+      "Arlaten Museum": 14,
+      "Ashmolean Museum": 14,
+      "Auguste Grasset Museum": 14,
+      "Barcelona Music Museum": 13,
+      "Barrois Museum": 13,
+      "Basque Museum in Bayonne": 13,
+      "Bristol Museums, Galleries & Archives": 13
+    }
+  },
+  "near_duplicate_candidates": {
+    "source": "results/phase2/review/possible_duplicate_pairs.csv",
+    "candidate_pairs": 191,
+    "rows_involved": 208,
+    "status": "screening flags only; not human-confirmed; no exclusion applied"
+  },
+  "alignment": {
+    "clip_manifest_inputs_match_sample_order": true,
+    "siglip_manifest_inputs_match_sample_order": true,
+    "phase2_image_order_matches_sample": true,
+    "phase2_masks_match_sample_labels": true,
+    "phase2_mask_counts": {
+      "hs1": 1565,
+      "hs2": 1563,
+      "hs3": 1549
+    },
+    "pilot_image_order_matches_sample": true
+  },
+  "embeddings": [
+    {
+      "name": "clip_raw",
+      "path": "data/mimo_pilot/embeddings/a0fbb27167c3807c202b7f787711455280e412b0b77f0c8bc7e6a438838ee487.npy",
+      "model": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K (OpenCLIP)",
+      "shape": [
+        2000,
+        512
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999998211860657,
+      "row_norm_max": 1.0000001192092896,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.7023234367370605,
+      "centered": false,
+      "sha256": "bc92a65c65a086933d23086fc2706503656563d9e44b9f3660cd4d647ce33480",
+      "expected_sha256": "bc92a65c65a086933d23086fc2706503656563d9e44b9f3660cd4d647ce33480",
+      "hash_ok": true
+    },
+    {
+      "name": "siglip_raw",
+      "path": "results/phase2/siglip/embeddings.npy",
+      "model": "timm/ViT-B-16-SigLIP @41f5757",
+      "shape": [
+        2000,
+        768
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999998211860657,
+      "row_norm_max": 1.0000001192092896,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.7708589434623718,
+      "centered": false,
+      "sha256": "4c4294da5db52c8165e46b4b9c54bf02c1917249380b22b6b6f8404053224da3",
+      "expected_sha256": "4c4294da5db52c8165e46b4b9c54bf02c1917249380b22b6b6f8404053224da3",
+      "hash_ok": true
+    },
+    {
+      "name": "clip_centered_l2",
+      "path": "results/phase2/clip/representations/centered_l2.npy",
+      "model": "clip",
+      "shape": [
+        2000,
+        512
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999997615814209,
+      "row_norm_max": 1.000000238418579,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.017915884032845497,
+      "centered": false,
+      "sha256": "1bf6d002627dd891a35c6a18c9c7f734d5ef31d42147155953a3e8e6f1d9597b",
+      "expected_sha256": "1bf6d002627dd891a35c6a18c9c7f734d5ef31d42147155953a3e8e6f1d9597b",
+      "hash_ok": true,
+      "variance_retained": null
+    },
+    {
+      "name": "clip_l2",
+      "path": "results/phase2/clip/representations/l2.npy",
+      "model": "clip",
+      "shape": [
+        2000,
+        512
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999998211860657,
+      "row_norm_max": 1.0000001192092896,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.7023234367370605,
+      "centered": false,
+      "sha256": "4dec983c331149b1c5e48232171b996bfed930b9ff0d7a3f35a8521677d03d8c",
+      "expected_sha256": "4dec983c331149b1c5e48232171b996bfed930b9ff0d7a3f35a8521677d03d8c",
+      "hash_ok": true,
+      "variance_retained": null
+    },
+    {
+      "name": "clip_pca100_l2",
+      "path": "results/phase2/clip/representations/pca100_l2.npy",
+      "model": "clip",
+      "shape": [
+        2000,
+        100
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999998211860657,
+      "row_norm_max": 1.0000001192092896,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.017516599968075752,
+      "centered": false,
+      "sha256": "3ff6e84d51d7aab3ae92e9fc7bc11480328449b64073fd4dd3ad2ecae1aa5422",
+      "expected_sha256": "3ff6e84d51d7aab3ae92e9fc7bc11480328449b64073fd4dd3ad2ecae1aa5422",
+      "hash_ok": true,
+      "variance_retained": 0.8292064070701599
+    },
+    {
+      "name": "clip_pca50",
+      "path": "results/phase2/clip/representations/pca50.npy",
+      "model": "clip",
+      "shape": [
+        2000,
+        50
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.4431905746459961,
+      "row_norm_max": 0.7807464003562927,
+      "l2_normalized": false,
+      "mean_vector_norm": 3.606084533203102e-07,
+      "centered": true,
+      "sha256": "30a4f33c9e5bdc600aa608a20917ad0a8f9b589fc76d02423ba01f28a56f21e3",
+      "expected_sha256": "30a4f33c9e5bdc600aa608a20917ad0a8f9b589fc76d02423ba01f28a56f21e3",
+      "hash_ok": true,
+      "variance_retained": 0.7042384743690491
+    },
+    {
+      "name": "clip_pca50_l2",
+      "path": "results/phase2/clip/representations/pca50_l2.npy",
+      "model": "clip",
+      "shape": [
+        2000,
+        50
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999998807907104,
+      "row_norm_max": 1.0000001192092896,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.01744684763252735,
+      "centered": false,
+      "sha256": "02daefba29e7bdf38d4b8af547fbd855ace114341e12de4bbc4e1c01b15e0386",
+      "expected_sha256": "02daefba29e7bdf38d4b8af547fbd855ace114341e12de4bbc4e1c01b15e0386",
+      "hash_ok": true,
+      "variance_retained": 0.7042384743690491
+    },
+    {
+      "name": "siglip_centered_l2",
+      "path": "results/phase2/siglip/representations/centered_l2.npy",
+      "model": "siglip",
+      "shape": [
+        2000,
+        768
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999997615814209,
+      "row_norm_max": 1.000000238418579,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.017547069117426872,
+      "centered": false,
+      "sha256": "b99ff171114755f9f7390b4e5a04128c57dc9b670c58ddb43c6fc3fc93209ee8",
+      "expected_sha256": "b99ff171114755f9f7390b4e5a04128c57dc9b670c58ddb43c6fc3fc93209ee8",
+      "hash_ok": true,
+      "variance_retained": null
+    },
+    {
+      "name": "siglip_l2",
+      "path": "results/phase2/siglip/representations/l2.npy",
+      "model": "siglip",
+      "shape": [
+        2000,
+        768
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999998211860657,
+      "row_norm_max": 1.000000238418579,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.7708589434623718,
+      "centered": false,
+      "sha256": "a9c4c7c2c4cc4699698d060d5414d2531862c83c3ee1390be356096e87d5d08c",
+      "expected_sha256": "a9c4c7c2c4cc4699698d060d5414d2531862c83c3ee1390be356096e87d5d08c",
+      "hash_ok": true,
+      "variance_retained": null
+    },
+    {
+      "name": "siglip_pca100_l2",
+      "path": "results/phase2/siglip/representations/pca100_l2.npy",
+      "model": "siglip",
+      "shape": [
+        2000,
+        100
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999998211860657,
+      "row_norm_max": 1.0000001192092896,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.015796484425663948,
+      "centered": false,
+      "sha256": "002acda1761ee60e963383a6bb6ad082cffa6a0e7a387c2a0ea595686cdf98af",
+      "expected_sha256": "002acda1761ee60e963383a6bb6ad082cffa6a0e7a387c2a0ea595686cdf98af",
+      "hash_ok": true,
+      "variance_retained": 0.8009518384933472
+    },
+    {
+      "name": "siglip_pca50",
+      "path": "results/phase2/siglip/representations/pca50.npy",
+      "model": "siglip",
+      "shape": [
+        2000,
+        50
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.3699524700641632,
+      "row_norm_max": 0.7071228623390198,
+      "l2_normalized": false,
+      "mean_vector_norm": 1.5493597516069713e-07,
+      "centered": true,
+      "sha256": "4ccdb65dfeae567d9909484668cbdb32f2efd6b067446f7a2cbc7db40cc83835",
+      "expected_sha256": "4ccdb65dfeae567d9909484668cbdb32f2efd6b067446f7a2cbc7db40cc83835",
+      "hash_ok": true,
+      "variance_retained": 0.6816511750221252
+    },
+    {
+      "name": "siglip_pca50_l2",
+      "path": "results/phase2/siglip/representations/pca50_l2.npy",
+      "model": "siglip",
+      "shape": [
+        2000,
+        50
+      ],
+      "dtype": "float32",
+      "nan": 0,
+      "inf": 0,
+      "row_norm_min": 0.9999998211860657,
+      "row_norm_max": 1.0000001192092896,
+      "l2_normalized": true,
+      "mean_vector_norm": 0.014382930472493172,
+      "centered": false,
+      "sha256": "a4365e64a4619541826aaf2b666504c9616dd9ead7959376b08de40510d7754e",
+      "expected_sha256": "a4365e64a4619541826aaf2b666504c9616dd9ead7959376b08de40510d7754e",
+      "hash_ok": true,
+      "variance_retained": 0.6816511750221252
+    }
+  ],
+  "dinov2": {
+    "available_locally": false,
+    "searched": [
+      "data/",
+      "results/",
+      "~/.cache/huggingface",
+      "runs/ (absent)",
+      "filesystem search for *dinov2*"
+    ],
+    "extraction_code": "spikes/common.py ENCODERS (timm vit_base_patch14_dinov2.lvd142m) — old spike pipeline, not the validated pilot pipeline",
+    "status": "BLOCKED: requires downloading ~350 MB DINOv2-B weights from Hugging Face; not downloaded without explicit approval. CPU inference on 2,000 images is otherwise feasible (~5-10 min)."
+  },
+  "larger_benchmark": {
+    "data/mimo/records.csv (older spike harvest)": {
+      "rows": 63478,
+      "unique_ids": 63478,
+      "museums": null
+    },
+    "data/mimo_pilot/metadata.csv (pilot metadata snapshot)": {
+      "rows": 63478,
+      "unique_ids": 63478,
+      "museums": 216,
+      "hs1_valid": 41141,
+      "hs3_valid": 40824
+    },
+    "cleaned_59661_photos": "NOT PRESENT LOCALLY: referenced in EXPLAINER.md/IDEAS.md (runs/clean/...), the runs/ directory does not exist in this repository",
+    "scored_27348_objects": "NOT PRESENT LOCALLY: referenced in EXPLAINER.md/IDEAS.md; no ids, embeddings or assignments available",
+    "reserved_final_holdout": "No held-out split file exists in the repository. The 2,000-image pilot has already been explored in phase 1/2 and is a development set; it must not be described as held-out."
+  },
+  "generated_utc": "2026-11-14T22:51:24.423379+00:00"
+}

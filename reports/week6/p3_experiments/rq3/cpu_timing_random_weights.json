@@ -1,0 +1,30 @@
+{
+  "note": "random-weight architectures, timing only, 224px, CPU fp32, 4 threads, shared machine",
+  "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+  "results": [
+    {
+      "model": "vit_small_patch14_dinov2",
+      "batch": 16,
+      "seconds_per_batch": 0.81,
+      "est_seconds_2000_images": 101,
+      "est_seconds_27348_images": 1383,
+      "threads": 4
+    },
+    {
+      "model": "vit_base_patch14_dinov2",
+      "batch": 16,
+      "seconds_per_batch": 2.68,
+      "est_seconds_2000_images": 335,
+      "est_seconds_27348_images": 4585,
+      "threads": 4
+    },
+    {
+      "model": "vit_large_patch14_dinov2",
+      "batch": 16,
+      "seconds_per_batch": 7.75,
+      "est_seconds_2000_images": 969,
+      "est_seconds_27348_images": 13244,
+      "threads": 4
+    }
+  ]
+}

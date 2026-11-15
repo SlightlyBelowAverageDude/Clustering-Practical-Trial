@@ -1,0 +1,4 @@
+row,image_id,record_id,observation,status,source_labels_changed,benchmark_excluded
+237,b0e76f6303931b8335f68e8f45d48a3cafb784b89633f80b79fd8c7129876574,/09102/_IMIT_JAD_4807,Generic missing-image icon visible instead of an instrument; source HS3 is 421.,assistant visual observation; human confirmation pending,False,False
+1834,e394664e44740b89c46403893cac3f8263d5c8b95b15f8a32bef96a965794d6f,/09102/_MINIM_UK_10345,Photograph shows piano maker branding/detail rather than a complete square piano; source HS3 is 314.,assistant visual observation; human confirmation pending,False,False
+1955,d97e723c1b02966610b8c7a5d72f89f7beeeb4a080e87e4a9b4a214c29f81586,/09102/_NL_AsdRM_lido_4691,Image is a painting of a terrace scene rather than a museum-object photograph; HS labels missing.,assistant visual observation; human confirmation pending,False,False

@@ -1,0 +1,62 @@
+{
+  "declared_utc": "2026-10-29T01:41:46.809323+00:00",
+  "representations": [
+    "l2",
+    "centered_l2",
+    "pca50",
+    "pca50_l2",
+    "pca100_l2"
+  ],
+  "ks": [
+    5,
+    10,
+    20,
+    40
+  ],
+  "kmeans_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_init": 10,
+  "max_iter": 300,
+  "tol": 0.0001,
+  "linkage": "average",
+  "agglomerative_metric": "cosine",
+  "pca_solver": "full",
+  "pca_whiten": false,
+  "threads": 4,
+  "silhouettes": "exact, all 2000 rows, cosine and Euclidean; report method-metric and common cosine",
+  "random_baseline": "20 full-row prediction permutations preserving sizes for seed-0 run of every configuration, seeds 1000..1019",
+  "subset_protocol": {
+    "rows": 1600,
+    "seeds": [
+      2026,
+      2027,
+      2028,
+      2029,
+      2030
+    ],
+    "replacement": false,
+    "representation": "centered_l2",
+    "k": 10,
+    "methods": [
+      "kmeans",
+      "average_cosine"
+    ],
+    "kmeans_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "refit_transformation_per_subset": true
+  },
+  "comparison": "paired identical configurations, all grid cells; report fixed centered_l2 k10 anchor and equally weighted grid mean; no selection of winner from max HS AMI; descriptive only",
+  "labels": "HS labels only for evaluation; separately used to stratify requested human review, never to fit features or clusters",
+  "review_seed": 20261102,
+  "review_target": 180
+}

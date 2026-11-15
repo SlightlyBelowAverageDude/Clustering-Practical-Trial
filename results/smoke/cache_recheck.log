@@ -1,0 +1,30 @@
+Embedding cache: 32 verified hits; 0 new images
+l2_kmeans_k5_s0 0.012s
+l2_kmeans_k5_s1 0.006s
+l2_kmeans_k5_s2 0.006s
+l2_average_cosine_k5_s0 0.013s
+l2_kmeans_k10_s0 0.011s
+l2_kmeans_k10_s1 0.010s
+l2_kmeans_k10_s2 0.010s
+l2_average_cosine_k10_s0 0.001s
+pca50_l2_kmeans_k5_s0 0.006s
+pca50_l2_kmeans_k5_s1 0.006s
+pca50_l2_kmeans_k5_s2 0.006s
+pca50_l2_average_cosine_k5_s0 0.000s
+pca50_l2_kmeans_k10_s0 0.009s
+pca50_l2_kmeans_k10_s1 0.010s
+pca50_l2_kmeans_k10_s2 0.009s
+pca50_l2_average_cosine_k10_s0 0.000s
+representation  method          label
+l2              average_cosine  hs1      0.592638
+                                hs2      0.681878
+                                hs3      0.574280
+                kmeans          hs1      0.444717
+                                hs2      0.546358
+                                hs3      0.525359
+pca50_l2        average_cosine  hs1      0.538403
+                                hs2      0.514493
+                                hs3      0.511799
+                kmeans          hs1      0.460576
+                                hs2      0.491107
+                                hs3      0.508512

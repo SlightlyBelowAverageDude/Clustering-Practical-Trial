@@ -1,0 +1,61 @@
+clip l2 kmeans k 5 complete
+clip l2 kmeans k 10 complete
+clip l2 kmeans k 20 complete
+clip l2 kmeans k 40 complete
+clip l2 average_cosine k 5 complete
+clip l2 average_cosine k 10 complete
+clip l2 average_cosine k 20 complete
+clip l2 average_cosine k 40 complete
+clip centered_l2 kmeans k 5 complete
+clip centered_l2 kmeans k 10 complete
+clip centered_l2 kmeans k 20 complete
+clip centered_l2 kmeans k 40 complete
+clip centered_l2 average_cosine k 5 complete
+clip centered_l2 average_cosine k 10 complete
+clip centered_l2 average_cosine k 20 complete
+clip centered_l2 average_cosine k 40 complete
+clip pca50 kmeans k 5 complete
+clip pca50 kmeans k 10 complete
+clip pca50 kmeans k 20 complete
+clip pca50 kmeans k 40 complete
+clip pca50 average_cosine k 5 complete
+clip pca50 average_cosine k 10 complete
+clip pca50 average_cosine k 20 complete
+clip pca50 average_cosine k 40 complete
+clip pca50_l2 kmeans k 5 complete
+clip pca50_l2 kmeans k 10 complete
+clip pca50_l2 kmeans k 20 complete
+clip pca50_l2 kmeans k 40 complete
+clip pca50_l2 average_cosine k 5 complete
+clip pca50_l2 average_cosine k 10 complete
+clip pca50_l2 average_cosine k 20 complete
+clip pca50_l2 average_cosine k 40 complete
+clip pca100_l2 kmeans k 5 complete
+clip pca100_l2 kmeans k 10 complete
+clip pca100_l2 kmeans k 20 complete
+clip pca100_l2 kmeans k 40 complete
+clip pca100_l2 average_cosine k 5 complete
+clip pca100_l2 average_cosine k 10 complete
+clip pca100_l2 average_cosine k 20 complete
+clip pca100_l2 average_cosine k 40 complete
+encoder representation         method  requested_k label  AMI_mean  AMI_seed_sd  ARI_mean  NMI_mean  largest_cluster_pct  silhouette_cosine  cluster_seconds  runs
+   clip    centered_l2 average_cosine            5   hs3  0.379316          NaN  0.237876  0.388275                37.10           0.092883         0.598915     1
+   clip    centered_l2 average_cosine           10   hs3  0.459127          NaN  0.366183  0.472911                24.35           0.118624         0.516934     1
+   clip    centered_l2 average_cosine           20   hs3  0.459709          NaN  0.375204  0.481801                16.70           0.107342         0.566738     1
+   clip    centered_l2 average_cosine           40   hs3  0.466148          NaN  0.365630  0.500389                12.15           0.099358         0.712018     1
+   clip             l2 average_cosine            5   hs3  0.003520          NaN  0.000672  0.008664                99.65           0.212422         0.589988     1
+   clip             l2 average_cosine           10   hs3  0.032247          NaN  0.005555  0.048086                98.65           0.118260         0.543142     1
+   clip             l2 average_cosine           20   hs3  0.040315          NaN  0.008298  0.070893                97.05           0.043225         0.533520     1
+   clip             l2 average_cosine           40   hs3  0.230179          NaN  0.080497  0.274525                72.15           0.016911         0.541552     1
+   clip      pca100_l2 average_cosine            5   hs3  0.350742          NaN  0.234788  0.360114                30.60           0.102553         0.110991     1
+   clip      pca100_l2 average_cosine           10   hs3  0.462125          NaN  0.364812  0.475786                22.95           0.137960         0.101005     1
+   clip      pca100_l2 average_cosine           20   hs3  0.465661          NaN  0.392446  0.487565                20.15           0.114231         0.101590     1
+   clip      pca100_l2 average_cosine           40   hs3  0.452379          NaN  0.358126  0.488453                12.35           0.117495         0.097451     1
+   clip          pca50 average_cosine            5   hs3  0.394166          NaN  0.249949  0.402910                32.40           0.140415         0.074185     1
+   clip          pca50 average_cosine           10   hs3  0.461015          NaN  0.366278  0.474652                21.55           0.155874         0.068583     1
+   clip          pca50 average_cosine           20   hs3  0.460096          NaN  0.364498  0.482314                17.95           0.141729         0.072344     1
+   clip          pca50 average_cosine           40   hs3  0.482089          NaN  0.383162  0.516693                13.75           0.135106         0.071343     1
+   clip       pca50_l2 average_cosine            5   hs3  0.394166          NaN  0.249949  0.402910                32.40           0.140415         0.063649     1
+   clip       pca50_l2 average_cosine           10   hs3  0.461015          NaN  0.366278  0.474652                21.55           0.155874         0.062304     1
+   clip       pca50_l2 average_cosine           20   hs3  0.460096          NaN  0.364498  0.482314                17.95           0.141729         0.062267     1
+   clip       pca50_l2 average_cosine           40   hs3  0.482089          NaN  0.383162  0.516693                13.75           0.135106         0.061175     1

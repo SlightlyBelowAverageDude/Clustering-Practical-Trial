@@ -1,0 +1,115 @@
+/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+dev clip centered_l2 done
+/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+dev clip pca50_l2 done
+/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+dev siglip centered_l2 done
+/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+dev siglip pca50_l2 done
+/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+dev dinov2_b_224_L1 centered_l2 done
+/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/hdbscan.py:722: FutureWarning: The default value of `copy` will change from False to True in 1.10. Explicitly set a value for `copy` to silence this warning.
+  warn(
+dev dinov2_b_224_L1 pca50_l2 done
+dev clip l2 done
+dev clip pca100_l2 done
+dev siglip l2 done
+dev siglip pca100_l2 done
+dev dinov2_b_224_L1 l2 done
+dev dinov2_b_224_L1 pca100_l2 done
+        variant representation                       method    k  AMI_mean  ARI_mean  largest_cluster_pct_max
+           clip    centered_l2 agglomerative_average_cosine 10.0    0.5117    0.3912                  31.3583
+           clip    centered_l2 agglomerative_average_cosine 13.0    0.5182    0.3942                  30.9167
+           clip    centered_l2                     gmm_diag 10.0    0.4660    0.2339                  32.7750
+           clip    centered_l2                     gmm_diag 13.0    0.4824    0.2298                  23.1167
+           clip    centered_l2                      hdbscan  NaN    0.4014    0.1574                  32.8667
+           clip    centered_l2                       kmeans 10.0    0.4508    0.2591                  27.5333
+           clip    centered_l2                       kmeans 13.0    0.4685    0.2776                  12.4667
+           clip    centered_l2                 spectral_knn 10.0    0.4929    0.2726                  34.5583
+           clip    centered_l2                 spectral_knn 13.0    0.5077    0.2514                  34.1333
+           clip             l2 agglomerative_average_cosine 10.0    0.0022    0.0004                  99.7750
+           clip             l2 agglomerative_average_cosine 13.0    0.0120    0.0016                  99.5917
+           clip             l2                       kmeans 10.0    0.4720    0.3034                  15.6250
+           clip             l2                       kmeans 13.0    0.4722    0.2868                  11.9917
+           clip             l2                 spectral_knn 10.0    0.4348    0.1532                  69.9250
+           clip             l2                 spectral_knn 13.0    0.4958    0.2722                  38.2167
+           clip      pca100_l2 agglomerative_average_cosine 10.0    0.5089    0.3826                  33.7417
+           clip      pca100_l2 agglomerative_average_cosine 13.0    0.5159    0.4109                  33.7417
+           clip      pca100_l2                       kmeans 10.0    0.4551    0.2793                  17.5000
+           clip      pca100_l2                       kmeans 13.0    0.4720    0.2822                  12.0250
+           clip      pca100_l2                 spectral_knn 10.0    0.4925    0.2713                  34.8167
+           clip      pca100_l2                 spectral_knn 13.0    0.5100    0.2555                  34.1833
+           clip       pca50_l2 agglomerative_average_cosine 10.0    0.5010    0.3865                  34.0750
+           clip       pca50_l2 agglomerative_average_cosine 13.0    0.5012    0.3918                  34.0750
+           clip       pca50_l2                     gmm_diag 10.0    0.4361    0.1685                  39.9250
+           clip       pca50_l2                     gmm_diag 13.0    0.4418    0.1561                  32.9833
+           clip       pca50_l2                      hdbscan  NaN    0.4142    0.1230                  12.4750
+           clip       pca50_l2                       kmeans 10.0    0.4751    0.3055                  17.3333
+           clip       pca50_l2                       kmeans 13.0    0.4688    0.2853                  11.3417
+           clip       pca50_l2                 spectral_knn 10.0    0.4814    0.2481                  37.6667
+           clip       pca50_l2                 spectral_knn 13.0    0.5101    0.2524                  35.2000
+dinov2_b_224_L1    centered_l2 agglomerative_average_cosine 10.0    0.5606    0.4173                  21.6000
+dinov2_b_224_L1    centered_l2 agglomerative_average_cosine 13.0    0.5837    0.4365                  19.8000
+dinov2_b_224_L1    centered_l2                     gmm_diag 10.0    0.4994    0.2307                  34.6167
+dinov2_b_224_L1    centered_l2                     gmm_diag 13.0    0.5143    0.2389                  27.5833
+dinov2_b_224_L1    centered_l2                      hdbscan  NaN    0.4476    0.1781                  37.3417
+dinov2_b_224_L1    centered_l2                       kmeans 10.0    0.5377    0.3137                  26.0833
+dinov2_b_224_L1    centered_l2                       kmeans 13.0    0.5569    0.3316                  23.2333
+dinov2_b_224_L1    centered_l2                 spectral_knn 10.0    0.4756    0.1645                  50.0750
+dinov2_b_224_L1    centered_l2                 spectral_knn 13.0    0.5211    0.2365                  43.8667
+dinov2_b_224_L1             l2 agglomerative_average_cosine 10.0    0.3605    0.1490                  68.6167
+dinov2_b_224_L1             l2 agglomerative_average_cosine 13.0    0.5458    0.3402                  49.7167
+dinov2_b_224_L1             l2                       kmeans 10.0    0.5369    0.3154                  27.4250
+dinov2_b_224_L1             l2                       kmeans 13.0    0.5526    0.3423                  17.9750
+dinov2_b_224_L1             l2                 spectral_knn 10.0    0.4739    0.1949                  54.2833
+dinov2_b_224_L1             l2                 spectral_knn 13.0    0.4761    0.1660                  51.3833
+dinov2_b_224_L1      pca100_l2 agglomerative_average_cosine 10.0    0.5680    0.4214                  23.3000
+dinov2_b_224_L1      pca100_l2 agglomerative_average_cosine 13.0    0.5524    0.3662                  19.7583
+dinov2_b_224_L1      pca100_l2                       kmeans 10.0    0.5453    0.3316                  23.0917
+dinov2_b_224_L1      pca100_l2                       kmeans 13.0    0.5572    0.3421                  17.1333
+dinov2_b_224_L1      pca100_l2                 spectral_knn 10.0    0.4758    0.1629                  49.9417
+dinov2_b_224_L1      pca100_l2                 spectral_knn 13.0    0.5369    0.2471                  32.0500
+dinov2_b_224_L1       pca50_l2 agglomerative_average_cosine 10.0    0.5512    0.3546                  24.4500
+dinov2_b_224_L1       pca50_l2 agglomerative_average_cosine 13.0    0.5694    0.3733                  22.1000
+dinov2_b_224_L1       pca50_l2                     gmm_diag 10.0    0.4824    0.2167                  28.6750
+dinov2_b_224_L1       pca50_l2                     gmm_diag 13.0    0.5098    0.2359                  27.0417
+dinov2_b_224_L1       pca50_l2                      hdbscan  NaN    0.4590    0.1903                  38.0917
+dinov2_b_224_L1       pca50_l2                       kmeans 10.0    0.5497    0.3500                  21.2000
+dinov2_b_224_L1       pca50_l2                       kmeans 13.0    0.5746    0.3718                  16.2167
+dinov2_b_224_L1       pca50_l2                 spectral_knn 10.0    0.4764    0.1644                  50.0750
+dinov2_b_224_L1       pca50_l2                 spectral_knn 13.0    0.5507    0.2701                  32.0167
+         siglip    centered_l2 agglomerative_average_cosine 10.0    0.5420    0.3993                  25.6500
+         siglip    centered_l2 agglomerative_average_cosine 13.0    0.5526    0.4082                  25.6500
+         siglip    centered_l2                     gmm_diag 10.0    0.5116    0.2906                  24.7083
+         siglip    centered_l2                     gmm_diag 13.0    0.5164    0.2857                  18.8917
+         siglip    centered_l2                      hdbscan  NaN    0.3936    0.0891                  18.5833
+         siglip    centered_l2                       kmeans 10.0    0.5235    0.3346                  19.8500
+         siglip    centered_l2                       kmeans 13.0    0.5248    0.3302                  12.9167
+         siglip    centered_l2                 spectral_knn 10.0    0.5591    0.3107                  34.7250
+         siglip    centered_l2                 spectral_knn 13.0    0.5415    0.2872                  35.3917
+         siglip             l2 agglomerative_average_cosine 10.0    0.0012    0.0003                  99.8500
+         siglip             l2 agglomerative_average_cosine 13.0    0.0099    0.0009                  99.0417
+         siglip             l2                       kmeans 10.0    0.5244    0.3668                  15.6083
+         siglip             l2                       kmeans 13.0    0.5408    0.3561                  15.1750
+         siglip             l2                 spectral_knn 10.0    0.5519    0.3279                  34.6583
+         siglip             l2                 spectral_knn 13.0    0.5472    0.3100                  34.9417
+         siglip      pca100_l2 agglomerative_average_cosine 10.0    0.5155    0.3384                  30.7417
+         siglip      pca100_l2 agglomerative_average_cosine 13.0    0.5134    0.3480                  27.8750
+         siglip      pca100_l2                       kmeans 10.0    0.5237    0.3569                  14.2000
+         siglip      pca100_l2                       kmeans 13.0    0.5294    0.3392                  11.3667
+         siglip      pca100_l2                 spectral_knn 10.0    0.5615    0.3087                  35.2250
+         siglip      pca100_l2                 spectral_knn 13.0    0.5613    0.2935                  35.6583
+         siglip       pca50_l2 agglomerative_average_cosine 10.0    0.5580    0.3790                  25.9083
+         siglip       pca50_l2 agglomerative_average_cosine 13.0    0.5386    0.3831                  22.5583
+         siglip       pca50_l2                     gmm_diag 10.0    0.5234    0.2883                  29.0000
+         siglip       pca50_l2                     gmm_diag 13.0    0.5287    0.2817                  24.0250
+         siglip       pca50_l2                      hdbscan  NaN    0.4100    0.0958                  17.1333
+         siglip       pca50_l2                       kmeans 10.0    0.5193    0.3488                  13.7500
+         siglip       pca50_l2                       kmeans 13.0    0.5269    0.3379                  10.7833
+         siglip       pca50_l2                 spectral_knn 10.0    0.5579    0.3007                  36.1500
+         siglip       pca50_l2                 spectral_knn 13.0    0.5512    0.2989                  32.2833

@@ -1,0 +1,9 @@
+encoder,k,partition_ARI,arrays_identical
+clip,5,1.0,True
+clip,10,1.0,True
+clip,20,1.0,True
+clip,40,1.0,True
+siglip,5,1.0,True
+siglip,10,1.0,True
+siglip,20,1.0,True
+siglip,40,1.0,True

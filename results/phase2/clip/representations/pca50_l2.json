@@ -1,0 +1,15 @@
+{
+  "representation": "pca50_l2",
+  "fit_rows": 2000,
+  "input_shape": [
+    2000,
+    512
+  ],
+  "variance_retained": 0.7042384743690491,
+  "seconds": 0.060274666000623256,
+  "array_sha256": "02daefba29e7bdf38d4b8af547fbd855ace114341e12de4bbc4e1c01b15e0386",
+  "shape": [
+    2000,
+    50
+  ]
+}

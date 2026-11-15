@@ -1,0 +1,7 @@
+encoder,method,label,mean_AMI,mean_within_subset_seed_sd,sd_of_subset_seed_means,subsets,images_per_subset,note
+siglip,average_cosine,hs1,0.35360830753412575,,0.008942650398857697,5,1600,"Conditional overlapping subset sensitivity, not a population confidence interval; seed SD is initialization variability."
+siglip,average_cosine,hs2,0.42833446328162117,,0.009413978712149124,5,1600,"Conditional overlapping subset sensitivity, not a population confidence interval; seed SD is initialization variability."
+siglip,average_cosine,hs3,0.4970035106142584,,0.0038533504429264904,5,1600,"Conditional overlapping subset sensitivity, not a population confidence interval; seed SD is initialization variability."
+siglip,kmeans,hs1,0.3606214646773661,0.010994037179774088,0.003759937696247834,5,1600,"Conditional overlapping subset sensitivity, not a population confidence interval; seed SD is initialization variability."
+siglip,kmeans,hs2,0.4436008393158764,0.015073827918198205,0.003398811929367241,5,1600,"Conditional overlapping subset sensitivity, not a population confidence interval; seed SD is initialization variability."
+siglip,kmeans,hs3,0.4891606377998474,0.011629228323795234,0.003979284020999019,5,1600,"Conditional overlapping subset sensitivity, not a population confidence interval; seed SD is initialization variability."

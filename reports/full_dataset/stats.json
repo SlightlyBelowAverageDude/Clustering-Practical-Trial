@@ -1,0 +1,81 @@
+{
+  "harvested_records": 63478,
+  "records_with_preview_url": 63478,
+  "records_with_hs_uri": 41210,
+  "download_status": {
+    "ok": 63473,
+    "download_failed": 5
+  },
+  "valid_images": 63473,
+  "distinct_pixel_hashes": 62671,
+  "placeholder_audit": {
+    "top_hash_count": 247,
+    "second_hash_count": 28,
+    "top_hash_titles_sample": [
+      "sheng, organo a bocca",
+      "tromba di conchiglia",
+      "mirliton",
+      "spinetta, ovale",
+      "Ondes Martenot"
+    ],
+    "top_hash_image_size": "293x293"
+  },
+  "exclusions": {
+    "instrument part": 3012,
+    "copy of a shared photo": 556,
+    "placeholder image": 247
+  },
+  "cleaned_photographs": 59658,
+  "clean_coded_hs1": 40694,
+  "clean_hs3": 40623,
+  "clean_named": 40229,
+  "clean_with_family": 34268,
+  "clean_museums": 216,
+  "benchmark_rows": 27347,
+  "benchmark_classes": {
+    "hs1": 5,
+    "hs2": 8,
+    "hs3": 13,
+    "hs4": 19,
+    "hs5": 33,
+    "hs6": 38,
+    "family": 6,
+    "name": 129
+  },
+  "benchmark_rows_with_level": {
+    "hs4": 26180,
+    "hs5": 23532,
+    "hs6": 21475
+  },
+  "benchmark_museums": 195,
+  "pixel_duplicates_across_partitions": 0,
+  "partition_counts": {
+    "heldout": 14696,
+    "dev": 12000,
+    "excluded_pilot_overlap": 651
+  },
+  "pilot_overlap_in_benchmark": 1116,
+  "hs3_benchmark_counts": {
+    "421": 7039,
+    "422": 4943,
+    "321": 4623,
+    "423": 3602,
+    "111": 2171,
+    "112": 1516,
+    "211": 1069,
+    "412": 866,
+    "314": 712,
+    "322": 591,
+    "531": 89,
+    "513": 86,
+    "212": 40
+  },
+  "reference_counts_from_plan": {
+    "original_records": 63478,
+    "cleaned_photographs": 59661,
+    "objects_with_hs_code": 40697,
+    "benchmark_objects": 27348,
+    "benchmark_hs3_classes": 13
+  },
+  "built_utc": "2026-11-15T13:31:07Z"
+}

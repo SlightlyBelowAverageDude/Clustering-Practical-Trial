@@ -1,0 +1,20 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Traceback (most recent call last):
+  File "/home/hayvan/Programming/LMU/CMVAL/Clustering-Practical-Trial/reports/dinov2/source/dinov2_weights.py", line 58, in <module>
+    main()
+  File "/home/hayvan/Programming/LMU/CMVAL/Clustering-Practical-Trial/reports/dinov2/source/dinov2_weights.py", line 48, in main
+    m.forward_intermediates(x[:1], indices=[-1], intermediates_only=True)
+  File "/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/timm/models/vision_transformer.py", line 1122, in forward_intermediates
+    x = self.patch_embed(x)
+        ^^^^^^^^^^^^^^^^^^^
+  File "/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/timm/layers/patch_embed.py", line 121, in forward
+    _assert(H == self.img_size[0], f"Input height ({H}) doesn't match model ({self.img_size[0]}).")
+  File "/home/hayvan/Programming/LMU/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/lib/python3.12/site-packages/torch/__init__.py", line 2702, in _assert
+    raise AssertionError(message)
+AssertionError: Input height (224) doesn't match model (518).

@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-29T01:53:52.112738+00:00",
+  "success": true,
+  "chance_and_subset_metric_rows_recomputed": 2490,
+  "seed_pair_rows_recomputed": 200,
+  "subset_pair_rows_recomputed": 20,
+  "subsets_refit_centering_verified": true
+}
