@@ -1,0 +1,6 @@
+repo	license (HF API cardData)	head_revision_2026-11-19	pinned_revision	match
+timm/vit_small_patch14_dinov2.lvd142m	apache-2.0	4610ca143709d58a633b6397a74412c2c3842454	4610ca143709d58a633b6397a74412c2c3842454	yes
+timm/vit_base_patch14_dinov2.lvd142m	apache-2.0	4685c99dabffe5affac90bd99dbffd25801ae58d	4685c99dabffe5affac90bd99dbffd25801ae58d	yes
+timm/vit_large_patch14_dinov2.lvd142m	apache-2.0	4741e1cafbf45415e77074bb0cb42dba76c8684a	4741e1cafbf45415e77074bb0cb42dba76c8684a	yes
+laion/CLIP-ViT-B-32-laion2B-s34B-b79K	mit	1a25a446712ba5ee05982a381eed697ef9b435cf	1a25a446712ba5ee05982a381eed697ef9b435cf	yes
+timm/ViT-B-16-SigLIP	apache-2.0	41f575766f40e752fdd1383e9565b7f02388c1c4	41f575766f40e752fdd1383e9565b7f02388c1c4	yes

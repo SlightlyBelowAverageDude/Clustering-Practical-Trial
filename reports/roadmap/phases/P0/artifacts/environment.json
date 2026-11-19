@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-19T14:20:46Z",
+  "python": "3.12.3",
+  "executable": "/home/hayvan/Programming/LMU/old/CMVAL/ClusteringmeetsVisionandLanguage/Clustering-Practical-Trial-main/.venv/bin/python",
+  "platform": "Linux-6.8.0-149-generic-x86_64-with-glibc2.39",
+  "cpu_count": 12,
+  "OMP_NUM_THREADS": "4",
+  "packages": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pandas": "3.1.0",
+    "torch": "2.15.0+cpu",
+    "timm": "1.0.30",
+    "open_clip_torch": "3.3.0",
+    "threadpoolctl": "3.7.0",
+    "pillow": "13.0.0"
+  }
+}

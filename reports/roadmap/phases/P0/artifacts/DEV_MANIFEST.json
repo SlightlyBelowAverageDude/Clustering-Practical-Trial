@@ -1,0 +1,221 @@
+{
+  "manifest_id": "MIMO-HS3-DEV12K-v1",
+  "frozen_utc": "2026-11-19T14:05:56Z",
+  "frozen_by": "roadmap phase P0 (reports/roadmap/phases/P0/source/p0_verify.py)",
+  "status": "FROZEN: every later phase must use exactly these rows in exactly this order; any change requires a new manifest_id",
+  "source_file": {
+    "path": "reports/full_dataset/benchmark/dev_ids.csv",
+    "sha256": "9a8d6139bc3ed075aba25b7305b3909e46fa8c7f8dcf930487e508726b4a1439",
+    "bytes": 5797257,
+    "rows": 12000,
+    "note": "not copied: the validated Week 6 file is referenced by path + hash"
+  },
+  "built_by": "reports/full_dataset/source/full_build.py (15 Nov 2026); split rule: np.sort(np.random.default_rng(0).choice(27347, 12000, replace=False)) over benchmark_objects.csv row order",
+  "object_order": {
+    "definition": "row order of dev_ids.csv (= benchmark order restricted to dev); row_index 0..11999",
+    "ordered_ids_sha256": "b3be178451b7d4565710e7afe5d251e42a171c836d8716f9927b526306c10350",
+    "ordered_ids_sha256_rule": "sha256('\\n'.join(ids))",
+    "ordered_inputs_sha256": "112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37",
+    "ordered_inputs_sha256_rule": "sha256(json.dumps([[image_id, sha256], ...], sort_keys=True, separators=(',',':'))) — the key every embedding manifest must carry",
+    "first_id": "/09102/_AF_IT_DSMFI_STR0001_0000392",
+    "last_id": "/09102/_ULEI_M0002235"
+  },
+  "image_to_object": {
+    "rule": "one Europeana record = one museum object = one image (first preview, else source image)",
+    "image_path": "data/mimo_pilot/images/<image_id>.img (git-ignored, local only)",
+    "image_bytes_sha256_column": "sha256",
+    "pixel_sha256_column": "pixel_sha256",
+    "unique_image_ids": 12000,
+    "files_verified": 12000
+  },
+  "labels": {
+    "hs1": {
+      "definition": "first digit of the Hornbostel-Sachs notation of the first HS concept (common.hs_level rule)",
+      "classes": 5,
+      "counts": {
+        "1": {
+          "name": "Idiophones",
+          "n": 1635
+        },
+        "2": {
+          "name": "Membranophones",
+          "n": 476
+        },
+        "3": {
+          "name": "Chordophones",
+          "n": 2609
+        },
+        "4": {
+          "name": "Aerophones",
+          "n": 7214
+        },
+        "5": {
+          "name": "Electrophones",
+          "n": 66
+        }
+      }
+    },
+    "hs3": {
+      "definition": "first three digits of the same notation; benchmark keeps HS3/family/name classes with >= 30 objects",
+      "classes": 13,
+      "counts": {
+        "111": {
+          "name": "Idiophones struck directly",
+          "n": 953
+        },
+        "112": {
+          "name": "Indirectly struck idiophones (standard H-S name; not in local MIMO vocabulary)",
+          "n": 682
+        },
+        "211": {
+          "name": "Drums struck directly",
+          "n": 453
+        },
+        "212": {
+          "name": "Rattle drums",
+          "n": 23
+        },
+        "314": {
+          "name": "Board zithers",
+          "n": 294
+        },
+        "321": {
+          "name": "Lutes",
+          "n": 2054
+        },
+        "322": {
+          "name": "Harps",
+          "n": 261
+        },
+        "412": {
+          "name": "Interruptive free aerophones (standard H-S name; not in local MIMO vocabulary)",
+          "n": 368
+        },
+        "421": {
+          "name": "Edge instruments or flutes",
+          "n": 3103
+        },
+        "422": {
+          "name": "Reedpipes",
+          "n": 2196
+        },
+        "423": {
+          "name": "Labrosones (or lip-reed instruments)",
+          "n": 1547
+        },
+        "513": {
+          "name": "Electro-acoustic chordophones",
+          "n": 33
+        },
+        "531": {
+          "name": "Analogue electronic instruments (MIMO electrophone revision; label not in local vocabulary)",
+          "n": 33
+        }
+      }
+    },
+    "secondary": {
+      "hs2": 8,
+      "family": 6,
+      "name": 129
+    }
+  },
+  "evaluation_masks": {
+    "hs1": {
+      "rule": "row is scored for hs1 iff hs1 != \"\"",
+      "valid_rows": 12000,
+      "invalid_rows": 0
+    },
+    "hs2": {
+      "rule": "row is scored for hs2 iff hs2 != \"\"",
+      "valid_rows": 12000,
+      "invalid_rows": 0
+    },
+    "hs3": {
+      "rule": "row is scored for hs3 iff hs3 != \"\"",
+      "valid_rows": 12000,
+      "invalid_rows": 0
+    },
+    "family": {
+      "rule": "row is scored for family iff family != \"\"",
+      "valid_rows": 12000,
+      "invalid_rows": 0
+    },
+    "name": {
+      "rule": "row is scored for name iff name != \"\"",
+      "valid_rows": 12000,
+      "invalid_rows": 0
+    }
+  },
+  "evaluation_mask_note": "all 12,000 development rows carry valid HS1, HS2, HS3, family and name labels, so every mask is all-true; the masks are defined by rule (not a file) so that any future subset applies the same rule",
+  "museums": {
+    "column": "provider",
+    "n_museums": 168,
+    "top5": {
+      "Musical instrument museum": 1574,
+      "Ethnological Museum, Staatliche Museen zu Berlin": 1359,
+      "Philharmonie de Paris": 1232,
+      "Swedish Museum of Performing Arts": 1205,
+      "University of Edinburgh": 949
+    },
+    "top5_share": 0.5266,
+    "per_museum_counts": "reports/full_dataset/museum_distribution.csv (dev column, verified equal)"
+  },
+  "pilot_overlap": {
+    "dev_rows_in_explored_pilot": 465,
+    "note": "kept in dev by the original split rule; these rows were seen in the 2,000-image pilot (descriptive only)"
+  },
+  "separation": {
+    "reserved_heldout": 14696,
+    "excluded_pilot_overlap": 651,
+    "reserved_file": {
+      "path": "reports/full_dataset/benchmark/heldout_ids_DO_NOT_USE_FOR_SELECTION.csv",
+      "sha256": "8fdb2bfd7c19bf06212f90b831f3f6dfd97303d0378041daa8dea7851f2079e8"
+    },
+    "overlap_with_reserved": {
+      "id": 0,
+      "image_id": 0,
+      "sha256": 0,
+      "pixel_sha256": 0
+    },
+    "reserved_rule": "pool for optional P5A validation (Week 8 or 10) plus a separate protected Week 14 final test; P0 created no P5A split"
+  },
+  "embeddings_aligned": {
+    "clip": {
+      "manifest": "reports/dinov2/embeddings/dev_clip.json",
+      "array": "data/dinov2/emb/dev/clip.npy",
+      "sha256": "57a84d1a7af7330e02fdd3cf20f513cf083967ef9a1c5746117b41d6c1a687d7",
+      "shape": [
+        12000,
+        512
+      ],
+      "dtype": "float32",
+      "row_norm_min": 0.9999998211860657,
+      "row_norm_max": 1.0000001192092896
+    },
+    "siglip": {
+      "manifest": "reports/dinov2/embeddings/dev_siglip.json",
+      "array": "data/dinov2/emb/dev/siglip.npy",
+      "sha256": "13dec27f0a9bc15709ea11c49f95b4b8fcaf2fb912d9d20d87fac860de5856a3",
+      "shape": [
+        12000,
+        768
+      ],
+      "dtype": "float32",
+      "row_norm_min": 0.9999997615814209,
+      "row_norm_max": 1.000000238418579
+    },
+    "dinov2_b_224_L1": {
+      "manifest": "reports/dinov2/embeddings/dev_dinov2_b_224.json",
+      "array": "data/dinov2/emb/dev/dinov2_b_224_L1.npy",
+      "sha256": "3eccdd92dd91eb71645f855a5a993803f523b3928633e392377d5108660e396c",
+      "shape": [
+        12000,
+        768
+      ],
+      "dtype": "float32",
+      "row_norm_min": 41.736263275146484,
+      "row_norm_max": 48.756813049316406
+    }
+  },
+  "manifest_content_sha256": "6c9bf55ba6992ef61f9ecbd4d578181c36b795ab3ba911b32bffa6071862d7df"
+}

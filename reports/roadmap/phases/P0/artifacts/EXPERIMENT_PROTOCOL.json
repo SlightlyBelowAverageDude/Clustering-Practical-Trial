@@ -1,0 +1,305 @@
+{
+  "protocol_id": "FAIR-CMP-v1",
+  "declared_utc": "2026-11-19T14:20:39Z",
+  "declared_in": "roadmap phase P0",
+  "supersedes": null,
+  "consistent_with": [
+    "reports/dinov2/DINOV2_PROTOCOL.json (15 Nov 2026)",
+    "reports/week6/P1_EXPERIMENT_PROTOCOL.json",
+    "reports/week6/P3_EXPERIMENT_PROTOCOL.json"
+  ],
+  "change_rule": "Any change to a frozen field creates FAIR-CMP-v2 with a written reason; results under different protocol ids are not pooled.",
+  "dataset": {
+    "manifest_id": "MIMO-HS3-DEV12K-v1",
+    "manifest_file": "reports/roadmap/phases/P0/artifacts/DEV_MANIFEST.json",
+    "manifest_content_sha256": "6c9bf55ba6992ef61f9ecbd4d578181c36b795ab3ba911b32bffa6071862d7df",
+    "dev_ids_csv": {
+      "path": "reports/full_dataset/benchmark/dev_ids.csv",
+      "sha256": "9a8d6139bc3ed075aba25b7305b3909e46fa8c7f8dcf930487e508726b4a1439",
+      "bytes": 5797257,
+      "rows": 12000,
+      "note": "not copied: the validated Week 6 file is referenced by path + hash"
+    },
+    "object_order": {
+      "definition": "row order of dev_ids.csv (= benchmark order restricted to dev); row_index 0..11999",
+      "ordered_ids_sha256": "b3be178451b7d4565710e7afe5d251e42a171c836d8716f9927b526306c10350",
+      "ordered_ids_sha256_rule": "sha256('\\n'.join(ids))",
+      "ordered_inputs_sha256": "112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37",
+      "ordered_inputs_sha256_rule": "sha256(json.dumps([[image_id, sha256], ...], sort_keys=True, separators=(',',':'))) — the key every embedding manifest must carry",
+      "first_id": "/09102/_AF_IT_DSMFI_STR0001_0000392",
+      "last_id": "/09102/_ULEI_M0002235"
+    },
+    "n_objects": 12000,
+    "image_to_object": "one Europeana record = one museum object = one image (first preview, else source image)",
+    "labels": {
+      "primary": "hs3 (13 classes)",
+      "secondary": [
+        "hs1 (5 classes)",
+        "hs2",
+        "family (Western, 6)",
+        "name"
+      ],
+      "definitions": {
+        "hs1": "first digit of the Hornbostel-Sachs notation of the first HS concept (common.hs_level rule)",
+        "hs3": "first three digits of the same notation; benchmark keeps HS3/family/name classes with >= 30 objects"
+      }
+    },
+    "evaluation_masks": {
+      "rule": "score a row for label L iff L != \"\" in dev_ids.csv; clustering always uses all 12,000 rows",
+      "current_valid_rows": {
+        "hs1": 12000,
+        "hs2": 12000,
+        "hs3": 12000,
+        "family": 12000,
+        "name": 12000
+      }
+    },
+    "museum_column": "provider",
+    "n_museums": 168,
+    "reserved_data": "reserved (heldout + excluded_pilot_overlap) objects are never embedded, clustered, scored or used for selection under this protocol; P5A must lock its own object-level validation split before touching them"
+  },
+  "embeddings": {
+    "shared_input_adaptation": "PIL: ImageOps.exif_transpose -> convert(RGB) -> ImageOps.pad to a white (255,255,255) square of side max(w,h); then the checkpoint's own evaluation transform. Because the image is already square, resize+center-crop (timm, OpenCLIP) and squash (SigLIP) all reduce to an aspect-preserving full-image resize: no part of the instrument is cropped.",
+    "storage": "float32 .npy, one row per manifest row in manifest order, under data/<family>/emb/dev/ (git-ignored); a tracked JSON manifest records checkpoint, revision, weight sha256, transform repr, array sha256, shape and ordered_inputs_sha256",
+    "alignment_gate": "ordered_inputs_sha256 must equal 112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37; arrays must be finite with shape (12000, d)",
+    "device_precision": "CPU, torch float32 inference (no autocast/fp16); torch.manual_seed(42); 4-6 torch threads (inference is deterministic per input; threads affect speed only)",
+    "models": {
+      "clip": {
+        "checkpoint": "laion/CLIP-ViT-B-32-laion2B-s34B-b79K@1a25a446712ba5ee05982a381eed697ef9b435cf",
+        "library": "open_clip_torch 3.3.0 (arch ViT-B-32)",
+        "weight_sha256": "ac4f8c4b88af6d963118cbf40ad93176d092abbedfcb752601ae1866352656e6",
+        "embedding_dim": 512,
+        "native_resolution": 224,
+        "protocol_resolution": 224,
+        "transform": "OpenCLIP eval: resize shortest side 224 (bicubic) + center crop 224; mean (0.48145466, 0.4578275, 0.40821073), std (0.26862954, 0.26130258, 0.27577711)",
+        "output": "encode_image() projected image embedding, L2-normalised at extraction",
+        "array": {
+          "manifest": "reports/dinov2/embeddings/dev_clip.json",
+          "array": "data/dinov2/emb/dev/clip.npy",
+          "sha256": "57a84d1a7af7330e02fdd3cf20f513cf083967ef9a1c5746117b41d6c1a687d7",
+          "shape": [
+            12000,
+            512
+          ],
+          "dtype": "float32",
+          "row_norm_min": 0.9999998211860657,
+          "row_norm_max": 1.0000001192092896
+        },
+        "license_per_model_card": "MIT (Hugging Face API cardData.license, checked 2026-11-19; repo head revision == pinned revision)"
+      },
+      "siglip": {
+        "checkpoint": "timm/ViT-B-16-SigLIP@41f575766f40e752fdd1383e9565b7f02388c1c4",
+        "library": "open_clip_torch 3.3.0 (arch SiglipPhase2 = vit_base_patch16_siglip_224, MAP pool)",
+        "weight_sha256": "81942ea8c09b9e41963357cca5d2682118bf7eb7491c2ae51a28bc4f4f95b194",
+        "embedding_dim": 768,
+        "native_resolution": 224,
+        "protocol_resolution": 224,
+        "transform": "resize_mode squash to 224x224 (bicubic); mean (0.5,0.5,0.5), std (0.5,0.5,0.5)",
+        "output": "encode_image() pooled image embedding, L2-normalised at extraction",
+        "array": {
+          "manifest": "reports/dinov2/embeddings/dev_siglip.json",
+          "array": "data/dinov2/emb/dev/siglip.npy",
+          "sha256": "13dec27f0a9bc15709ea11c49f95b4b8fcaf2fb912d9d20d87fac860de5856a3",
+          "shape": [
+            12000,
+            768
+          ],
+          "dtype": "float32",
+          "row_norm_min": 0.9999997615814209,
+          "row_norm_max": 1.000000238418579
+        },
+        "license_per_model_card": "Apache-2.0 (Hugging Face API cardData.license, checked 2026-11-19; repo head revision == pinned revision)"
+      },
+      "dinov2_b": {
+        "checkpoint": "timm/vit_base_patch14_dinov2.lvd142m@4685c99dabffe5affac90bd99dbffd25801ae58d",
+        "weight_sha256": "55cbb5d887b336d430e649c277b85a1429e724871f9d02ac16203235886d8c7b",
+        "params_million": 86.6,
+        "embedding_dim": 768,
+        "depth": 12,
+        "native_resolution_timm_default": 518,
+        "protocol_resolution": 224,
+        "license_per_model_card": "Apache-2.0 (Hugging Face API cardData.license, checked 2026-11-19; repo head revision == pinned revision)",
+        "weights_local": true,
+        "library": "timm 1.0.30",
+        "transform": "timm eval transform with input_size 224, crop_pct 1.0: Resize(224, bicubic) + CenterCrop(224); ImageNet mean/std",
+        "output": "CLS token after final LayerNorm (forward_intermediates norm=True); layer -1 == pooled output (asserted at run time); not L2-normalised at extraction",
+        "array": {
+          "manifest": "reports/dinov2/embeddings/dev_dinov2_b_224.json",
+          "array": "data/dinov2/emb/dev/dinov2_b_224_L1.npy",
+          "sha256": "3eccdd92dd91eb71645f855a5a993803f523b3928633e392377d5108660e396c",
+          "shape": [
+            12000,
+            768
+          ],
+          "dtype": "float32",
+          "row_norm_min": 41.736263275146484,
+          "row_norm_max": 48.756813049316406
+        },
+        "other_layers_cached": [
+          "-2",
+          "-4"
+        ]
+      },
+      "dinov2_s": {
+        "checkpoint": "timm/vit_small_patch14_dinov2.lvd142m@4610ca143709d58a633b6397a74412c2c3842454",
+        "weight_sha256": "04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081",
+        "params_million": 22.1,
+        "embedding_dim": 384,
+        "depth": 12,
+        "native_resolution_timm_default": 518,
+        "protocol_resolution": 224,
+        "license_per_model_card": "Apache-2.0 (Hugging Face API cardData.license, checked 2026-11-19; repo head revision == pinned revision)",
+        "weights_local": true,
+        "library": "timm 1.0.30",
+        "status": "P1 to extract on dev; pilot-only so far"
+      },
+      "dinov2_l": {
+        "checkpoint": "timm/vit_large_patch14_dinov2.lvd142m@4741e1cafbf45415e77074bb0cb42dba76c8684a",
+        "weight_sha256": "0424a5d1b515278cba3c6640ccbeaacc41de59d3a93df0dd5e494285eea2b355",
+        "params_million": 304.4,
+        "embedding_dim": 1024,
+        "depth": 24,
+        "native_resolution_timm_default": 518,
+        "protocol_resolution": 224,
+        "license_per_model_card": "Apache-2.0 (Hugging Face API cardData.license, checked 2026-11-19; repo head revision == pinned revision)",
+        "weights_local": true,
+        "library": "timm 1.0.30",
+        "status": "P1 to extract on dev; pilot-only so far"
+      }
+    },
+    "rule_for_new_encoders": [
+      "same 12,000 rows, same order, same alignment gate",
+      "same shared input adaptation, then the checkpoint's own evaluation transform at its NATIVE resolution; record native and used resolution separately",
+      "image-only forward pass; record exactly which output is used (pooled/projected embedding for VLM encoders, final-LN CLS for SSL ViTs, documented pooling for embedding LLMs)",
+      "record checkpoint id + revision, weight sha256, licence, embedding dim, dtype, seconds, threads, peak RSS",
+      "DINOv2 S/B/L (P1) are compared at 224 px so that only model size changes; 518 px is a separate, labelled resolution arm",
+      "model families are not assumed to share native preprocessing; a model whose native transform crops (crop_pct<1) still receives the white-square-padded image first"
+    ]
+  },
+  "clustering": {
+    "primary_controlled_reference": {
+      "representation": "centered_l2",
+      "k": 10,
+      "methods": [
+        "kmeans",
+        "agglomerative_average_cosine",
+        "spectral_knn",
+        "gmm_diag",
+        "hdbscan"
+      ],
+      "primary_metric": "HS3 AMI (mean over seeds); ARI reported with equal prominence"
+    },
+    "k_policy": {
+      "fixed_k": 10,
+      "fixed_k_note": "predeclared anchor, not tuned on labels",
+      "label_informed_reference": "k = 13 (= number of HS3 benchmark classes); reported in a separate table, never called blind",
+      "blind_k": "P3/P12: select k from label-free criteria only (silhouette, elbow, eigengap, BIC) on the same rows; HS labels are read only after k is fixed"
+    },
+    "representations": {
+      "centered_l2": "X - mean(X over the 12,000 clustered rows), then row L2 (primary)",
+      "l2": "row L2 only (control; collapses VLM agglomerative)",
+      "pca50_l2 / pca100_l2": "PCA(n, svd_solver='full', whiten=False) fitted on the clustered rows, then row L2",
+      "fit_scope": "every transform is fitted on the clustered rows only, label-free; features cast to float32 (GMM to float64)"
+    },
+    "methods": {
+      "kmeans": {
+        "class": "sklearn.cluster.KMeans",
+        "n_init": 10,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "algorithm": "lloyd",
+        "init": "k-means++",
+        "distance": "euclidean (= cosine ranking on L2 rows)"
+      },
+      "agglomerative_average_cosine": {
+        "class": "sklearn.cluster.AgglomerativeClustering",
+        "linkage": "average",
+        "metric": "cosine",
+        "deterministic": true
+      },
+      "spectral_knn": {
+        "class": "sklearn.cluster.SpectralClustering",
+        "affinity": "nearest_neighbors",
+        "n_neighbors": 15,
+        "assign_labels": "kmeans",
+        "eigen_solver": "arpack",
+        "n_init": 10,
+        "n_jobs": 1
+      },
+      "gmm_diag": {
+        "class": "sklearn.mixture.GaussianMixture",
+        "covariance_type": "diag",
+        "n_init": 3,
+        "max_iter": 200,
+        "tol": 0.001,
+        "reg_covar": 1e-06,
+        "init_params": "kmeans",
+        "input_dtype": "float64"
+      },
+      "hdbscan": {
+        "class": "sklearn.cluster.HDBSCAN",
+        "min_cluster_size": 20,
+        "metric": "euclidean",
+        "cluster_selection_method": "eom",
+        "deterministic": true
+      }
+    },
+    "factory": "reports/week6/source/p2_benchmark.py make(method, k, seed, mcs=20)",
+    "seeds": {
+      "stochastic_methods": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "deterministic_methods": [
+        0
+      ],
+      "embedding_extraction_torch_seed": 42,
+      "silhouette_sample_seed": 0
+    },
+    "numerics": {
+      "OMP_NUM_THREADS": 4,
+      "threadpoolctl_limit": 4,
+      "note": "4 BLAS threads are part of the protocol: 6 threads changed PCA results by up to 2.3e-5 in P5",
+      "environment": "requirements-pilot.lock.txt (Python 3.12.3, numpy 2.5.4, scikit-learn 1.9.1, torch 2.15.0+cpu, timm 1.0.30, open_clip_torch 3.3.0)"
+    }
+  },
+  "evaluation": {
+    "external_metrics": {
+      "AMI": "sklearn adjusted_mutual_info_score(labels, pred), average_method=arithmetic (default)",
+      "ARI": "sklearn adjusted_rand_score(labels, pred)",
+      "NMI": "sklearn normalized_mutual_info_score(labels, pred), arithmetic (default)",
+      "levels": "HS3 primary; HS1, HS2, family, name secondary"
+    },
+    "internal_metrics": {
+      "silhouette": "cosine silhouette on the clustered representation, on a fixed 4,000-row sample: np.random.default_rng(0).choice(12000, 4000, replace=False); HDBSCAN noise rows excluded",
+      "largest_cluster_pct": "100 * size of largest non-noise cluster / 12,000 (report max over seeds)",
+      "assigned_clusters": "number of distinct non-noise labels (actual_k)",
+      "noise_fraction": "share of rows labelled -1 (HDBSCAN only; 0 otherwise)",
+      "runtime": "wall-clock seconds of fit_predict only (time.perf_counter), 4 threads; transform time recorded separately; embedding time per model in its manifest"
+    },
+    "hdbscan_noise": {
+      "primary": "noise_as_cluster: all 12,000 rows scored, label -1 treated as one extra cluster",
+      "secondary": "assigned_only: score only rows with label != -1 and report coverage; never quote assigned_only without coverage"
+    },
+    "invalid_labels": "rows with an empty label at level L are clustered but excluded from that level's external metrics; n_evaluated is always reported (currently 12,000 at every level)",
+    "seed_aggregation": "mean over seeds 0-4 and sample SD (ddof=1) for AMI and ARI; min/max kept in per-run files; largest_cluster_pct reported as the worst (max) seed; deterministic methods have n_seeds = 1 and no SD. Seed-to-seed partition agreement (pairwise ARI) is reported in P3.",
+    "statistics": "no significance claims without paired seeds or bootstrap over objects; any difference < 2 x seed SD is reported as no clear difference",
+    "leakage": "labels are read only after every fit of a grid has been saved (fit stage then score stage)"
+  },
+  "baselines": {
+    "file": "reports/roadmap/phases/P0/artifacts/BASELINE_REFERENCE.csv",
+    "status": "immutable references for every later comparison"
+  },
+  "source_sha256": {
+    "reports/week6/source/p2_benchmark.py": "967b4f62c45cefe1b43954745e072711dad5d08bd0b0b0ec029db8504a10600a",
+    "reports/dinov2/source/dinov2_benchmark.py": "69c73b57ff02e378f99c386457413ec1e6a689410627889c9dcb479770ef05bd",
+    "reports/dinov2/source/dinov2_embed.py": "d6fae4368433dbd5f64852ff6e37c98f60e341f2a0d6c9bcd802df46b3e13f00",
+    "reports/dinov2/source/openclip_embed.py": "411f62711e26eb14e5e0fd7d383acf6418802497cef2d6fc9720198dc4a2c3c6",
+    "reports/dinov2/source/dinov2_weights.py": "d715db5441bd29f19dcab940cff506a6fcd76c08b7abfee96b76cd68889e8b7b",
+    "reports/roadmap/phases/P0/source/p0_verify.py": "5304c2f56a7e0bfce187751dc017c681c981cbe20d6dbe89cc552179c7dbc1dc"
+  },
+  "protocol_content_sha256": "ffff30463d9610e1fd1adc1e28ee544541c323b354918ef9b454f17af814826f"
+}

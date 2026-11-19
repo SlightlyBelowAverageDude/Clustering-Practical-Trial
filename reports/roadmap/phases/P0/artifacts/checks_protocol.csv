@@ -1,0 +1,11 @@
+group,kind,check,observed,expected,pass,note
+protocol,gate,protocol k == DINOV2_PROTOCOL.json k,10,10,True,
+protocol,gate,protocol methods == methods in BASELINE_REFERENCE.csv,"['agglomerative_average_cosine', 'gmm_diag', 'hdbscan', 'kmeans', 'spectral_knn']","['agglomerative_average_cosine', 'gmm_diag', 'hdbscan', 'kmeans', 'spectral_knn']",True,
+protocol,gate,protocol order key == every aligned embedding manifest key,True,True,True,
+protocol,gate,dinov2_s weights present locally and sha256 pinned,True,True,True,
+protocol,gate,dinov2_b weights present locally and sha256 pinned,True,True,True,
+protocol,gate,dinov2_l weights present locally and sha256 pinned,True,True,True,
+protocol,gate,clip weights present locally and sha256 pinned,True,True,True,
+protocol,info,clip model.json weight_path resolves (needed only to re-embed),False,True,False,informational: path points to the pre-move checkout; openclip_embed.py would need the path remapped before any CLIP/SigLIP re-embedding
+protocol,gate,siglip weights present locally and sha256 pinned,True,True,True,
+protocol,info,siglip model.json weight_path resolves (needed only to re-embed),False,True,False,informational: path points to the pre-move checkout; openclip_embed.py would need the path remapped before any CLIP/SigLIP re-embedding

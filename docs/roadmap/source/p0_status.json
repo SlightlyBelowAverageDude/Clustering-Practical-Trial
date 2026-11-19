@@ -1,0 +1,7 @@
+{"phase_status": "COMPLETE", "date": "19 Nov 2026",
+ "rows": [
+  {"task": "P0-001", "status": "Complete", "evidence": "74/74 dataset checks: 12,000 unique dev ids (split rule reproduced), 13 HS3 / 5 HS1 classes, 168 museums, 0 dev/reserved overlap on id, image and pixel hash; no reserved labels read, nothing reserved embedded or scored in P0. Two pre-existing reserved-pool findings handed to P5A/P16."},
+  {"task": "P0-002", "status": "Complete", "evidence": "Frozen protocol FAIR-CMP-v1 (EXPERIMENT_PROTOCOL.json): manifest MIMO-HS3-DEV12K-v1, label masks, seeds 0-4, k=10 (k=13 label-informed reference only), per-model input accounting, AMI/ARI/NMI/silhouette definitions, HDBSCAN noise rule, seed aggregation."},
+  {"task": "P0-003", "status": "Complete", "evidence": "BASELINE_REFERENCE.csv: 27 CLIP/SigLIP/DINOv2-B configurations rescored exactly; all 51 k=10 fits re-fitted with bit-identical labels; checkpoints, transforms and licences (Apache-2.0 / MIT) recorded."},
+  {"task": "P0-004", "status": "Complete", "evidence": "COMPUTE_AUDIT.md: CPU-only (i5-11400H, 15 GiB RAM, GPU unusable), weights for DINOv2-S/B/L local; estimates DINOv2-S 11 min, DINOv2-L 2.0 h; P1/P2 schedule before 30 Nov."}],
+ "note": "Only P0 boxes are ticked. All other phases, checkboxes, dates and DONE WHEN criteria are unchanged."}

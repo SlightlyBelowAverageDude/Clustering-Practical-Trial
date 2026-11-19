@@ -1,0 +1,26 @@
+{
+  "checks": 200,
+  "gates": 195,
+  "gates_passed": 195,
+  "gates_failed": 0,
+  "info": 3,
+  "findings": 2,
+  "p0_gate_status": "PASS",
+  "gates_by_group": {
+    "baseline": "113/113",
+    "dataset": "74/74",
+    "protocol": "8/8"
+  },
+  "artifact_sha256": {
+    "BASELINE_REFERENCE.csv": "986178eae3bab6d814bc9d6c658f8901cfb1e0d9736e457127901e559e3f768d",
+    "DEV_MANIFEST.json": "337d204fa9b4e7546298b58cf14da952229087675cfc59c58ab8010e03a2a8c0",
+    "EXPERIMENT_PROTOCOL.json": "76e77ba5e16b0c9fbd183157e9b33cef83554ab032eca5069a60271b4dddae7d",
+    "RESERVED_PRIOR_EXPOSURE.csv": "2e8250aad95ae9e12d36be4c79916961094596c10a33362032bc8e329f5f6fb0",
+    "baseline_refit.csv": "6a7d743ee0a960d5db0f7dc9a897c54966a1342da959cd3b9928eedc670ccfc1",
+    "checks_baseline.csv": "ae06dbb5d6556a44d2d2f3982f19450a92573350495356b629cadb93c1f9f477",
+    "checks_dataset.csv": "9b01789ad7434a07d9d154c36df02789a407827b01107cf03869b67188973533",
+    "checks_protocol.csv": "03b1213f17ea0a6ef7aa63aa2b05f2a9178b323c5fa2d7c5b369aabebc4aa901",
+    "environment.json": "7d8a8c3ac95ed619fec40e4cc13ccffa5f15956200fd87583e82c6f2ab426b06",
+    "p0_checks.csv": "4be2d09991d58be55bdc83f5530c973b823942ffe13ff06897e8945cf3d1056f"
+  }
+}
