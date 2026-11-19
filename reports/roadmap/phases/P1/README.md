@@ -1,6 +1,6 @@
 # P1: Finish DINOv2 S/B/L at scale (RQ3)
 
-**Status: NOT STARTED.** No work has been executed for this phase; there are no results here yet.
+**Status: COMPLETE (2026-11-19).** Report: [`P1_REPORT.md`](P1_REPORT.md). Validation: 121/121 checks ([`artifacts/P1_VALIDATION.md`](artifacts/P1_VALIDATION.md)).
 
 Milestone: WEEK 8 | 30 NOV 2026
 
@@ -8,16 +8,22 @@ Roadmap note: Complete the model-size comparison before introducing newer famili
 
 ## Roadmap tasks (verbatim from the execution roadmap)
 
-- [ ] Reuse already validated DINOv2-B embeddings at 224 px; rerun B only if settings or alignment differ.
-- [ ] Extract DINOv2-S and DINOv2-L embeddings for the same 12,000 development objects, using matching 224 px settings.
-- [ ] Measure runtime, peak memory, dimensions, failures and preprocessing for every size; record model checkpoint IDs.
-- [ ] For supported models compare last and intermediate layers (-2, -4); cluster each with identical reference settings.
+- [x] Reuse already validated DINOv2-B embeddings at 224 px; rerun B only if settings or alignment differ.
+- [x] Extract DINOv2-S and DINOv2-L embeddings for the same 12,000 development objects, using matching 224 px settings.
+- [x] Measure runtime, peak memory, dimensions, failures and preprocessing for every size; record model checkpoint IDs.
+- [x] For supported models compare last and intermediate layers (-2, -4); cluster each with identical reference settings.
 
 **DONE WHEN:** A matched DINOv2 S/B/L table with AMI/ARI and runtime, plus a layer-depth chart.
 
-## When this phase is executed
+## Contents
 
-1. Copy [`../../PHASE_REPORT_TEMPLATE.md`](../../PHASE_REPORT_TEMPLATE.md) to `P1_REPORT.md` in this folder and fill in all 12 sections.
-2. Put generated evidence (CSV, JSON, logs, figures) in `artifacts/` and scripts in `source/`.
-3. Follow the frozen protocol [`../P0/artifacts/EXPERIMENT_PROTOCOL.json`](../P0/artifacts/EXPERIMENT_PROTOCOL.json) and compare against [`../P0/artifacts/BASELINE_REFERENCE.csv`](../P0/artifacts/BASELINE_REFERENCE.csv).
-4. Update the status row in [`../../README.md`](../../README.md).
+| Path | What |
+|---|---|
+| `P1_REPORT.md` | 12-section phase report |
+| `artifacts/DINOV2_SBL_12K.csv` | Model-scaling table (layer −1; CLIP/SigLIP context rows marked as cached) |
+| `artifacts/DINOV2_LAYER_ABLATION.csv` | S/B/L × layer −1/−2/−4 × 3 methods |
+| `artifacts/DINOV2_RUNTIME_MEMORY.csv`, `DINOV2_MODEL_MANIFEST.json` | Cost, memory, checkpoints, hashes |
+| `artifacts/figures/` | Four figures + `figure_values.json` |
+| `artifacts/assignments/` | 99 saved cluster assignments |
+| `artifacts/P1_VALIDATION.md`, `DINOV2_EXTRACTION_VALIDATION.md` | Independent verification evidence |
+| `source/` | Extraction driver, clustering runner, figures, verifier |

@@ -1,0 +1,61 @@
+{
+  "utc": "2026-11-19T18:43:53Z",
+  "set": "dev",
+  "n": 12000,
+  "descriptor": {
+    "model": "dinov2_s",
+    "repo": "timm/vit_small_patch14_dinov2.lvd142m",
+    "revision": "4610ca143709d58a633b6397a74412c2c3842454",
+    "weight_sha256": "04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081",
+    "size": 224,
+    "layers": [
+      -1,
+      -2,
+      -4
+    ],
+    "adaptation": "exif_transpose,rgb,white_square_pad",
+    "transform": "Compose(\n    Resize(size=224, interpolation=bicubic, max_size=None, antialias=True)\n    CenterCrop(size=(224, 224))\n    MaybeToTensor()\n    Normalize(mean=tensor([0.4850, 0.4560, 0.4060]), std=tensor([0.2290, 0.2240, 0.2250]))\n)",
+    "pooling": "CLS token, final LayerNorm applied (norm=True)"
+  },
+  "fingerprint": "84de6bec46f63bb420219fc70c4de5833318ea06d3ab025975257940b68a8b3c",
+  "ordered_inputs_sha256": "112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37",
+  "arrays": {
+    "-1": {
+      "path": "data/dinov2/emb/dev/dinov2_s_224_L1.npy",
+      "sha256": "f0dab90f94df10a95a4fe07487f27cdd0a09ff6de7153030b110c1de062d9620",
+      "shape": [
+        12000,
+        384
+      ],
+      "norm_min": 43.38715744018555,
+      "norm_max": 50.628456115722656
+    },
+    "-2": {
+      "path": "data/dinov2/emb/dev/dinov2_s_224_L2.npy",
+      "sha256": "4d5021204c97f8c8045fec9f51703ffeff86e8151d0f429e56ce0f2a4cb95438",
+      "shape": [
+        12000,
+        384
+      ],
+      "norm_min": 23.820812225341797,
+      "norm_max": 32.64485168457031
+    },
+    "-4": {
+      "path": "data/dinov2/emb/dev/dinov2_s_224_L4.npy",
+      "sha256": "f3b4d20061819209547110cac9ce9d87a1edfc96c86164e7d3624410ed185070",
+      "shape": [
+        12000,
+        384
+      ],
+      "norm_min": 29.535465240478516,
+      "norm_max": 36.78300476074219
+    }
+  },
+  "new_images": 12000,
+  "cache_hits": 0,
+  "seconds": 14618.5,
+  "threads": 6,
+  "device": "cpu",
+  "torch": "2.15.0+cpu",
+  "timm": "1.0.30"
+}

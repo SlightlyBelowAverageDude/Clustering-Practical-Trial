@@ -1,0 +1,7 @@
+{"phase_status": "COMPLETE", "date": "19 Nov 2026", "report": "reports/roadmap/phases/P1/P1_REPORT.md",
+ "rows": [
+  {"task": "P1-005", "status": "Complete", "evidence": "DINOv2-B 224 dev embeddings reused (hash, row order, preprocessing, layer definition verified); 11/11 B layer -1 clusterings bit-identical to the Week 6 baseline (k-Means 0.538, Agglomerative 0.561, Spectral 0.476 HS3 AMI)."},
+  {"task": "P1-006", "status": "Complete", "evidence": "DINOv2-S and DINOv2-L extracted for all 12,000 dev objects (224 px, CLS of layers -1/-2/-4, one forward pass), same manifest order; layer mapping independently recomputed (max diff 0.0)."},
+  {"task": "P1-007", "status": "Complete", "evidence": "Active extraction S 12.4 min / B 30.8 min (Week 6) / L 96.5 min on CPU; peak RSS S 0.87 GiB, L 2.63 GiB; 0 failures; checkpoints and hashes in DINOV2_MODEL_MANIFEST.json."},
+  {"task": "P1-008", "status": "Complete", "evidence": "27 cells (S/B/L x layers -1/-2/-4 x k-Means/Agglomerative/Spectral, k=10, 99 fits). Last layer best in 7/9; Spectral prefers layer -2 for B and L. Best: DINOv2-L Agglomerative AMI 0.587 (ARI 0.391)."}],
+ "note": "Only P1 boxes are ticked in this update. P0 state, P2-P20, optional P5A scheduling, dates and DONE WHEN criteria are unchanged. 121/121 independent checks passed."}

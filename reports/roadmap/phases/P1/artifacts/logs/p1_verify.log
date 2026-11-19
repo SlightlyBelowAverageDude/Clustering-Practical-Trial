@@ -1,0 +1,139 @@
+PASS [A environment / frozen inputs] running interpreter is the repository .venv: /home/hayvan/Programming/LMU/CMVAL/Clustering-Practical-Trial/.venv
+PASS [A environment / frozen inputs] .venv packages == requirements-pilot.lock.txt (pip excluded): True
+PASS [A environment / frozen inputs] dev_ids.csv sha256 == frozen manifest: 9a8d6139bc3ed075aba25b7305b3909e46fa8c7f8dcf930487e508726b4a1439
+PASS [A environment / frozen inputs] unchanged vs git HEAD: reports/roadmap/phases/P0/artifacts/EXPERIMENT_PROTOCOL.json: True
+PASS [A environment / frozen inputs] unchanged vs git HEAD: reports/roadmap/phases/P0/artifacts/DEV_MANIFEST.json: True
+PASS [A environment / frozen inputs] unchanged vs git HEAD: reports/roadmap/phases/P0/artifacts/BASELINE_REFERENCE.csv: True
+PASS [A environment / frozen inputs] unchanged vs git HEAD: reports/dinov2/embeddings/dev_dinov2_b_224.json: True
+PASS [A environment / frozen inputs] unchanged vs git HEAD: reports/dinov2/models.json: True
+PASS [A environment / frozen inputs] unchanged vs git HEAD: reports/dinov2/source/dinov2_embed.py: True
+PASS [A environment / frozen inputs] unchanged vs git HEAD: reports/dinov2/dev/summary.csv: True
+PASS [A environment / frozen inputs] recomputed dev order key == DEV_MANIFEST ordered_inputs_sha256: 112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37
+PASS [B checkpoints] dinov2_s weight sha256 == models.json: 04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081
+PASS [B checkpoints] dinov2_b weight sha256 == models.json: 55cbb5d887b336d430e649c277b85a1429e724871f9d02ac16203235886d8c7b
+PASS [B checkpoints] dinov2_l weight sha256 == models.json: 0424a5d1b515278cba3c6640ccbeaacc41de59d3a93df0dd5e494285eea2b355
+PASS [C embeddings] dinov2_s: n == 12000 and set == dev: (12000, 'dev')
+PASS [C embeddings] dinov2_s: ordered_inputs_sha256 == frozen manifest: 112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37
+PASS [C embeddings] dinov2_s: repo@revision/weights == models.json: ('timm/vit_small_patch14_dinov2.lvd142m', '4610ca143709d58a633b6397a74412c2c3842454', '04d27f3400d059fc0cfd7d17dd1909a75bf3ea8fb3eeb48b97cb99e57ee20081')
+PASS [C embeddings] dinov2_s: cache fingerprint == sha256(descriptor): 84de6bec46f63bb420219fc70c4de5833318ea06d3ab025975257940b68a8b3c
+PASS [C embeddings] dinov2_s: size 224, layers [-1,-2,-4], CLS + final LN: (224, [-1, -2, -4], 'CLS token, final LayerNorm applied (norm=True)')
+PASS [C embeddings] dinov2_s L-1: sha256: f0dab90f94df10a95a4fe07487f27cdd0a09ff6de7153030b110c1de062d9620
+PASS [C embeddings] dinov2_s L-1: shape/dtype: ([12000, 384], 'float32')
+PASS [C embeddings] dinov2_s L-1: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_s L-1: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_s L-2: sha256: 4d5021204c97f8c8045fec9f51703ffeff86e8151d0f429e56ce0f2a4cb95438
+PASS [C embeddings] dinov2_s L-2: shape/dtype: ([12000, 384], 'float32')
+PASS [C embeddings] dinov2_s L-2: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_s L-2: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_s L-4: sha256: f3b4d20061819209547110cac9ce9d87a1edfc96c86164e7d3624410ed185070
+PASS [C embeddings] dinov2_s L-4: shape/dtype: ([12000, 384], 'float32')
+PASS [C embeddings] dinov2_s L-4: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_s L-4: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_s: layers -1/-2/-4 are three different arrays: 3
+PASS [C embeddings] dinov2_b: n == 12000 and set == dev: (12000, 'dev')
+PASS [C embeddings] dinov2_b: ordered_inputs_sha256 == frozen manifest: 112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37
+PASS [C embeddings] dinov2_b: repo@revision/weights == models.json: ('timm/vit_base_patch14_dinov2.lvd142m', '4685c99dabffe5affac90bd99dbffd25801ae58d', '55cbb5d887b336d430e649c277b85a1429e724871f9d02ac16203235886d8c7b')
+PASS [C embeddings] dinov2_b: cache fingerprint == sha256(descriptor): 1da4068e2c85e0f4c47817d4284baa5c43a8b3b8a40863a9a4909a2f46451f54
+PASS [C embeddings] dinov2_b: size 224, layers [-1,-2,-4], CLS + final LN: (224, [-1, -2, -4], 'CLS token, final LayerNorm applied (norm=True)')
+PASS [C embeddings] dinov2_b L-1: sha256: 3eccdd92dd91eb71645f855a5a993803f523b3928633e392377d5108660e396c
+PASS [C embeddings] dinov2_b L-1: shape/dtype: ([12000, 768], 'float32')
+PASS [C embeddings] dinov2_b L-1: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_b L-1: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_b L-2: sha256: 4b6852cf3bfcd48252f1ac2e5158dba615e3e664dd09dc0d966933665b9431f8
+PASS [C embeddings] dinov2_b L-2: shape/dtype: ([12000, 768], 'float32')
+PASS [C embeddings] dinov2_b L-2: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_b L-2: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_b L-4: sha256: 5225b5221fc2c9305c852846ee56b92fa27b61d3cc3f695ed37278bcd1a4a9fb
+PASS [C embeddings] dinov2_b L-4: shape/dtype: ([12000, 768], 'float32')
+PASS [C embeddings] dinov2_b L-4: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_b L-4: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_b: layers -1/-2/-4 are three different arrays: 3
+PASS [C embeddings] dinov2_l: n == 12000 and set == dev: (12000, 'dev')
+PASS [C embeddings] dinov2_l: ordered_inputs_sha256 == frozen manifest: 112d1630d339de97348095911a4ed07cd49f8644d65f6d52d75a11bb43317f37
+PASS [C embeddings] dinov2_l: repo@revision/weights == models.json: ('timm/vit_large_patch14_dinov2.lvd142m', '4741e1cafbf45415e77074bb0cb42dba76c8684a', '0424a5d1b515278cba3c6640ccbeaacc41de59d3a93df0dd5e494285eea2b355')
+PASS [C embeddings] dinov2_l: cache fingerprint == sha256(descriptor): b1eb6d96eeea1458272db25496a5958ad3bd38af495088abf1683fc288d10e45
+PASS [C embeddings] dinov2_l: size 224, layers [-1,-2,-4], CLS + final LN: (224, [-1, -2, -4], 'CLS token, final LayerNorm applied (norm=True)')
+PASS [C embeddings] dinov2_l L-1: sha256: 133e291b52fc30afbdecdd7f7f5a832aa5b4f718b34dda2e34f187cd5ff43fc9
+PASS [C embeddings] dinov2_l L-1: shape/dtype: ([12000, 1024], 'float32')
+PASS [C embeddings] dinov2_l L-1: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_l L-1: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_l L-2: sha256: b8aa007d2e739bb80768971c1374391f7cdbd706d75c40e27a8165b6ef7fb847
+PASS [C embeddings] dinov2_l L-2: shape/dtype: ([12000, 1024], 'float32')
+PASS [C embeddings] dinov2_l L-2: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_l L-2: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_l L-4: sha256: b7e056df867fec2cfb2fa8653d5658e662fe8c6abcf357f3b8041a0eafb500c2
+PASS [C embeddings] dinov2_l L-4: shape/dtype: ([12000, 1024], 'float32')
+PASS [C embeddings] dinov2_l L-4: all finite (no NaN/inf): True
+PASS [C embeddings] dinov2_l L-4: no duplicate rows from a stuck batch: 12000
+PASS [C embeddings] dinov2_l: layers -1/-2/-4 are three different arrays: 3
+PASS [C embeddings] S/B/L share identical adaptation: 1
+PASS [C embeddings] S/B/L share identical transform: 1
+PASS [C embeddings] S/B/L share identical pooling: 1
+PASS [C embeddings] S/B/L share identical size: 1
+PASS [C embeddings] S/B/L share identical layers: 1
+PASS [C embeddings] DINOv2-B L1 sha == P0 DEV_MANIFEST (reused, not re-extracted): 3eccdd92dd91eb71645f855a5a993803f523b3928633e392377d5108660e396c
+PASS [D reserved isolation] dinov2_s: cache chunks == 750 dev chunks, keys all dev: (750, 0)
+PASS [D reserved isolation] dinov2_b: cache chunks == 750 dev chunks, keys all dev: (750, 0)
+PASS [D reserved isolation] dinov2_l: cache chunks == 750 dev chunks, keys all dev: (750, 0)
+PASS [D reserved isolation] no held-out / reserved embedding manifest: []
+PASS [D reserved isolation] dev image ids ∩ reserved image ids: 0
+PASS [E layer mapping (independent forward)] dinov2_s saved L-1 == independent CLS of block 11 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_s saved L-1 differs from the other two layers (min max|Δ|): 11.32
+PASS [E layer mapping (independent forward)] dinov2_s saved L-2 == independent CLS of block 10 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_s saved L-2 differs from the other two layers (min max|Δ|): 10.05
+PASS [E layer mapping (independent forward)] dinov2_s saved L-4 == independent CLS of block 8 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_s saved L-4 differs from the other two layers (min max|Δ|): 10.05
+PASS [E layer mapping (independent forward)] dinov2_b saved L-1 == independent CLS of block 11 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_b saved L-1 differs from the other two layers (min max|Δ|): 21.67
+PASS [E layer mapping (independent forward)] dinov2_b saved L-2 == independent CLS of block 10 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_b saved L-2 differs from the other two layers (min max|Δ|): 20.26
+PASS [E layer mapping (independent forward)] dinov2_b saved L-4 == independent CLS of block 8 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_b saved L-4 differs from the other two layers (min max|Δ|): 20.26
+PASS [E layer mapping (independent forward)] B: independent block-loop layer -1 == timm pooled output: 0.0
+PASS [E layer mapping (independent forward)] dinov2_l saved L-1 == independent CLS of block 23 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_l saved L-1 differs from the other two layers (min max|Δ|): 14.68
+PASS [E layer mapping (independent forward)] dinov2_l saved L-2 == independent CLS of block 22 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_l saved L-2 differs from the other two layers (min max|Δ|): 13.34
+PASS [E layer mapping (independent forward)] dinov2_l saved L-4 == independent CLS of block 20 (max |Δ|, min cos): 0.00e+00, 0.9999999
+PASS [E layer mapping (independent forward)] dinov2_l saved L-4 differs from the other two layers (min max|Δ|): 13.34
+PASS [F metrics (independent rescoring)] fits saved (3 models × 3 layers × 11): 99
+PASS [F metrics (independent rescoring)] assignment sha256 == runs.csv, length 12000: True
+PASS [F metrics (independent rescoring)] per-run HS3 AMI/ARI/NMI, HS1 AMI == runner (max |Δ|): 0.0
+PASS [F metrics (independent rescoring)] DINOV2_LAYER_ABLATION.csv means/SD == independent aggregation (27 cells, max |Δ|): 4.981100300560648e-07
+PASS [F metrics (independent rescoring)] DINOV2_SBL_12K.csv DINOv2 rows == independent aggregation (9 cells): 4.4578979002674046e-07
+PASS [F metrics (independent rescoring)] CLIP/SigLIP context rows == P0 BASELINE_REFERENCE (6 cells): 0.0
+PASS [F metrics (independent rescoring)] deterministic agglomerative reported with n_seeds 1 and no SD: True
+PASS [G DINOv2-B baseline reproduction] P1 DINOv2-B L1 assignments bit-identical to Week 6 dev assignments: 11/11
+PASS [G DINOv2-B baseline reproduction] B kmeans: AMI/ARI == P0 reference (0.538/0.314): 0.538/0.314
+PASS [G DINOv2-B baseline reproduction] B agglomerative_average_cosine: AMI/ARI == P0 reference (0.561/0.417): 0.561/0.417
+PASS [G DINOv2-B baseline reproduction] B spectral_knn: AMI/ARI == P0 reference (0.476/0.165): 0.476/0.165
+PASS [H re-fit determinism] refit dinov2_s_224_L1__centered_l2__kmeans__k10__s3 bit-identical: True
+PASS [H re-fit determinism] refit dinov2_l_224_L1__centered_l2__agglomerative_average_cosine__k10__s0 bit-identical: True
+PASS [H re-fit determinism] refit dinov2_l_224_L4__centered_l2__spectral_knn__k10__s1 bit-identical: True
+PASS [I figures] P1_AMI_ARI_COMPARISON.png exists and sha256 == figure_values.json: ae4ccaf06f2d662a4797fbb9087a0af148db7f84b0eca8688c809f89ef53c3c4
+PASS [I figures] P1_LAYER_DEPTH.png exists and sha256 == figure_values.json: 8f3d9fe56006ad34681bd34ed468b91c9c0a42a04491fc5b95366758441408e5
+PASS [I figures] P1_MODEL_SCALING.png exists and sha256 == figure_values.json: d137bd9bce5286ce4f089a95ea721242cb753022035a967c063f2118f2d8e583
+PASS [I figures] P1_RUNTIME_TRADEOFF.png exists and sha256 == figure_values.json: 07e0b05af57fc1b3cc35290c766029e6cbb1baec24c29c1b5cd5646a6aa56f8d
+PASS [I figures] every plotted value (96) == source CSV: 0.0
+PASS [I figures] runtime figure x-values == DINOV2_RUNTIME_MEMORY.csv: 0.0
+PASS [I figures] dinov2_s extraction seconds == embedding manifest: 14618.5
+PASS [I figures] dinov2_b extraction seconds == embedding manifest: 1850.6
+PASS [I figures] dinov2_l extraction seconds == embedding manifest: 5791.5
+{
+ "checks": 121,
+ "passed": 121,
+ "failed": 0,
+ "by_group": {
+  "A environment / frozen inputs": "11/11",
+  "B checkpoints": "3/3",
+  "C embeddings": "60/60",
+  "D reserved isolation": "5/5",
+  "E layer mapping (independent forward)": "19/19",
+  "F metrics (independent rescoring)": "7/7",
+  "G DINOv2-B baseline reproduction": "4/4",
+  "H re-fit determinism": "3/3",
+  "I figures": "9/9"
+ },
+ "utc": "2026-11-19T20:36:10Z",
+ "python": "/home/hayvan/Programming/LMU/CMVAL/Clustering-Practical-Trial/.venv/bin/python"
+}

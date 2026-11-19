@@ -1,0 +1,18 @@
+{
+  "checks": 121,
+  "passed": 121,
+  "failed": 0,
+  "by_group": {
+    "A environment / frozen inputs": "11/11",
+    "B checkpoints": "3/3",
+    "C embeddings": "60/60",
+    "D reserved isolation": "5/5",
+    "E layer mapping (independent forward)": "19/19",
+    "F metrics (independent rescoring)": "7/7",
+    "G DINOv2-B baseline reproduction": "4/4",
+    "H re-fit determinism": "3/3",
+    "I figures": "9/9"
+  },
+  "utc": "2026-11-19T20:36:10Z",
+  "python": "/home/hayvan/Programming/LMU/CMVAL/Clustering-Practical-Trial/.venv/bin/python"
+}

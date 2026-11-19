@@ -5,18 +5,18 @@ The roadmap itself is [`docs/roadmap/Clustering_Execution_Roadmap_W8_to_Final.do
 
 | | |
 |---|---|
-| **Current state** | P0 complete (2026-11-19). No other phase has started. |
-| **Next permitted phase** | **P1** (Finish DINOv2 S/B/L at scale), after the team has reviewed the P0 report. |
+| **Current state** | P0 and P1 complete (2026-11-19). No other phase has started. |
+| **Next permitted phase** | **P2** (Add several newer image encoders), after the team has reviewed the P1 report. |
 | **Frozen dataset** | `MIMO-HS3-DEV12K-v1`: [`phases/P0/artifacts/DEV_MANIFEST.json`](phases/P0/artifacts/DEV_MANIFEST.json) |
 | **Frozen protocol** | `FAIR-CMP-v1`: [`phases/P0/artifacts/EXPERIMENT_PROTOCOL.json`](phases/P0/artifacts/EXPERIMENT_PROTOCOL.json) |
-| **Frozen baselines** | [`phases/P0/artifacts/BASELINE_REFERENCE.csv`](phases/P0/artifacts/BASELINE_REFERENCE.csv) |
+| **Frozen baselines** | [`phases/P0/artifacts/BASELINE_REFERENCE.csv`](phases/P0/artifacts/BASELINE_REFERENCE.csv); DINOv2 S/B/L references: [`phases/P1/artifacts/DINOV2_SBL_12K.csv`](phases/P1/artifacts/DINOV2_SBL_12K.csv) |
 
 ## Phases
 
 | Phase | Objective (roadmap name) | Milestone | Status | Report | Completed |
 |---|---|---|---|---|---|
 | **P0** | Freeze a fair comparison protocol | Week 8 | **COMPLETE** | [P0_REPORT.md](phases/P0/P0_REPORT.md) | 2026-11-19 |
-| P1 | Finish DINOv2 S/B/L at scale (RQ3) | Week 8 | NOT STARTED | [placeholder](phases/P1/README.md) | — |
+| **P1** | Finish DINOv2 S/B/L at scale (RQ3) | Week 8 | **COMPLETE** | [P1_REPORT.md](phases/P1/P1_REPORT.md) | 2026-11-19 |
 | P2 | Add several newer image encoders (RQ1) | Week 8 | NOT STARTED | [placeholder](phases/P2/README.md) | — |
 | P3 | Method comparison and blind k (RQ1) | Week 8 | NOT STARTED | [placeholder](phases/P3/README.md) | — |
 | P4 | Feature and image preprocessing (RQ2) | Week 8 | NOT STARTED | [placeholder](phases/P4/README.md) | — |
